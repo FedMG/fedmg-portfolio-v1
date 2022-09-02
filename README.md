@@ -1,3 +1,3 @@
-# react-ddpfsv
+# My Portfolio
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ddpfsv)
+- This project it's done with **React** and **Sass**.
