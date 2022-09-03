@@ -1,0 +1,42 @@
+.Lists {
+  float: left;
+}
+
+.Lists__anchor {
+  /* font-size: clamp(0.9em, 2vw, 1.3em); */
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  min-height: 3.6em;
+  padding: 16px 16px;
+}
+
+/* states */
+.Lists__anchor:link,
+.Lists__anchor:visited {
+  color: #fff;
+}
+
+.Lists__anchor:focus {
+  color: #ff6347;
+  outline: 1.5px solid #ff6347;
+}
+
+.Lists__anchor:hover {
+  border-bottom: 2.5px solid #ff6347;
+  color: #ff6347;
+}
+
+.Lists__anchor:active {
+  color: #fff;
+  outline: none;
+  border-bottom: 4px solid #ff6347;
+}
+
+/* This media-query is related to header.css & logo.css media-querys */
+@media (min-width: 510px) {
+  .Lists {
+    float: none;
+    display: inline-block;
+  }
+}

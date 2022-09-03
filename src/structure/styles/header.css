@@ -1,0 +1,17 @@
+/* Reorganize css files and refactor styles in one file */
+
+.Header {
+  z-index: 22222;
+  background-color: #000;
+  user-select: none;
+  position: fixed;
+  width: 100%;
+}
+
+/* This media-query is related to createlist.css & logo.css media-querys */
+@media (min-width: 510px) {
+  .lists-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
