@@ -8,7 +8,7 @@
   color: #fff;
   text-decoration: none;
   min-height: 3.6em;
-  padding: 16px 16px;
+  padding: 1em 1em;
 }
 
 /* states */
@@ -38,5 +38,8 @@
   .Lists {
     float: none;
     display: inline-block;
+  }
+  .Lists__anchor {
+    padding: 1em clamp(1em, 2.5vw, 2em);
   }
 }
