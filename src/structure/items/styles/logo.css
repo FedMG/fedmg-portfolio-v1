@@ -30,7 +30,7 @@
 }
 
 /* This media-query is related to header.css & createlist.css media-querys */
-@media (min-width: 510px) {
+@media (min-width: 495px) {
   .Logo-container {
     display: inline-block;
   }

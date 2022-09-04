@@ -2,14 +2,15 @@
 
 .Header {
   z-index: 22222;
-  background-color: #000;
+  /* background-color: #051E55; */
+  background-color: #02113d;
   user-select: none;
   position: fixed;
   width: 100%;
 }
 
 /* This media-query is related to createlist.css & logo.css media-querys */
-@media (min-width: 510px) {
+@media (min-width: 495px) {
   .lists-wrapper {
     display: flex;
     justify-content: center;

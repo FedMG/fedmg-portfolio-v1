@@ -34,7 +34,7 @@
 }
 
 /* This media-query is related to header.css & logo.css media-querys */
-@media (min-width: 510px) {
+@media (min-width: 495px) {
   .Lists {
     float: none;
     display: inline-block;
