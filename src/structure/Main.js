@@ -1,3 +1,4 @@
+import React from 'react';
 import Home from '../routes/Home.js';
 
 const Main = () => {
@@ -5,8 +6,7 @@ const Main = () => {
     <main className="Main">
       <Home />
       {/* <About />
-      <Projects /> */}
-      {/*
+      <Projects />
       <Skills />
       <Contact />*/}
     </main>
