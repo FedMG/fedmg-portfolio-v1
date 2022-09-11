@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/logo.css';
+import '../styles/logo.css';
 
 const Logo = ({ classes, source, href, alt }) => (
   <a className={classes[0]} href={href}>

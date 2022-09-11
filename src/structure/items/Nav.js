@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/nav.css';
+import '../styles/nav.css';
 
 const Nav = ({ classes, children }) => (
   <nav className={classes[0]}>

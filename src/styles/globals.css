@@ -2,9 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 * {
-  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  /* fonts */
+  /* --title-ff: '';
+  --subtitle-ff: '';
+  --paragraph-ff: 'Rubik', sans-serif; */
+
+  /* navbar */
+  --logo-color: invert(100%) contrast(900%) grayscale(100);
+  --logo-color-status: invert(50%) sepia(89%) saturate(967%) hue-rotate(325deg)
+    brightness(94%) contrast(117%);
+  --nav-color: #fff;
+  --nav-status-color: #ff6347;
+
+  /* header */
+  --nav-bg-color: #02113d;
+
+  /* properties */
+  scroll-behavior: smooth;
 }

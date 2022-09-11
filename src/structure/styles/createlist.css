@@ -1,45 +1,31 @@
+/* elements */
 .Lists {
   float: left;
 }
 
 .Lists__anchor {
-  /* font-size: clamp(0.9em, 2vw, 1.3em); */
   display: block;
-  color: #fff;
+  color: var(--nav-color);
   text-decoration: none;
   min-height: 3.6em;
   padding: 1em 1em;
 }
 
-/* states */
+/* status */
 .Lists__anchor:link,
 .Lists__anchor:visited {
-  color: #fff;
+  color: var(--nav-color);
 }
 
-.Lists__anchor:focus {
-  color: #ff6347;
-  outline: 1.5px solid #ff6347;
-}
-
+.Lists__anchor:focus,
 .Lists__anchor:hover {
-  border-bottom: 2.5px solid #ff6347;
-  color: #ff6347;
+  color: var(--nav-status-color);
+  outline: none;
+  border-bottom: 2.5px solid var(--nav-status-color);
 }
 
 .Lists__anchor:active {
-  color: #fff;
+  color: var(--nav-color);
   outline: none;
-  border-bottom: 4px solid #ff6347;
-}
-
-/* This media-query is related to header.css & logo.css media-querys */
-@media (min-width: 495px) {
-  .Lists {
-    float: none;
-    display: inline-block;
-  }
-  .Lists__anchor {
-    padding: 1em clamp(1em, 2.5vw, 2em);
-  }
+  border-bottom: 4px solid var(--nav-status-color);
 }
