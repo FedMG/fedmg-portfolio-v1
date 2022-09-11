@@ -1,9 +1,13 @@
 /* elements */
-.Lists {
+.unordered-list {
+  list-style-type: none;
+}
+
+.lists {
   float: left;
 }
 
-.Lists__anchor {
+.lists__anchor {
   display: block;
   color: var(--nav-color);
   text-decoration: none;
@@ -12,19 +16,19 @@
 }
 
 /* status */
-.Lists__anchor:link,
-.Lists__anchor:visited {
+.lists__anchor:link,
+.lists__anchor:visited {
   color: var(--nav-color);
 }
 
-.Lists__anchor:focus,
-.Lists__anchor:hover {
+.lists__anchor:focus,
+.lists__anchor:hover {
   color: var(--nav-status-color);
   outline: none;
   border-bottom: 2.5px solid var(--nav-status-color);
 }
 
-.Lists__anchor:active {
+.lists__anchor:active {
   color: var(--nav-color);
   outline: none;
   border-bottom: 4px solid var(--nav-status-color);
