@@ -1,16 +1,9 @@
-/* @media (min-width: 495px) {
-  .lists-wrapper {
+@media (min-width: 495px) {
+  .navbar {
     display: flex;
     justify-content: center;
   }
-  .Lists {
-    float: none;
-    display: inline-block;
+  .lists__anchor {
+    padding: 1em clamp(1em, 2.5vw, 2.4em);
   }
-  .Lists__anchor {
-    padding: 1em clamp(1em, 2.5vw, 2em);
-  }
-  .Logo-container {
-    display: inline-block;
-  }
-} */
+}

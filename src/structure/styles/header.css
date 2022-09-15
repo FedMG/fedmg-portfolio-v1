@@ -1,6 +1,5 @@
 @import 'createlist.css';
-@import 'logo.css';
-/* @import 'media.css'; */
+@import 'media.css';
 
 .Header {
   z-index: 22222;
