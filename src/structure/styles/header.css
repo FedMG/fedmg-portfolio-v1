@@ -1,5 +1,4 @@
 @import 'createlist.css';
-@import 'media.css';
 
 .Header {
   z-index: 22222;
@@ -7,4 +6,9 @@
   user-select: none;
   position: fixed;
   width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
 }

@@ -1,9 +1,0 @@
-@media (min-width: 495px) {
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-  .lists__anchor {
-    padding: 1em clamp(1em, 2.5vw, 2.4em);
-  }
-}
