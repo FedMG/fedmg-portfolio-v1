@@ -6,7 +6,7 @@ import './styles/header.css';
 const Header = () => {
   return (
     <header className="Header">
-      <Top />
+      <Top title="Fed" span="MG" />
       <nav className="navbar">
         <CreateList
           listNames={['Home', 'About', 'Projects', 'Skills', 'Contact']}

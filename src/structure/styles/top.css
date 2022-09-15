@@ -1,0 +1,45 @@
+/* elements */
+.Top {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--top-bg-color);
+}
+
+.Top__anchor {
+  text-decoration: none;
+}
+
+.anchor__title-logo {
+  color: var(--top-title-color);
+  display: inline-block;
+}
+
+.title__span-logo {
+  color: var(--top-span-color);
+}
+
+.Top__side-items,
+.Top__side-items {
+  display: inline-block;
+  background-color: var(--top-bg-side-items);
+  height: 5px;
+  width: 10px;
+}
+
+/* status */
+
+.Top__anchor:link,
+.Top__anchor:visited {
+  color: var(--top-link-visited-color);
+}
+
+.Top__anchor:focus,
+.Top__anchor:hover {
+  color: var(--top-focus-hover-color);
+  outline: none;
+}
+
+.Top__anchor:active {
+  color: var(--top-activate-color);
+  outline: none;
+}

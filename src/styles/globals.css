@@ -14,15 +14,21 @@
   --subtitle-ff: '';
   --paragraph-ff: 'Rubik', sans-serif; */
 
-  /* navbar */
-  --logo-color: invert(100%) contrast(900%) grayscale(100);
-  --logo-color-status: invert(50%) sepia(89%) saturate(967%) hue-rotate(325deg)
-    brightness(94%) contrast(117%);
-  --nav-color: #fff;
-  --nav-status-color: #ff6347;
-
   /* header */
   --nav-bg-color: #02113d;
+
+  /* top */
+  --top-title-color: #fff;
+  --top-span-color: #ff6347;
+  --top-bg-color: transparent;
+  --top-bg-side-items: #fff;
+  --top-focus-hover-color: #ff6347;
+  --top-link-visited-color: #fff;
+  --top-activate-color: #fff;
+
+  /* navbar */
+  --nav-color: #fff;
+  --nav-status-color: #ff6347;
 
   /* properties */
   scroll-behavior: smooth;
