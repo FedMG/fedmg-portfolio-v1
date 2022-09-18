@@ -8,6 +8,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  background-color: #171717;
+}
+
 :root {
   /* fonts */
   /* --title-ff: '';
@@ -15,7 +19,7 @@
   --paragraph-ff: 'Rubik', sans-serif; */
 
   /* header */
-  --nav-bg-color: #02113d;
+  /* --nav-bg-color: #02113d; */
 
   /* top */
   --top-title-color: #fff;

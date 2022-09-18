@@ -1,14 +1,18 @@
 import React from 'react';
 import Home from '../routes/Home.js';
+import About from '../routes/About.js';
+import Projects from '../routes/Projects.js';
+import Skills from '../routes/Skills.js';
+import Contact from '../routes/Contact.js';
 
 const Main = () => {
   return (
     <main className="Main">
       <Home />
-      {/* <About />
+      <About />
       <Projects />
       <Skills />
-      <Contact />*/}
+      <Contact />
     </main>
   );
 };
