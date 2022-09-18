@@ -1,0 +1,15 @@
+.section {
+  height: 100%;
+  width: 100%;
+  min-height: 300px;
+}
+
+.subtitle-section {
+  text-align: center;
+  margin-top: 5em;
+  color: var(--subtitle-section);
+}
+
+.span-subtitle {
+  color: var(--span-subtitle);
+}

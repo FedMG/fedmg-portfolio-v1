@@ -1,0 +1,66 @@
+/* @import './sections.css'; */
+
+.home-subcontainer {
+  height: 100%;
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 3em;
+  min-height: 16em;
+  height: 100%;
+  width: 100%;
+}
+
+.greeting-container__span {
+  color: var(--first-title-color);
+  font-size: var(--first-title-fz);
+}
+
+.span-container {
+  display: flex;
+  padding: 3em;
+  height: 100%;
+  color: white;
+  width: 100%;
+}
+
+.span-container__subcontainer {
+  display: block;
+  width: 100%;
+}
+
+.first-phrase,
+.second-phrase,
+.third-phrase {
+  font-size: var(--subtitle-section-fz);
+  font-family: var(--subtitle-section-ff);
+  color: var(--subtitle-section-color);
+}
+.first-phrase__span,
+.second-phrase__span
+/* .third-phrase__span  */ {
+  color: var(--span-subtitle-color);
+}
+
+.buttons-container {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-container__subcontainer {
+  display: flex;
+  gap: 0 15px;
+  padding-left: 3em;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  padding: var(--button-padding);
+  width: 9em;
+  border-radius: var(--button-bd-radius);
+}

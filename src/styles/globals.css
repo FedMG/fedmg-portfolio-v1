@@ -9,31 +9,69 @@
 }
 
 body {
-  background-color: #171717;
+  background-color: var(--body-bg-color);
 }
+
+/* 
+Palette
+#171717
+#444444
+#DA0037
+#EDEDED
+ */
 
 :root {
   /* fonts */
-  /* --title-ff: '';
+  --title-ff: '';
   --subtitle-ff: '';
-  --paragraph-ff: 'Rubik', sans-serif; */
+  --paragraph-ff: 'Rubik', sans-serif;
+
+  --first-title-fz: clamp(2.2em, 10vw, 4.5em);
+  --first-title-color: #da0037;
+
+  --subtitle-section-fz: clamp(1.1em, 5vw, 1.6em);
+  --subtitle-section-ff: 'Rubik', sans-serif;
+  --subtitle-section-color: #f2f2f2;
+  --span-subtitle-color: #da0037;
+
+  --button-fz: ;
+  --button-ff: ;
+  --button-padding: 0.5em;
+  --button-color: #ededed;
+  --button-bg-color: #da0037;
+  --button-bd-radius: 0.3em;
 
   /* header */
-  /* --nav-bg-color: #02113d; */
+  --nav-bg-color: #171717;
 
   /* top */
   --top-title-color: #fff;
-  --top-span-color: #ff6347;
+  --top-span-color: #da0037;
   --top-bg-color: transparent;
   --top-bg-side-items: #fff;
-  --top-focus-hover-color: #ff6347;
+  --top-focus-hover-color: #da0037;
+
   --top-link-visited-color: #fff;
   --top-activate-color: #fff;
 
   /* navbar */
   --nav-color: #fff;
-  --nav-status-color: #ff6347;
+  --nav-status-color: #da0037;
+
+  /* sections */
+  --subtitle-section: #ededed;
+  --span-subtitle: #da0037;
+
+  /* body */
+  --body-bg-color: #171717;
 
   /* properties */
   scroll-behavior: smooth;
 }
+
+/* 
+Colors
+
+#ff6347
+
+*/

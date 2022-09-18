@@ -4,6 +4,7 @@ import About from '../routes/About.js';
 import Projects from '../routes/Projects.js';
 import Skills from '../routes/Skills.js';
 import Contact from '../routes/Contact.js';
+import '../routes/styles/sections.css';
 
 const Main = () => {
   return (

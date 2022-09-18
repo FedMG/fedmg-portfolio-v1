@@ -2,16 +2,9 @@ import React from 'react';
 
 const Contact = ({}) => {
   return (
-    <div
-      id="Contact"
-      style={{
-        height: '100%',
-        width: '100%',
-        minHeight: '300px',
-      }}
-    >
-      <h2>
-        <span>Contact</span> me
+    <div id="Contact" className="section">
+      <h2 className="subtitle-section">
+        <span className="span-subtitle">Contact</span> me
       </h2>
     </div>
   );
