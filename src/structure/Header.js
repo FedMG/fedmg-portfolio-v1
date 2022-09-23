@@ -9,7 +9,13 @@ const Header = () => {
       <Top title="Fed" span="MG" />
       <nav className="navbar">
         <CreateList
-          listNames={['Home', 'About', 'Projects', 'Skills', 'Contact']}
+          listNames={[
+            { id: 1, name: 'Home' },
+            { id: 2, name: 'About' },
+            { id: 3, name: 'Projects' },
+            { id: 4, name: 'Skills' },
+            { id: 5, name: 'Contact' },
+          ]}
           classes={['unordered-list', 'lists', 'lists__anchor']}
         />
       </nav>

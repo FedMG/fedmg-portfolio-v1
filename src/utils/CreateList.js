@@ -2,8 +2,8 @@ import React from 'react';
 
 const CreateList = ({ listNames, classes }) => (
   <ul className={classes[0]}>
-    {listNames.map((eachName) => (
-      <li className={classes[1]}>
+    {listNames.map(({ id, eachName }) => (
+      <li className={classes[1]} key={id}>
         <a href={`#${eachName}`} className={classes[2]}>
           {eachName}
         </a>
