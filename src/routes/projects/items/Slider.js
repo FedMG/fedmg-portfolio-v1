@@ -1,11 +1,9 @@
 import React from 'react';
 import setNext from '../funcionalities/move.js';
-import addIntervals from '../funcionalities/interval.js';
-const { useRef, useEffect, useCallback } = React;
+const { useRef, useCallback } = React;
 
-const Slider = ({ children, speed = '500', interval = '3500' }) => {
+const Slider = ({ children, speed = '500' }) => {
   const slider = useRef(null);
-  const intervals = useRef(null);
 
   const serveObject = () => {
     return {
@@ -21,12 +19,6 @@ const Slider = ({ children, speed = '500', interval = '3500' }) => {
       setNext(speed, serveObject);
     }
   }, [speed]);
-
-  useEffect(() => {
-    addIntervals(intervals.current, serveObject, () =>
-      setInterval(() => next(), interval)
-    );
-  }, [interval, next]);
 
   return (
     <div style={{ position: 'relative' }}>

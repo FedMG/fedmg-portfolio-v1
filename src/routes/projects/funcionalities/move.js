@@ -15,6 +15,7 @@ const setNext = (speed, serveObject) => {
     container.appendChild(firstElement);
     container.removeEventListener('transitionend', updatePosition);
   };
+
   setListener(container, 'transitionend', updatePosition);
 };
 

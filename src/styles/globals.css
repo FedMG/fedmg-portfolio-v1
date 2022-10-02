@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: var(--body-bg-color);
+  /* background-color: var(--body-bg-color); */
+  background: var(--body-bg-color);
 }
 
 /* 
@@ -63,8 +64,8 @@ Palette
   --span-subtitle: #da0037;
 
   /* body */
+  /* --body-bg-color: linear-gradient(14deg, #171717, #bbb2); */
   --body-bg-color: #171717;
-
   /* properties */
   scroll-behavior: smooth;
 }
