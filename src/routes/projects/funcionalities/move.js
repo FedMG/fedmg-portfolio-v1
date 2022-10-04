@@ -37,7 +37,7 @@ const setPrevious = (serveObject) => {
       `600ms cubic-bezier(0,1,.78,.99)`,
       `translateX(0)`
     );
-  }, 30);
+  }, 50);
 };
 
 export { setNext, setPrevious };

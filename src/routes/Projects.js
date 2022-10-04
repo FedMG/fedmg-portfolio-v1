@@ -10,12 +10,13 @@ const Projects = () => {
         My<span className="span-subtitle"> projects</span>
       </h2>
       <div
-        style={{ maxWidth: '100%', margin: '50px auto',
-        // overflow: 'hidden'
-         }}
+        style={{
+          maxWidth: '100%',
+          margin: '50px auto',
+        }}
       >
         <Slider>
-        <CreateProject data={projectData} />
+          <CreateProject data={projectData} />
         </Slider>
       </div>
     </div>
