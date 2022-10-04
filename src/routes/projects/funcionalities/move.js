@@ -7,11 +7,11 @@ const setNext = (speed, serveObject) => {
   setAnimation(
     containerStyle,
     `${speed}ms ease-out all`,
-    `translateY(-${sliderElem[0].offsetWidth}px)`
+    `translateX(-${sliderElem[0].offsetWidth}px)`
   );
 
   const updatePosition = () => {
-    setAnimation(containerStyle, 'none', `translateY(0)`);
+    setAnimation(containerStyle, 'none', `translateX(0)`);
     container.appendChild(firstElement);
     container.removeEventListener('transitionend', updatePosition);
   };
@@ -19,4 +19,25 @@ const setNext = (speed, serveObject) => {
   setListener(container, 'transitionend', updatePosition);
 };
 
-export default setNext;
+const setPrevious = (serveObject) => {
+  const { sliderElem, containerStyle, container } = serveObject();
+  const lastElement = sliderElem[sliderElem.length - 1];
+
+  setAnimation(
+    containerStyle,
+    'none',
+    `translateX(-${sliderElem[0].offsetWidth}px)`
+  );
+
+  container.insertBefore(lastElement, container.firstChild);
+
+  setTimeout(() => {
+    setAnimation(
+      containerStyle,
+      `600ms cubic-bezier(0,1,.78,.99)`,
+      `translateX(0)`
+    );
+  }, 30);
+};
+
+export { setNext, setPrevious };

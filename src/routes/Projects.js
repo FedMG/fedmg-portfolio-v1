@@ -9,10 +9,15 @@ const Projects = () => {
       <h2 className="subtitle-section">
         My<span className="span-subtitle"> projects</span>
       </h2>
-
-      {/* <Slider> */}
-      <CreateProject data={projectData} />
-      {/* </Slider> */}
+      <div
+        style={{ maxWidth: '100%', margin: '50px auto',
+        // overflow: 'hidden'
+         }}
+      >
+        <Slider>
+        <CreateProject data={projectData} />
+        </Slider>
+      </div>
     </div>
   );
 };
