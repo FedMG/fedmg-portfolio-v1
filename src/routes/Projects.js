@@ -1,7 +1,7 @@
 import React from 'react';
-import { Slider } from './projects/items/Slider.js';
-import { CreateProject } from './projects/CreateProject.js';
-import { projectData } from './projects/projectData.js';
+import { Slider } from '../items/Slider.js';
+import { CreateProject } from '../items/CreateProject.js';
+import { projectData } from '../refs/projects.js';
 
 const Projects = () => {
   return (

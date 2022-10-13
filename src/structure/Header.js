@@ -1,7 +1,7 @@
 import React from 'react';
-import Top from './items/Top.js';
+import Top from '../items/Top.js';
 import CreateList from '../utils/CreateList.js';
-import './styles/header.css';
+import '../styles/header/header.css';
 
 const Header = () => {
   return (

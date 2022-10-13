@@ -1,4 +1,4 @@
-import { setListener, setAnimation } from './utils.js';
+import { setListener, setAnimation } from '../utils/tools.js';
 
 const setNext = (speed, serveObject) => {
   const { sliderElem, containerStyle, container } = serveObject();

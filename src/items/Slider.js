@@ -1,5 +1,5 @@
 import React from 'react';
-import { setNext, setPrevious } from '../funcionalities/move.js';
+import { setNext, setPrevious } from '../functionals/move.js';
 const { useRef, useCallback } = React;
 
 const container = {
