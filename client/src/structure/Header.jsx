@@ -1,6 +1,6 @@
 import React from 'react';
-import Top from '../items/Top.js';
-import CreateList from '../utils/CreateList.js';
+import Top from '../items/Top.jsx';
+import CreateList from '../utils/CreateList.jsx';
 import '../styles/header/header.css';
 
 const Header = () => {

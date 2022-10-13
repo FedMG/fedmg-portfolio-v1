@@ -1,9 +1,9 @@
-import * as React from 'react';
-import Header from './structure/Header.js';
-import Main from './structure/Main.js';
+// import * as React from 'react';
+import Header from './structure/Header.jsx';
+import Main from './structure/Main.jsx';
 import './styles/globals.css';
 
-const App = () => {
+function App () {
   return (
     <div className="App">
       <Header />
