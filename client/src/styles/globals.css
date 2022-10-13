@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
@@ -23,24 +23,42 @@ Palette
 
 :root {
   /* fonts */
-  --title-ff: '';
-  --subtitle-ff: '';
-  --paragraph-ff: 'Rubik', sans-serif;
+  --title-ff: "";
+  --subtitle-ff: "";
+  --paragraph-ff: "Rubik", sans-serif;
 
   --first-title-fz: clamp(2.2em, 10vw, 4.5em);
   --first-title-color: #da0037;
 
   --subtitle-section-fz: clamp(1.1em, 5vw, 1.6em);
-  --subtitle-section-ff: 'Rubik', sans-serif;
+  --subtitle-section-ff: "Rubik", sans-serif;
   --subtitle-section-color: #f2f2f2;
   --span-subtitle-color: #da0037;
 
+  /* span subcontainer */
+  --span-subcontainer-pad-lf-bt: clamp(0.3em, 7vw, 3em);
+
+  /* button subcontainer */
+  --btn-subcontainer-gap: 0 clamp(0.3em, 2vw, 1.05em);
+  --btn-subcontainer-pad-left: clamp(0.5em, 7vw, 3em);
+
+  /* button */
   --button-fz: ;
   --button-ff: ;
   --button-padding: 0.5em;
+  --button-width: 9em;
+
   --button-color: #ededed;
   --button-bg-color: #da0037;
   --button-bd-radius: 0.3em;
+
+  /* hover button */
+  --button-color-hov: #ededed;
+  --button-bg-color-hov: #c20030;
+
+  /* active button */
+  --button-color-act: #f7f7f7;
+  --button-bg-color-act: #e00038;
 
   /* header */
   --nav-bg-color: #171717;
