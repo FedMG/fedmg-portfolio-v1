@@ -26,10 +26,12 @@ const Projects = () => {
       <h2 className="subtitle-section">
         My<span className="span-subtitle"> projects</span>
       </h2>
-      <div className="project-slider-bk">
-        <Slider>
-          <CreateProject data={projectData} />
-        </Slider>
+      <div className="example">
+        <div className="project-slider-bk">
+          <Slider>
+            <CreateProject data={projectData} />
+          </Slider>
+        </div>
       </div>
     </div>
   );

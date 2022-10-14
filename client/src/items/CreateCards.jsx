@@ -6,7 +6,7 @@ import { ButtonsSection } from "./ButtonsSection.jsx";
 export const CreateCards = () => {
   const { captions } = useContext(DataContext);
   return captions.map((caption, index) => (
-    <div key={caption} className="project-content">
+    <div key={caption} className="project-cards">
       <Figure idx={index} cap={caption} />
       <ButtonsSection idx={index} />
     </div>

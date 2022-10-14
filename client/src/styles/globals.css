@@ -8,8 +8,11 @@
   font-family: "Rubik", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  /* background-color: var(--body-bg-color); */
   background: var(--body-bg-color);
 }
 
@@ -35,16 +38,12 @@ Palette
   --subtitle-section-color: #f2f2f2;
   --span-subtitle-color: #da0037;
 
-  /* span subcontainer */
+  /* home */
   --span-subcontainer-pad-lf-bt: clamp(0.3em, 7vw, 3em);
-
-  /* button subcontainer */
   --btn-subcontainer-gap: 0 clamp(0.3em, 2vw, 1.05em);
   --btn-subcontainer-pad-left: clamp(0.5em, 7vw, 3em);
 
   /* button */
-  --button-fz: ;
-  --button-ff: ;
   --button-padding: 0.5em;
   --button-width: 9em;
 
@@ -53,8 +52,8 @@ Palette
   --button-bd-radius: 0.3em;
 
   /* hover button */
-  --button-color-hov: #ededed;
-  --button-bg-color-hov: #c20030;
+  --button-color-hov: #d1d1d1;
+  --button-bg-color-hov: #b5002e;
 
   /* active button */
   --button-color-act: #f7f7f7;
@@ -74,6 +73,7 @@ Palette
   --top-activate-color: #fff;
 
   /* navbar */
+  --nav-list-fz-break: 0.85em;
   --nav-color: #fff;
   --nav-status-color: #da0037;
 
@@ -81,16 +81,23 @@ Palette
   --subtitle-section: #ededed;
   --span-subtitle: #da0037;
 
+  /* project */
+  --pjt-slider-bk-margin: 3em auto;
+  --pjt-board-gap-pad: 0.85em;
+  --pjt-gap-btns: 0.5em;
+  --pjt-figcaption-fz: 1em;
+  --pjt-figcaption-margin: 0.3em 0 0.6em;
+  --pjt-figcaption-fw: 600;
+  --pjt-card-padding: 0.2em;
+  --pjt-card-bd-rad: 0.23em;
+
+  /* project hover */
+  --pjt-cards-bg-color-hov: #c9c9c9;
+
+  /* slider */
+  --sld-elem-bk-margin: 0 clamp(0.3em, 2vw, 1em);
+  --sld-icon-btn-width: 3.7em;
+
   /* body */
-  /* --body-bg-color: linear-gradient(14deg, #171717, #bbb2); */
   --body-bg-color: #171717;
-  /* properties */
-  scroll-behavior: smooth;
 }
-
-/* 
-Colors
-
-#ff6347
-
-*/

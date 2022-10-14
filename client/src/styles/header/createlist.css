@@ -33,3 +33,9 @@
   outline: none;
   border-bottom: 4px solid var(--nav-status-color);
 }
+
+@media (max-width: 450px) {
+  .lists {
+    font-size: var(--nav-list-fz-break);
+  }
+}
