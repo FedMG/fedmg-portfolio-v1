@@ -1,3 +1,9 @@
+@import "../items/slider.css";
+
+.project-slider-bk {
+  margin: 3em auto;
+}
+
 .project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;

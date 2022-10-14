@@ -1,0 +1,31 @@
+.slider-bk {
+  display: flex;
+}
+
+.slider-element-bk {
+  margin: 0 clamp(0.3em, 2vw, 1em);
+  overflow: hidden;
+}
+.slider-element {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slider-buttons-bk {
+  display: flex;
+  align-items: center;
+}
+.slider-buttons {
+  background: none;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 100%;
+  max-height: 50px;
+  pointer-events: all;
+  z-index: 20;
+}
+.slider-icon-button {
+  width: 50px;
+  height: 50px;
+}
