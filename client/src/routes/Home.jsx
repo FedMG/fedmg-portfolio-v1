@@ -1,7 +1,7 @@
 import React from "react";
 import { Introduction } from "../items/Introduction.jsx";
 import { Greeting } from "../items/Greeting.jsx";
-// import { LinkSection } from "../items/LinkSection.jsx";
+import { LinkSection } from "../items/LinkSection.jsx";
 import "../styles/routes/home.css";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
       <div className="home-subcontainer">
         <Greeting />
         <Introduction />
-        {/* <LinkSection /> */}
+        <LinkSection />
       </div>
 
       <div class="custom-shape-divider-bottom-1665638802">
