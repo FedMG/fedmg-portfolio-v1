@@ -65,6 +65,7 @@
   padding: var(--button-padding);
   width: var(--button-width);
   border-radius: var(--button-bd-radius);
+  border: var(--button-bd-style);
 }
 
 .button:hover {
@@ -75,6 +76,7 @@
 .button:active {
   background-color: var(--button-bg-color-act);
   color: var(--button-color-act);
+  border: var(--button-bd-style-act);
 }
 
 @media (max-width: 450px) {
