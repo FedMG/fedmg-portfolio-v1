@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Button = ({ href, name, src, alt, onclick }) => {
+export const Button = ({ href, name, src, alt, onclick, style }) => {
   if (!src) {
     return (
-      <a href={href} className="project-anchors" target="_blank">
-        <button className="project-buttons">{name}</button>
+      <a href={href} className="anchors" target="_blank">
+        <button className={style}>{name}</button>
       </a>
     );
   }
