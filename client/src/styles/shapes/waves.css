@@ -1,0 +1,39 @@
+.waves-upside,
+.waves-downside {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.waves-upside svg,
+.waves-downside svg {
+  position: relative;
+  display: block;
+}
+
+.waves-upside .shape-fill,
+.waves-downside .shape-fill {
+  fill: #ffffff;
+}
+
+/* BOTTOM */
+.waves-upside {
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.waves-upside svg {
+  width: calc(140% + 1.3px);
+  height: 130px;
+}
+
+/* TOP */
+.waves-downside {
+  position: absolute;
+}
+
+.waves-downside svg {
+  width: calc(223% + 1.3px);
+  height: 186px;
+}

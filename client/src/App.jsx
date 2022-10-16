@@ -1,9 +1,12 @@
 // import * as React from 'react';
-import Header from './structure/Header.jsx';
-import Main from './structure/Main.jsx';
-import './styles/globals.css';
+import { useEffect } from "react";
+import Header from "./structure/Header.jsx";
+import Main from "./structure/Main.jsx";
+import "./styles/globals.css";
 
-function App () {
+function App() {
+  // useEffect();
+
   return (
     <div className="App">
       <Header />
@@ -11,5 +14,5 @@ function App () {
       {/* <Footer />  */}
     </div>
   );
-};
+}
 export default App;

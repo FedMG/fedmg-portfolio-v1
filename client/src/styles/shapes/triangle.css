@@ -1,0 +1,41 @@
+.triangle-top,
+.triangle-bottom {
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  border: none;
+}
+
+.triangle-top svg,
+.triangle-bottom svg {
+  position: relative;
+  display: block;
+}
+
+.triangle-top .shape-fill,
+.triangle-bottom .shape-fill {
+  fill: #ffffff;
+}
+
+/* TOP */
+.triangle-top {
+  position: absolute;
+}
+
+.triangle-top svg {
+  width: calc(100% + 1.3px);
+  height: 137px;
+}
+
+/* BOTTOM */
+.triangle-bottom {
+  position: relative;
+  bottom: -1px;
+  transform: rotate(180deg);
+}
+
+.triangle-bottom svg {
+  width: calc(200% + 1.3px);
+  height: 212px;
+}

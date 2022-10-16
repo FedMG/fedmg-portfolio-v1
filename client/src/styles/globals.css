@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import "./shapes/triangle.css";
+@import "./shapes/waves.css";
 
 * {
   margin: 0;

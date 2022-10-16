@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const Skills = ({}) => {
+const Skills = () => {
   return (
     <div id="Skills" className="section">
       <h2 className="subtitle-section">
