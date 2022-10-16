@@ -1,8 +1,7 @@
-import { CreateShape } from "../layouts/CreateShape.jsx";
+import { CreateShape } from "../iterators/CreateShape.jsx";
 import { triangle, waves } from "../refs/shapes.js";
-import "../styles/routes/about.css";
 
-const About = () => {
+export const About = () => {
   return (
     <div id="About" className="section">
       <CreateShape data={waves.downside} />
@@ -13,5 +12,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

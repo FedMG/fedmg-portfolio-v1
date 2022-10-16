@@ -1,6 +1,4 @@
-import React from 'react';
-
-const CreateList = ({ listNames, classes }) => {
+export const CreateList = ({ listNames, classes }) => {
   return (
     <ul className={classes[0]}>
       {listNames.map(({ id, name }) => (
@@ -13,5 +11,3 @@ const CreateList = ({ listNames, classes }) => {
     </ul>
   );
 };
-
-export default CreateList;

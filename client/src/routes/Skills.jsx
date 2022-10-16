@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Skills = () => {
+export const Skills = () => {
   return (
     <div id="Skills" className="section">
       <h2 className="subtitle-section">
@@ -9,5 +7,3 @@ const Skills = () => {
     </div>
   );
 };
-
-export default Skills;

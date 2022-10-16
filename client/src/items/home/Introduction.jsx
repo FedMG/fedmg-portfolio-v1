@@ -1,5 +1,4 @@
-import React from "react";
-import { Typography } from "./Typography.jsx";
+import { Typography } from "../Typography.jsx";
 
 export const Introduction = () => {
   return (

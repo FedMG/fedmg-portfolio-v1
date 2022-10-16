@@ -1,5 +1,9 @@
 @import "../items/slider.css";
 
+.anchors {
+  outline: none;
+}
+
 .project-slider-bk {
   margin: 3em 0;
   display: flex;
@@ -34,8 +38,7 @@
   padding: var(--pjt-card-padding);
   border-radius: var(--pjt-card-bd-rad);
 }
-.project-figure {
-}
+/* .project-figure {} */
 
 .project-image {
   width: 100%;
@@ -54,9 +57,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.project-anchors {
-  outline: none;
-}
 .project-buttons {
   width: 100%;
   border: none;

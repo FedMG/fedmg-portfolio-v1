@@ -1,26 +1,17 @@
-import React from 'react';
-import Top from '../items/Top.jsx';
-import CreateList from '../utils/CreateList.jsx';
-import '../styles/header/header.css';
+import Top from "../items/header/Top.jsx";
+import { CreateList } from "../iterators/CreateList.jsx";
+import { headerData } from "../refs/headerData.js";
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className="Header">
       <Top title="Fed" span="MG" />
       <nav className="navbar">
         <CreateList
-          listNames={[
-            { id: 1, name: 'Home' },
-            { id: 2, name: 'About' },
-            { id: 3, name: 'Projects' },
-            { id: 4, name: 'Skills' },
-            { id: 5, name: 'Contact' },
-          ]}
-          classes={['unordered-list', 'lists', 'lists__anchor']}
+          listNames={headerData.routeNames}
+          classes={headerData.styles}
         />
       </nav>
     </header>
   );
 };
-
-export default Header;

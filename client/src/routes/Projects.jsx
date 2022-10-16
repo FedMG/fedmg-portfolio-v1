@@ -1,12 +1,10 @@
-import React from "react";
 import { Slider } from "../items/Slider.jsx";
-import { CreateProject } from "../items/CreateProject.jsx";
+import { CreateProject } from "../iterators/CreateProject.jsx";
+import { CreateShape } from "../iterators/CreateShape.jsx";
 import { projectData } from "../refs/projects.js";
-import { CreateShape } from "../layouts/CreateShape.jsx";
 import { triangle } from "../refs/shapes.js";
-import "../styles/routes/projects.css";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <div id="Projects" className="section">
       <CreateShape data={triangle.downside} />
@@ -21,5 +19,3 @@ const Projects = () => {
     </div>
   );
 };
-
-export default Projects;

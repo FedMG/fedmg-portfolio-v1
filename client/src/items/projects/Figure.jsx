@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { DataContext } from "./CreateProject.jsx";
+import { useContext } from "react";
+import { DataContext } from "../../iterators/CreateProject.jsx";
 
 export const Figure = ({ idx, cap }) => {
   const { sources } = useContext(DataContext);

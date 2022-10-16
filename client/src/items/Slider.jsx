@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import { useRef, useCallback } from "react";
 import { setNext, setPrevious } from "../functionals/move.js";
 import { Button } from "./Button.jsx";
 import { buttonClasses } from "../refs/buttonClasses.js";

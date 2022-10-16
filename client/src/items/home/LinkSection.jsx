@@ -1,6 +1,5 @@
-import React from "react";
-import { CreateButtons } from "./CreateButtons.jsx";
-import { dataButton } from "../refs/dataButton.js";
+import { CreateButtons } from "../../iterators/CreateButtons.jsx";
+import { dataButton } from "../../refs/dataButton.js";
 
 export const LinkSection = () => {
   return (

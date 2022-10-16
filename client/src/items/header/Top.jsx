@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Top = ({ title, span }) => (
   <div className="Top">
     <div className="Top__side-items"></div>

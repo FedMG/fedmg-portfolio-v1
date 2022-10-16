@@ -1,4 +1,3 @@
-/* elements */
 .Top {
   display: flex;
   justify-content: space-between;
@@ -27,7 +26,6 @@
 }
 
 /* status */
-
 .Top__anchor:link,
 .Top__anchor:visited {
   color: var(--top-link-visited-color);

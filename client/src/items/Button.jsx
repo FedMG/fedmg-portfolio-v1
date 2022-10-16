@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Button = ({ href, name, src, alt, onclick, style }) => {
   if (!src) {
     return (

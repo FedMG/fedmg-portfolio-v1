@@ -1,12 +1,10 @@
-import React from "react";
-import { Introduction } from "../items/Introduction.jsx";
-import { Greeting } from "../items/Greeting.jsx";
-import { LinkSection } from "../items/LinkSection.jsx";
-import { CreateShape } from "../layouts/CreateShape.jsx";
+import { Introduction } from "../items/home/Introduction.jsx";
+import { Greeting } from "../items/home/Greeting.jsx";
+import { LinkSection } from "../items/home/LinkSection.jsx";
+import { CreateShape } from "../iterators/CreateShape.jsx";
 import { waves } from "../refs/shapes.js";
-import "../styles/routes/home.css";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div id="Home" className="section">
       <div className="home-subcontainer">
@@ -18,5 +16,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
