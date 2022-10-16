@@ -21,9 +21,10 @@
 
 .span-container {
   display: flex;
-  padding: 3em;
+  padding-left: var(--span-subcontainer-pad-lf-bt);
+  padding-bottom: var(--span-subcontainer-pad-lf-bt);
+
   height: 100%;
-  color: white;
   width: 100%;
 }
 
@@ -52,8 +53,9 @@
 
 .buttons-container__subcontainer {
   display: flex;
-  gap: 0 15px;
-  padding-left: 3em;
+  gap: var(--btn-subcontainer-gap);
+  padding-left: clamp(0.3em, 7vw, 3em);
+  padding-left: var(--btn-subcontainer-pad-left);
   width: 100%;
 }
 
@@ -61,11 +63,28 @@
   background-color: var(--button-bg-color);
   color: var(--button-color);
   padding: var(--button-padding);
-  width: 9em;
+  width: var(--button-width);
   border-radius: var(--button-bd-radius);
+  border: var(--button-bd-style);
 }
 
+.button:hover {
+  background-color: var(--button-bg-color-hov);
+  color: var(--button-color-hov);
+}
 
+.button:active {
+  background-color: var(--button-bg-color-act);
+  color: var(--button-color-act);
+  border: var(--button-bd-style-act);
+}
+
+@media (max-width: 450px) {
+  .button {
+    max-width: calc(var(--button-width) - 3em);
+    padding: calc(var(--button-padding) - 0.2em);
+  }
+}
 
 /* waves */
 .custom-shape-divider-bottom-1665638802 {
@@ -86,5 +105,5 @@
 }
 
 .custom-shape-divider-bottom-1665638802 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
