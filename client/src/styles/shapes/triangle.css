@@ -24,8 +24,8 @@
 }
 
 .triangle-top svg {
-  width: calc(100% + 1.3px);
-  height: 137px;
+  width: calc(100% + 0.08125em);
+  height: 8.5625em;
 }
 
 /* BOTTOM */
@@ -36,6 +36,6 @@
 }
 
 .triangle-bottom svg {
-  width: calc(200% + 1.3px);
-  height: 212px;
+  width: calc(200% + 0.08125em);
+  height: 13.25em;
 }

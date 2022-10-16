@@ -7,7 +7,6 @@ const Top = ({ title, span }) => (
         <span className="title__span-logo">{span}</span>
       </a>
     </h1>
-
     <div className="Top__side-items"></div>
   </div>
 );
