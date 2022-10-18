@@ -6,14 +6,31 @@
   height: 100%;
   width: 100%;
   min-height: 300px;
+  position: relative;
+}
+.section-content {
+  padding: var(--sec-content-pad) 0;
 }
 
 .subtitle-section {
+  /* padding temporal */
+  padding-top: 0.5em;
   text-align: center;
-  padding-top: 5em;
   color: var(--subtitle-section);
 }
 
 .span-subtitle {
   color: var(--span-subtitle);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-content {
+    padding: calc(var(--sec-content-pad) - 1em) 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-content {
+    padding: calc(var(--sec-content-pad) - 2em) 0;
+  }
 }

@@ -7,7 +7,7 @@ import { waves } from "../refs/shapes.js";
 export const Home = () => {
   return (
     <div id="Home" className="section">
-      <div className="home-subcontainer">
+      <div className="home-section-content">
         <Greeting />
         <Introduction />
         <LinkSection />
