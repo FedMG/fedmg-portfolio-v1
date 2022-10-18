@@ -1,5 +1,6 @@
 .triangle-top,
 .triangle-bottom {
+  position: absolute;
   z-index: -1;
   width: 100%;
   overflow: hidden;
@@ -19,9 +20,7 @@
 }
 
 /* TOP */
-.triangle-top {
-  position: absolute;
-}
+/* .triangle-top {} */
 
 .triangle-top svg {
   width: calc(100% + 0.08125em);
@@ -30,7 +29,6 @@
 
 /* BOTTOM */
 .triangle-bottom {
-  position: relative;
   bottom: -1px;
   transform: rotate(180deg);
 }

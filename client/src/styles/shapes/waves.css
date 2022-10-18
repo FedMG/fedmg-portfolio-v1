@@ -1,5 +1,7 @@
 .waves-upside,
 .waves-downside {
+  position: absolute;
+
   width: 100%;
   overflow: hidden;
   line-height: 0;
@@ -19,7 +21,6 @@
 
 /* BOTTOM */
 .waves-upside {
-  position: relative;
   bottom: -1px;
   transform: rotate(180deg);
 }
@@ -30,9 +31,7 @@
 }
 
 /* TOP */
-.waves-downside {
-  position: absolute;
-}
+/* .waves-downside { } */
 
 .waves-downside svg {
   width: calc(223% + 0.08125em);
