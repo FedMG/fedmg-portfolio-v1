@@ -1,0 +1,34 @@
+.about-board-container {
+  display: grid;
+  place-content: center;
+  padding-top: var(--ab-board-bk-pad-top);
+}
+
+.about-board {
+  padding: 0 2em;
+  perspective: 1000px;
+}
+
+.about-card {
+  position: relative;
+  max-width: var(--ab-card-width);
+  background: var(--ab-card-bg-gradient);
+  box-shadow: var(--ab-card-shadow);
+  border: var(--ab-card-bd);
+  padding: var(--ab-card-pad);
+  border-radius: var(--pjt-card-bd-rad);
+}
+
+.about-text {
+  color: var(--ab-text-color);
+  font-size: var(--ab-text-fz);
+}
+
+.background-effect {
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(20px);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
