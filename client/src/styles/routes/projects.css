@@ -5,7 +5,7 @@
 }
 
 .project-slider-bk {
-  margin: 3em 0;
+  padding-top: var(--sections-bk-pad-top);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,10 @@
   background-color: var(--pjt-cards-bg-color-hov);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
+  .project-slider-bk {
+    padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
+  }
   .project-board {
     grid-gap: calc(var(--pjt-board-gap-pad) - 0.25em);
     padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.25em);

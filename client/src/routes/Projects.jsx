@@ -1,3 +1,4 @@
+import { Typography } from "../items/Typography.jsx";
 import { Slider } from "../items/Slider.jsx";
 import { CreateProject } from "../iterators/CreateProject.jsx";
 import { CreateShape } from "../iterators/CreateShape.jsx";
@@ -9,9 +10,9 @@ export const Projects = () => {
     <div id="Projects" className="section">
       <CreateShape data={triangle.downside} />
       <div className="section-content">
-        <h2 className="subtitle-section">
-          My<span className="span-subtitle"> projects</span>
-        </h2>
+        <Typography as="h2" style="subtitle-section">
+          My<Typography style="span-subtitle"> projects</Typography>
+        </Typography>
         <div className="project-slider-bk">
           <Slider>
             <CreateProject data={projectData} />

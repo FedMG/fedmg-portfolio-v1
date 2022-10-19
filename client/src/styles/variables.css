@@ -75,8 +75,10 @@
   --sld-elem-bk-margin: 0 clamp(0.3em, 2vw, 1em);
   --sld-icon-btn-width: 3.7em;
 
+  /* subtitle-space-content */
+  --sections-bk-pad-top: 3.7em;
+
   /* about */
-  --ab-board-bk-pad-top: 3.7em;
   --ab-text-color: #111;
   --ab-text-fz: clamp(1rem, 8vw - 2rem, 1.1rem);
   --ab-card-bd: 2px solid rgba(255, 255, 255, 0.25);
@@ -92,6 +94,11 @@
     rgba(235, 235, 233, 0.45),
     rgba(255, 255, 255, 0.52)
   );
+
+
+  /* skills */
+  --skill-cards-gap: 0.6em;
+
 
   /* body */
   --body-bg-color: #171717;

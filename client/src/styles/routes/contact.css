@@ -1,0 +1,9 @@
+.contact-container {
+  padding-top: var(--sections-bk-pad-top);
+}
+
+@media (max-width: 767px) {
+  .contact-container {
+    padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
+  }
+}

@@ -1,7 +1,7 @@
 .about-board-container {
   display: grid;
   place-content: center;
-  padding-top: var(--ab-board-bk-pad-top);
+  padding-top: var(--sections-bk-pad-top);
 }
 
 .about-board {
@@ -31,4 +31,10 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  .about-board-container {
+    padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
+  }
 }

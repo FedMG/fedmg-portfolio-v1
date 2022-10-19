@@ -1,6 +1,8 @@
 @import "./home.css";
 @import "./projects.css";
 @import "./about.css";
+@import "./skills.css";
+@import "./contact.css";
 
 .section {
   height: 100%;
