@@ -16,4 +16,10 @@ export const Button = ({ href, name, src, alt, onclick, style }) => {
       </div>
     );
   }
+
+  return (
+    <button className={style} onClick={onclick}>
+      {name}
+    </button>
+  );
 };
