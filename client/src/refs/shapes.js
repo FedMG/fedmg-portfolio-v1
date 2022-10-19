@@ -23,7 +23,48 @@ export const triangle = {
       path: "shape-fill",
     },
   },
+
+  contact: {
+    ...svg,
+    path: [{ id: 1, d: "M1200 0L0 0 598.97 114.72 1200 0z" }],
+    styles: {
+      div: "contact-triangle",
+      path: "shape-fill",
+    },
+  },
+
+  skillsTopAsym: {
+    ...svg,
+    path: [
+      { id: 1, d: "M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" },
+    ],
+    styles: {
+      div: "skills-triangle-top",
+      path: "shape-fill",
+    },
+  },
+    skillsTopEmpty: {
+    ...svg,
+    path: [
+      { id: 1, d: "M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" },
+    ],
+    styles: {
+      div: "skills-top-empty",
+      path: "shape-fill",
+    },
+  },
+     projectBottom: {
+    ...svg,
+    path: [
+      { id: 1, d: "M1200 0L0 0 892.25 114.72 1200 0z" },
+    ],
+    styles: {
+      div: "project-bottom",
+      path: "shape-fill",
+    },
+  },
 };
+
 
 export const waves = {
   upside: {

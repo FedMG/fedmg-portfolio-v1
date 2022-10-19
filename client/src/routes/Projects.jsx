@@ -19,6 +19,7 @@ export const Projects = () => {
           </Slider>
         </div>
       </div>
+      <CreateShape data={triangle.projectBottom} />
     </div>
   );
 };
