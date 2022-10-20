@@ -1,15 +1,13 @@
-/* @import './sections.css'; */
-
-.home-subcontainer {
-  height: 100%;
+.home-section-content {
+  padding-top: calc(var(--sec-content-pad) + 1em);
+  padding-bottom: calc(var(--sec-content-pad) + 1em);
 }
 
 .greeting-container {
   display: flex;
   justify-content: center;
   align-items: end;
-  padding: 3em;
-  min-height: 16em;
+  padding: 3.5em;
   height: 100%;
   width: 100%;
 }
@@ -79,31 +77,13 @@
   border: var(--button-bd-style-act);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
+  .home-section-content {
+    padding-top: calc(var(--sec-content-pad) - 1em);
+    padding-bottom: calc(var(--sec-content-pad) + 1em);
+  }
   .button {
     max-width: calc(var(--button-width) - 3em);
     padding: calc(var(--button-padding) - 0.2em);
   }
-}
-
-/* waves */
-.custom-shape-divider-bottom-1665638802 {
-  /* position: absolute; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1665638802 svg {
-  position: relative;
-  display: block;
-  width: calc(140% + 1.3px);
-  height: 130px;
-}
-
-.custom-shape-divider-bottom-1665638802 .shape-fill {
-  fill: #ffffff;
 }

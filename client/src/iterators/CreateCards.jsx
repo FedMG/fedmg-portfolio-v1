@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { DataContext } from "./CreateProject.jsx";
-import { Figure } from "./Figure.jsx";
-import { Links } from "./Links.jsx";
+import { Figure } from "../items/projects/Figure.jsx";
+import { Links } from "../items/projects/Links.jsx";
 
 export const CreateCards = () => {
   const { captions } = useContext(DataContext);

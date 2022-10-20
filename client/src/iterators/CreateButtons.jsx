@@ -1,5 +1,4 @@
-import React from "react";
-import { Button } from "./Button.jsx";
+import { Button } from "../items/Button.jsx";
 
 export const CreateButtons = ({ data, style }) => {
   return data.map(({ id, name, link }) => (

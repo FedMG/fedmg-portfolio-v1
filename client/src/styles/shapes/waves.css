@@ -1,0 +1,64 @@
+.waves-upside,
+.waves-downside {
+  position: absolute;
+
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.waves-upside svg,
+.waves-downside svg {
+  position: relative;
+  display: block;
+}
+
+.waves-upside .shape-fill,
+.waves-downside .shape-fill {
+  fill: #ffffff;
+}
+
+/* BOTTOM */
+.waves-upside {
+  bottom: -1px;
+  transform: rotate(180deg);
+}
+
+.waves-upside svg {
+  width: calc(120% + 0.08125em);
+  height: 10em;
+}
+
+/* TOP */
+/* .waves-downside { } */
+
+.waves-downside svg {
+  width: calc(223% + 0.08125em);
+  height: 15.625em;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .waves-upside svg {
+    width: calc(130% + 0.08125em);
+    height: 8.125em;
+  }
+  .waves-downside svg {
+    width: calc(240% + 0.08125em);
+    height: 13.75em;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .waves-upside svg {
+    width: calc(130% + 0.08125em);
+    height: 5.625em;
+  }
+
+  .waves-downside svg {
+    width: calc(250% + 0.08125em);
+    height: 12.5em;
+  }
+}

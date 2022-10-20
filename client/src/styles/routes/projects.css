@@ -1,7 +1,11 @@
 @import "../items/slider.css";
 
+.anchors {
+  outline: none;
+}
+
 .project-slider-bk {
-  margin: 3em 0;
+  padding-top: var(--sections-bk-pad-top);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +38,7 @@
   padding: var(--pjt-card-padding);
   border-radius: var(--pjt-card-bd-rad);
 }
-.project-figure {
-}
+/* .project-figure {} */
 
 .project-image {
   width: 100%;
@@ -54,9 +57,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.project-anchors {
-  outline: none;
-}
 .project-buttons {
   width: 100%;
   border: none;
@@ -82,7 +82,10 @@
   background-color: var(--pjt-cards-bg-color-hov);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 767px) {
+  .project-slider-bk {
+    padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
+  }
   .project-board {
     grid-gap: calc(var(--pjt-board-gap-pad) - 0.25em);
     padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.25em);
@@ -93,45 +96,4 @@
   .project-buttons-bk {
     gap: calc(var(--pjt-gap-btns) - 0.3em);
   }
-}
-
-/* shapes */
-.custom-shape-divider-top-1665642090 {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1665642090 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 137px;
-}
-
-.custom-shape-divider-top-1665642090 .shape-fill {
-  fill: #ffffff;
-}
-
-.custom-shape-divider-top-1665640187 {
-  position: absolute;
-  /* top: 2; */
-  /* left: 0; */
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1665640187 svg {
-  position: relative;
-  display: block;
-  width: calc(200% + 1.3px);
-  height: 212px;
-}
-
-.custom-shape-divider-top-1665640187 .shape-fill {
-  fill: #ffffff;
 }

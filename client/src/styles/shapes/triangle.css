@@ -1,0 +1,96 @@
+.triangle-top,
+.triangle-bottom,
+.contact-triangle,
+.skills-triangle-top,
+.skills-top-empty,
+.project-bottom {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  border: none;
+}
+
+.triangle-top svg,
+.triangle-bottom svg,
+.contact-triangle svg,
+.skills-triangle-top svg,
+.skills-top-empty svg,
+.project-bottom svg {
+  position: relative;
+  display: block;
+}
+
+.triangle-top .shape-fill,
+.triangle-bottom .shape-fill,
+.contact-triangle .shape-fill,
+.skills-triangle-top .shape-fill,
+.skills-top-empty .shape-fill,
+.project-bottom .shape-fill {
+  fill: #ffffff;
+}
+
+.contact-triangle,
+.triangle-bottom,
+.skills-triangle-top,
+.skills-top-empty,
+.project-bottom svg {
+  transform: rotate(180deg);
+}
+
+/* TOP */
+/* .triangle-top {} */
+
+.triangle-top svg {
+  width: calc(100% + 0.08125em);
+  height: 8.5625em;
+}
+
+/* BOTTOM */
+.triangle-bottom {
+  bottom: -1px;
+}
+
+.triangle-bottom svg {
+  width: calc(200% + 0.08125em);
+  height: 13.25em;
+}
+
+/* contact triangle bottom */
+.contact-triangle {
+  bottom: 0;
+}
+
+.contact-triangle svg {
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+/* skills triangle top */
+.skills-triangle-top,
+.skills-top-empty {
+  top: 0;
+  left: 0;
+}
+
+.skills-triangle-top svg {
+  width: calc(100% + 1.3px);
+  height: 300px;
+}
+
+/* skills empty triangle top */
+.skills-top-empty svg {
+  width: calc(100% + 1.3px);
+  height: 163px;
+}
+
+/* project-bottom */
+.project-bottom {
+  bottom: -1px;
+}
+
+.project-bottom svg {
+  width: calc(100% + 1.3px);
+  height: 84px;
+}

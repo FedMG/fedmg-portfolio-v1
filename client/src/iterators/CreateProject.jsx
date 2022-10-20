@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 import { CreateCards } from "./CreateCards.jsx";
 
 export const DataContext = createContext();

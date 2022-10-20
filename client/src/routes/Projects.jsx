@@ -1,40 +1,25 @@
-import React from "react";
+import { Typography } from "../items/Typography.jsx";
 import { Slider } from "../items/Slider.jsx";
-import { CreateProject } from "../items/CreateProject.jsx";
+import { CreateProject } from "../iterators/CreateProject.jsx";
+import { CreateShape } from "../iterators/CreateShape.jsx";
 import { projectData } from "../refs/projects.js";
-import "../styles/routes/projects.css";
+import { triangle } from "../refs/shapes.js";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <div id="Projects" className="section">
-      <div class="custom-shape-divider-top-1665642090">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-      </div>
-      {/* second */}
-      {/* <div class="custom-shape-divider-top-1665640187">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-      </div> */}
-      <h2 className="subtitle-section">
-        My<span className="span-subtitle"> projects</span>
-      </h2>
-      <div className="example">
+      <CreateShape data={triangle.downside} />
+      <div className="section-content">
+        <Typography as="h2" style="subtitle-section">
+          My<Typography style="span-subtitle"> projects</Typography>
+        </Typography>
         <div className="project-slider-bk">
           <Slider>
             <CreateProject data={projectData} />
           </Slider>
         </div>
       </div>
+      <CreateShape data={triangle.projectBottom} />
     </div>
   );
 };
-
-export default Projects;

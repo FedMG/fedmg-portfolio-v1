@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { DataContext } from "./CreateProject.jsx";
-import { Button } from "./Button.jsx";
+import { useContext } from "react";
+import { DataContext } from "../../iterators/CreateProject.jsx";
+import { Button } from "../Button.jsx";
 
 export const Links = ({ idx }) => {
   const { links } = useContext(DataContext);
