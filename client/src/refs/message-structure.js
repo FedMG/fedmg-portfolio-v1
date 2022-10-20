@@ -1,5 +1,6 @@
 export const structure = {
   subject: "",
   body: "",
-  error: "",
+  status: "",
+  errors: [],
 };

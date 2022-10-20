@@ -1,7 +1,7 @@
 import { Typography } from "../items/Typography.jsx";
 import { CreateShape } from "../iterators/CreateShape.jsx";
 import { triangle } from "../refs/shapes.js";
-import { MailTo } from "../items/contact/Mailto.jsx";
+import { MailTo } from "../items/contact/MailTo.jsx";
 
 export const Contact = () => {
   return (

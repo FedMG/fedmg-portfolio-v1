@@ -10,45 +10,60 @@ export const MailTo = () => {
   const getForm = (e) => {
     e.preventDefault();
 
-    if (!message.subject || !message.body) {
+    if (!message.subject && !message.body) {
+      return setMessage({
+        ...message,
+        status: "-error",
+        errors: "Please, complete all fields!",
+      });
+    }
+
+    if (!message.subject) {
       setMessage({
         ...message,
-        error: "Please, to submit a message complete all fields!",
+        status: "-error",
+        errors: ["Please, complete the subject line", message.errors[1]],
+      });
+    }
+
+    if (!message.body) {
+      setMessage({
+        ...message,
+        status: "-error",
+        errors: [message.errors[0], "Please, complete the body line"],
       });
     }
   };
 
   const getSubject = (e) => {
-    setMessage({ ...message, subject: e.target.value, error: "" });
+    setMessage({ ...message, subject: e.target.value, status: "", errors: [] });
   };
 
   const getBody = (e) => {
-    setMessage({ ...message, body: e.target.value, error: "" });
+    setMessage({ ...message, body: e.target.value, status: "", errors: [] });
   };
 
   return (
     <form className="form" onSubmit={getForm}>
       <label for="subject"></label>
       <input
-        className="form__input"
+        className={"form__input " + (message.errors[0] ? "error" : "")}
         id="subject"
         type="text"
         onChange={getSubject}
         placeholder="Subject"
-        title="example: inquery for services"
+        title="e.i: inquery for services"
       />
       <label for="body"></label>
       <textarea
-        className="form__textarea"
+        className={"form__textarea " + (message.errors[1] ? "error" : "")}
         id="body"
         onChange={getBody}
         placeholder="Type a mail"
       />
-      <div className="form__button-bk">
-        <div className="form__msg-error-bk">
-          <Typography style="form__msg-error">
-            {message.error ? message.error : null}
-          </Typography>
+      <div className="form__control-bk">
+        <div className={"form__msg-bk form__msg-bk" + (message.status ?? null)}>
+          <Typography>{message.errors ?? null}</Typography>
         </div>
         <Mail
           email="federico.mgonzalia@gmail.com"
