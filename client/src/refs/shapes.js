@@ -1,13 +1,15 @@
-const svg = {
-  dname: "Layer 1",
-  xml: "http://www.w3.org/2000/svg",
-  vbox: "0 0 1200 120",
-  preAR: "none",
+const repeated = {
+  svg: {
+    dname: "Layer 1",
+    xmlns: "http://www.w3.org/2000/svg",
+    vbox: "0 0 1200 120",
+    preAR: "none",
+  },
 };
 
 export const triangle = {
   upside: {
-    ...svg,
+    ...repeated,
     path: [{ id: 1, d: "M1200 0L0 0 598.97 114.72 1200 0z" }],
     styles: {
       div: "triangle-bottom",
@@ -16,7 +18,7 @@ export const triangle = {
   },
 
   downside: {
-    ...svg,
+    ...repeated,
     path: [{ id: 1, d: "M1200 0L0 0 892.25 114.72 1200 0z" }],
     styles: {
       div: "triangle-top",
@@ -25,7 +27,7 @@ export const triangle = {
   },
 
   contact: {
-    ...svg,
+    ...repeated,
     path: [{ id: 1, d: "M1200 0L0 0 598.97 114.72 1200 0z" }],
     styles: {
       div: "contact-triangle",
@@ -34,7 +36,7 @@ export const triangle = {
   },
 
   skillsTopAsym: {
-    ...svg,
+    ...repeated,
     path: [
       { id: 1, d: "M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" },
     ],
@@ -43,8 +45,8 @@ export const triangle = {
       path: "shape-fill",
     },
   },
-    skillsTopEmpty: {
-    ...svg,
+  skillsTopEmpty: {
+    ...repeated,
     path: [
       { id: 1, d: "M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" },
     ],
@@ -53,11 +55,9 @@ export const triangle = {
       path: "shape-fill",
     },
   },
-     projectBottom: {
-    ...svg,
-    path: [
-      { id: 1, d: "M1200 0L0 0 892.25 114.72 1200 0z" },
-    ],
+  projectBottom: {
+    ...repeated,
+    path: [{ id: 1, d: "M1200 0L0 0 892.25 114.72 1200 0z" }],
     styles: {
       div: "project-bottom",
       path: "shape-fill",
@@ -65,10 +65,9 @@ export const triangle = {
   },
 };
 
-
 export const waves = {
   upside: {
-    ...svg,
+    ...repeated,
     path: [
       {
         id: 1,
@@ -92,7 +91,7 @@ export const waves = {
   },
 
   downside: {
-    ...svg,
+    ...repeated,
     path: [
       {
         id: 1,
