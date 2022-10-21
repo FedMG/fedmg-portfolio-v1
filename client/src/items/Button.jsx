@@ -1,5 +1,5 @@
 export const Button = ({ href, src, alt, onclick, style, children }) => {
-  if (!src) {
+  if (href) {
     return (
       <a href={href} className="anchors" target="_blank">
         <button className={style}>{children}</button>

@@ -45,7 +45,7 @@ export const MailTo = () => {
 
   return (
     <form className="form" onSubmit={getForm}>
-      <label for="subject"></label>
+      <label htmlFor="subject"></label>
       <input
         className={"form__input " + (message.errors[0] ? "error" : "")}
         id="subject"
@@ -54,7 +54,7 @@ export const MailTo = () => {
         placeholder="Subject"
         title="e.i: inquery for services"
       />
-      <label for="body"></label>
+      <label htmlFor="body"></label>
       <textarea
         className={"form__textarea " + (message.errors[1] ? "error" : "")}
         id="body"
@@ -70,7 +70,7 @@ export const MailTo = () => {
           subject={message.subject}
           body={message.body}
         >
-          <Button style="button" name="Generate" />
+          <Button style="button">Generate</Button>
         </Mail>
       </div>
     </form>
