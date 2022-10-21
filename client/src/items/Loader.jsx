@@ -1,6 +1,7 @@
 export const Loader = () => {
   return (
-  <div className="loader-bk">
-    <div className="loader"></div>
- </div>)
-};
+    <div className='loader-bk'>
+      <div className='loader' />
+    </div>
+  )
+}

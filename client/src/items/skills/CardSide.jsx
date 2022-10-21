@@ -3,5 +3,5 @@ export const CardSide = ({ styles, children }) => {
     <div className={styles[0]}>
       <div className={styles[1]}>{children}</div>
     </div>
-  );
-};
+  )
+}

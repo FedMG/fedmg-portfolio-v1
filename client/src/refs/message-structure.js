@@ -1,6 +1,6 @@
 export const structure = {
-  subject: "",
-  body: "",
-  status: "",
-  errors: [],
-};
+  subject: '',
+  body: '',
+  status: '',
+  errors: []
+}

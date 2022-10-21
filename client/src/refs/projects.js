@@ -5,32 +5,32 @@ export const projectData = [
       'Cash register',
       'Roman Numbers',
       'MERN ecommerce',
-      'Landing Page',
+      'Landing Page'
     ],
     sources: [
       'https://shots.codepen.io/fedmg/pen/poaxwjd-320.webp?',
       'https://shots.codepen.io/fedmg/full/oNEPMYN-320.webp?',
       'https://shots.codepen.io/fedmg/details/ExQvJzm-320.webp?',
-      'https://shots.codepen.io/fedmg/details/QWQqmvq-320.webp?',
+      'https://shots.codepen.io/fedmg/details/QWQqmvq-320.webp?'
     ],
     links: [
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
-      ],
-    ],
+        'https://stackblitz.com/edit/cash-register-project'
+      ]
+    ]
   },
   {
     id: 1,
@@ -39,25 +39,25 @@ export const projectData = [
       'https://shots.codepen.io/fedmg/pen/poaxwjd-320.webp?',
       'https://shots.codepen.io/fedmg/details/QWQqmvq-320.webp?',
       'https://shots.codepen.io/fedmg/details/ExQvJzm-320.webp?',
-      'https://shots.codepen.io/fedmg/full/oNEPMYN-320.webp?',
+      'https://shots.codepen.io/fedmg/full/oNEPMYN-320.webp?'
     ],
     links: [
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
+        'https://stackblitz.com/edit/cash-register-project'
       ],
       [
         'https://github.com/FedMG/react-cash-register',
-        'https://stackblitz.com/edit/cash-register-project',
-      ],
-    ],
-  },
-];
+        'https://stackblitz.com/edit/cash-register-project'
+      ]
+    ]
+  }
+]

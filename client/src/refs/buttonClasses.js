@@ -1,5 +1,5 @@
 export const buttonClasses = [
-  "slider-buttons-bk",
-  "slider-buttons",
-  "slider-icon-button",
-];
+  'slider-buttons-bk',
+  'slider-buttons',
+  'slider-icon-button'
+]
