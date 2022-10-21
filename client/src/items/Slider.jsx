@@ -17,16 +17,16 @@ export const Slider = ({ children, speed = '500' }) => {
   const conditionHandler = (setEvent) => {
     const { sliderElem } = serveObject()
     if (sliderElem.length > 0) {
-      setEvent
+      setEvent()
     }
   }
 
   const next = useCallback(() => {
-    conditionHandler(setNext(speed, serveObject))
+    conditionHandler(() => setNext(speed, serveObject))
   }, [speed])
 
   const previous = () => {
-    conditionHandler(setPrevious(serveObject))
+    conditionHandler(() => setPrevious(serveObject))
   }
 
   return (
