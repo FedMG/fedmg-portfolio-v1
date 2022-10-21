@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 @import "./variables.css";
+@import "./items/loader.css";
 @import "./header/header.css";
 @import "./routes/sections.css";
 @import "./routes/sections.css";
