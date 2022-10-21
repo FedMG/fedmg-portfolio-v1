@@ -1,13 +1,13 @@
-export const Button = ({ href, name, src, alt, onclick, style }) => {
+export const Button = ({ href, src, alt, onclick, style, children }) => {
   if (!src) {
     return (
       <a href={href} className="anchors" target="_blank">
-        <button className={style}>{name}</button>
+        <button className={style}>{children}</button>
       </a>
     );
   }
 
-  if (src) {
+  if (!children) {
     return (
       <div className={style[0]}>
         <button onClick={onclick} className={style[1]}>
@@ -19,7 +19,7 @@ export const Button = ({ href, name, src, alt, onclick, style }) => {
 
   return (
     <button className={style} onClick={onclick}>
-      {name}
+      {children}
     </button>
   );
 };

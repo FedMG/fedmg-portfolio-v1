@@ -23,7 +23,7 @@ export const Introduction = () => {
           <Typography style="third-phrase__span" as="span">
             IT World
           </Typography>
-          .
+          
         </Typography>
         <br />
       </div>
