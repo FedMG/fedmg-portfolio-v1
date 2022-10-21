@@ -4,10 +4,11 @@ import { Figure } from '../items/projects/Figure.jsx'
 import { Links } from '../items/projects/Links.jsx'
 
 export const CreateCards = () => {
-  const { captions } = useContext(DataContext)
-  return captions.map((caption, index) => (
-    <div key={caption} className='project-cards'>
-      <Figure idx={index} cap={caption} />
+  const board = useContext(DataContext)
+
+  return board.map(({ id }, index) => (
+    <div key={id} className='project-cards'>
+      <Figure idx={index} />
       <Links idx={index} />
     </div>
   ))

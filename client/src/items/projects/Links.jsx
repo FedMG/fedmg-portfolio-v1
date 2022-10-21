@@ -3,13 +3,17 @@ import { DataContext } from '../../iterators/CreateProject.jsx'
 import { Button } from '../Button.jsx'
 
 export const Links = ({ idx }) => {
-  const { links } = useContext(DataContext)
+  const board = useContext(DataContext)
+  const {
+    links: [github, stackblitz]
+  } = board[idx]
+
   return (
     <div className='project-buttons-bk'>
-      <Button href={links[idx][0]} style='project-buttons'>
+      <Button href={github} style='project-buttons'>
         Github
       </Button>
-      <Button href={links[idx][1]} style='project-buttons'>
+      <Button href={stackblitz} style='project-buttons'>
         Stackblitz
       </Button>
     </div>
