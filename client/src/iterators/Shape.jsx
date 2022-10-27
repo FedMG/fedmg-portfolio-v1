@@ -1,10 +1,4 @@
-import { useContext } from 'react'
-import { SkillsContext } from './CreateSkill'
-
-export const CreateShape = ({ data }) => {
-  const skill = useContext(SkillsContext)
-  const { styles, svg, title, path } = data ?? skill
-
+export const Shape = ({ data: { styles, svg, title, path }  }) => {
   return (
     <div className={styles?.div}>
       <svg
