@@ -1,5 +1,5 @@
 import { Typography } from '../items/Typography.jsx'
-import { CreateShape } from '../iterators/CreateShape.jsx'
+import { Shape } from '../iterators/Shape.jsx'
 import { triangle } from '../refs/shapes.js'
 import { MailTo } from '../items/contact/MailTo.jsx'
 
@@ -16,7 +16,7 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <CreateShape data={triangle.contact} />
+      <Shape data={triangle.contact} />
     </div>
   )
 }
