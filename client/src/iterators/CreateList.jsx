@@ -9,5 +9,5 @@ export const CreateList = ({ listNames, classes }) => {
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}

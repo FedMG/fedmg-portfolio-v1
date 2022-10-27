@@ -1,16 +1,31 @@
+import { useContext } from 'react'
+import { SkillsContext } from './CreateSkill'
+
 export const CreateShape = ({ data }) => {
+  const skill = useContext(SkillsContext)
+  const { styles, svg, title, path } = data ?? skill
+
   return (
-    <div className={data["styles"]["div"]}>
+    <div className={styles?.div}>
       <svg
-        data-name={data["dname"]}
-        xmlns={data["xml"]}
-        viewBox={data["vbox"]}
-        preserveAspectRatio={data["preAR"]}
+        className={styles?.svg}
+        data-name={svg?.dname}
+        xmlns={svg?.xmlns}
+        viewBox={svg?.vbox}
+        role={svg?.role}
+        preserveAspectRatio={svg?.preAR}
       >
-        {data["path"].map(({id, d, opacity}) => (
-          <path key={id} d={d} opacity={opacity || 1} className={data["styles"]["path"]} />
+        {title && <title>{title}</title>}
+
+        {path.map(({ id, d, opacity }) => (
+          <path
+            key={id || title}
+            d={d}
+            opacity={opacity || 1}
+            className={styles?.path}
+          />
         ))}
       </svg>
     </div>
-  );
-};
+  )
+}

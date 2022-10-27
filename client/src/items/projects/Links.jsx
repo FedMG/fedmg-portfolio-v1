@@ -1,13 +1,21 @@
-import { useContext } from "react";
-import { DataContext } from "../../iterators/CreateProject.jsx";
-import { Button } from "../Button.jsx";
+import { useContext } from 'react'
+import { DataContext } from '../../iterators/CreateProject.jsx'
+import { Button } from '../Button.jsx'
 
 export const Links = ({ idx }) => {
-  const { links } = useContext(DataContext);
+  const board = useContext(DataContext)
+  const {
+    links: [github, stackblitz]
+  } = board[idx]
+
   return (
-    <div className="project-buttons-bk">
-      <Button href={links[idx][0]} name="Github" style="project-buttons" />
-      <Button href={links[idx][1]} name="Stackblitz" style="project-buttons" />
+    <div className='project-buttons-bk'>
+      <Button href={github} style='project-buttons'>
+        Github
+      </Button>
+      <Button href={stackblitz} style='project-buttons'>
+        Stackblitz
+      </Button>
     </div>
-  );
-};
+  )
+}
