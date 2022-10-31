@@ -28,5 +28,5 @@ html {
 }
 
 body {
-  background: var(--body-bg-color);
+  background: var(--primary-bg-color);
 }

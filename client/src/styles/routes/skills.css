@@ -30,7 +30,7 @@
   backface-visibility: hidden;
   height: 100px;
   width: 100%;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .card-side.back {
@@ -38,22 +38,14 @@
   top: 0;
   left: 0;
   transform: rotateY(-180deg);
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+  background-color: var(--secondary-bg-color);
 }
 
 .card-side.front {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, 
-  #0093e9 0%, 
-  #80d0c7 100%);
+  /* background-color: #0093e9; */
+  /* background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
+  background-color: var(--secondary-bg-color);
 }
-
 
 .card-content {
   display: grid;

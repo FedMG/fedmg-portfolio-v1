@@ -12,7 +12,7 @@
 .about-card {
   position: relative;
   max-width: var(--ab-card-width);
-  background: var(--ab-card-bg-gradient);
+  background: var(--primary-item-bg-color);
   box-shadow: var(--ab-card-shadow);
   border: var(--ab-card-bd);
   padding: var(--ab-card-pad);
@@ -20,8 +20,9 @@
 }
 
 .about-text {
-  color: var(--ab-text-color);
+  color: var(--fourth-color);
   font-size: var(--ab-text-fz);
+  font-family: var(--secondary-ff);
 }
 
 .background-effect {

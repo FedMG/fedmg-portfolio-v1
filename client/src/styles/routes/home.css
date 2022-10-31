@@ -13,7 +13,7 @@
 }
 
 .greeting-container__span {
-  color: var(--first-title-color);
+  color: var(--secondary-color);
   font-size: var(--first-title-fz);
 }
 
@@ -35,13 +35,13 @@
 .second-phrase,
 .third-phrase {
   font-size: var(--subtitle-section-fz);
-  font-family: var(--subtitle-section-ff);
-  color: var(--subtitle-section-color);
+  font-family: var(--primary-ff);
+  color: var(--primary-color);
 }
 .first-phrase__span,
 .second-phrase__span
 /* .third-phrase__span  */ {
-  color: var(--span-subtitle-color);
+  color: var(--secondary-color);
 }
 
 .buttons-container {
@@ -58,8 +58,8 @@
 }
 
 .button {
-  background-color: var(--button-bg-color);
-  color: var(--button-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--third-color);
   padding: var(--button-padding);
   width: var(--button-width);
   border-radius: var(--button-bd-radius);
@@ -67,13 +67,13 @@
 }
 
 .button:hover {
-  background-color: var(--button-bg-color-hov);
-  color: var(--button-color-hov);
+  background-color: var(--primary-bg-color-hov);
+  color: var(--primary-color-hov);
 }
 
 .button:active {
-  background-color: var(--button-bg-color-act);
-  color: var(--button-color-act);
+  background-color: var(--secondary-bg-color-act);
+  color: var(--secondary-color-act);
   border: var(--button-bd-style-act);
 }
 

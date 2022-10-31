@@ -8,7 +8,6 @@
 
 .lists__anchor {
   display: block;
-  color: var(--nav-color);
   text-decoration: none;
   min-height: 3.6em;
   padding: 1em clamp(1em, 2.5vw, 2.4em);
@@ -17,20 +16,20 @@
 /* status */
 .lists__anchor:link,
 .lists__anchor:visited {
-  color: var(--nav-color);
+  color: var(--primary-color);
 }
 
 .lists__anchor:focus,
 .lists__anchor:hover {
-  color: var(--nav-status-color);
+  color: var(--secondary-color);
   outline: none;
-  border-bottom: 2.5px solid var(--nav-status-color);
+  border-bottom: 2.5px solid var(--secondary-color);
 }
 
 .lists__anchor:active {
-  color: var(--nav-color);
+  color: var(--primary-color);
   outline: none;
-  border-bottom: 4px solid var(--nav-status-color);
+  border-bottom: 4px solid var(--secondary-color);
 }
 
 @media (max-width: 450px) {

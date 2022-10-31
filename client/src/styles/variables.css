@@ -1,14 +1,49 @@
 :root {
+  /* fonts family */
+  --primary-ff: "Rubik", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+    oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --secondary-ff: "Noto Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
+    roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* font colors */
+  --primary-color: #f2f2f2;
+  --secondary-color: #da0037;
+  --third-color: #ededed;
+  --fourth-color: #000;
+
+  /* body background */
+  --primary-bg-color: #171717;
+  --secondary-bg-color: #da0037;
+  /* --third-bg-color: ; */
+
+
+  /* items background */
+  --primary-item-bg-color: linear-gradient(
+    45deg,
+    rgba(235, 235, 233, 0.45),
+    rgba(255, 255, 255, 0.62),
+    rgba(235, 235, 233, 0.43),
+    rgba(255, 255, 255, 0.52),
+    rgba(235, 235, 233, 0.45),
+    rgba(255, 255, 255, 0.52)
+  );
+
+  
+  /* states bg item */
+  --primary-item-bg-color-hov: #c9c9c9;
+  
+  /* states colors */
+  --primary-color-hov: #d1d1d1;
+  --secondary-color-act: #f7f7f7;
+  /* states bg colors */
+  --primary-bg-color-hov: #b5002e;
+  --secondary-bg-color-act: #e00038;
+}
+
+:root {
   /* fonts */
-  --paragraph-ff: "Rubik", sans-serif;
-
   --first-title-fz: clamp(2.2em, 10vw, 4.5em);
-  --first-title-color: #da0037;
-
   --subtitle-section-fz: clamp(1.1em, 5vw, 1.6em);
-  --subtitle-section-ff: "Rubik", sans-serif;
-  --subtitle-section-color: #f2f2f2;
-  --span-subtitle-color: #da0037;
 
   /* home */
   --span-subcontainer-pad-lf-bt: clamp(0.3em, 7vw, 3em);
@@ -18,44 +53,21 @@
   /* button */
   --button-padding: 0.5em;
   --button-width: 9em;
-
-  --button-color: #ededed;
-  --button-bg-color: #da0037;
   --button-bd-radius: 0.3em;
   --button-bd-style: 2px outset #666;
 
-  /* hover button */
-  --button-color-hov: #d1d1d1;
-  --button-bg-color-hov: #b5002e;
-
   /* active button */
-  --button-color-act: #f7f7f7;
-  --button-bg-color-act: #e00038;
   --button-bd-style-act: 2px inset #666;
 
-  /* header */
-  --nav-bg-color: #171717;
-
   /* top */
-  --top-title-color: #fff;
-  --top-span-color: #da0037;
   --top-bg-color: transparent;
-  --top-bg-side-items: #fff;
-  --top-focus-hover-color: #da0037;
-
-  --top-link-visited-color: #fff;
-  --top-activate-color: #fff;
 
   /* navbar */
   --nav-list-fz-break: 0.85em;
-  --nav-color: #fff;
-  --nav-status-color: #da0037;
 
   /* sections */
-  --subtitle-section: #ededed;
-  --span-subtitle: #da0037;
   --sec-content-pad: 7em;
-
+  
   /* project */
   --pjt-slider-bk-margin: 3em auto;
   --pjt-board-gap-pad: 0.85em;
@@ -66,9 +78,6 @@
   --pjt-card-padding: 0.2em;
   --pjt-card-bd-rad: 0.23em;
 
-  /* project hover */
-  --pjt-cards-bg-color-hov: #c9c9c9;
-
   /* slider */
   --sld-elem-bk-margin: 0 clamp(0.3em, 2vw, 1em);
   --sld-icon-btn-width: 3.7em;
@@ -77,32 +86,20 @@
   --sections-bk-pad-top: 3.7em;
 
   /* about */
-  --ab-text-color: #111;
   --ab-text-fz: clamp(1rem, 8vw - 2rem, 1.1rem);
   --ab-card-bd: 2px solid rgba(255, 255, 255, 0.25);
   --ab-card-pad: 1.8em;
   --ab-card-width: 40em;
   --ab-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  --ab-card-bg-gradient: linear-gradient(
-    45deg,
-    rgba(235, 235, 233, 0.45),
-    rgba(255, 255, 255, 0.62),
-    rgba(235, 235, 233, 0.43),
-    rgba(255, 255, 255, 0.52),
-    rgba(235, 235, 233, 0.45),
-    rgba(255, 255, 255, 0.52)
-  );
 
   /* skills */
   --skill-cards-gap: 0.6em;
 
-  /* body */
-  --body-bg-color: #171717;
 
-  /* color-scheme: light dark;
+  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  -webkit-text-size-adjust: 100%;
 }

@@ -3,7 +3,7 @@
 
 .Header {
   z-index: 22222;
-  background-color: var(--nav-bg-color);
+  background-color: var(--primary-bg-color);
   user-select: none;
   position: fixed;
   width: 100%;

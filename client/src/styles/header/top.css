@@ -9,18 +9,18 @@
 }
 
 .anchor__title-logo {
-  color: var(--top-title-color);
+  color: red;
   display: inline-block;
 }
 
 .title__span-logo {
-  color: var(--top-span-color);
+  color: var(--secondary-color);
 }
 
 .Top__side-items,
 .Top__side-items {
   display: inline-block;
-  background-color: var(--top-bg-side-items);
+  background-color: var(--primary-color);
   height: 5px;
   width: 10px;
 }
@@ -28,16 +28,16 @@
 /* status */
 .Top__anchor:link,
 .Top__anchor:visited {
-  color: var(--top-link-visited-color);
+  color: var(--primary-color);
 }
 
 .Top__anchor:focus,
 .Top__anchor:hover {
-  color: var(--top-focus-hover-color);
+  color: var(--secondary-color);
   outline: none;
 }
 
 .Top__anchor:active {
-  color: var(--top-activate-color);
+  color: var(--primary-color);
   outline: none;
 }
