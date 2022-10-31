@@ -14,6 +14,12 @@
   max-width: var(--ab-card-width);
   background: var(--primary-item-bg-color);
   box-shadow: var(--ab-card-shadow);
+  
+  /* background: rgba(255,255,255,0.3); */
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+border: 1px solid rgba(255,255,255,0.45);
+  
   border: var(--ab-card-bd);
   padding: var(--ab-card-pad);
   border-radius: var(--pjt-card-bd-rad);

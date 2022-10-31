@@ -16,7 +16,7 @@
 
 .waves-upside .shape-fill,
 .waves-downside .shape-fill {
-  fill: #ffffff;
+  fill: var(--third-bg-color);
 }
 
 /* BOTTOM */

@@ -30,3 +30,17 @@ html {
 body {
   background: var(--primary-bg-color);
 }
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+:-ms-input-placeholder { 
+  color: var(--primary-color);
+}
+
+::-ms-input-placeholder {
+  color:  var(--primary-color);
+}

@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .project-board {
@@ -30,12 +31,19 @@
 
   padding: var(--pjt-card-padding);
   border-radius: var(--pjt-card-bd-rad);
+  
+  
+  /* background: rgba(255,255,255,0.3); */
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+/* border: 1px solid rgba(255,255,255,0.45); */
 }
 /* .project-figure {} */
 
 .project-image {
   width: 100%;
   vertical-align: top;
+  user-select: none;
 }
 .project-figcaption {
   margin: var(--pjt-figcaption-margin);

@@ -1,49 +1,48 @@
-import { useRef } from 'react'
-import { Typography } from '../Typography.jsx'
-import { applyEffect, removeEffect } from '../../functionals/board-effect'
+import { useRef } from "react";
+import { Typography } from "../Typography.jsx";
+import { applyEffect, removeEffect } from "../../functionals/board-effect";
 
 export const Board = () => {
-  const board = useRef(null)
+  const board = useRef(null);
 
   const references = () => ({
     board: board.current.getBoundingClientRect(),
-    card: board.current.children[0].style
-  })
+    card: board.current.children[0].style,
+  });
 
   const getEvent = (e) => {
     const props = {
       offsetX: e.nativeEvent.offsetX,
       offsetY: e.nativeEvent.offsetY,
-      ...references()
-    }
+      ...references(),
+    };
 
-    applyEffect(props)
-  }
+    applyEffect(props);
+  };
 
   return (
-    <div className='about-board-container'>
+    <div className="about-board-container">
       <div
-        className='about-board'
+        className="about-board"
         onMouseMove={getEvent}
         onMouseLeave={() => removeEffect(references)}
         ref={board}
       >
-        <div className='about-card'>
-          <Typography as='p' style='about-text'>
-            I am passionate about the IT world and love to learn new and
-            interesting things every day.
+        <div className="about-card">
+          <Typography as="p" style="about-text">
+            I am passionate about the IT world who loves to learn new things
+            every day.
             <br />
             <br />
-            Student of Computer Science and Software development as self-taught.
+            I am a self-taught Software Engineering student.
             <br />
-            <br />I am fascinated by the idea of getting along with people where
-            there is mutual learning that allows us to grow, with whom we can
-            talk about the latest trends in technological and scientific
-            progress. trends of technological and scientific progress.
+            <br />I love to get along with people where the passion for
+            technological progress, curiosity and learning allows us to grow and
+            improve.
           </Typography>
-          <div className='background-effect' />
+          <div className="background-effect" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

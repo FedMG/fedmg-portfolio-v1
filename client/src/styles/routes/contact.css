@@ -28,6 +28,12 @@
 
   box-shadow: var(--ab-card-shadow);
   border: var(--ab-card-bd);
+  /* background: var(--primary-item-bg-color); */
+  
+background: rgba(255,255,255,0.3);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+border: 1px solid rgba(255,255,255,0.45);
 }
 
 .form__input,
@@ -35,10 +41,11 @@
   width: 100%;
   border-radius: 0.23em;
   padding: 0.8em;
-  border: none;
   background: none;
   border: var(--ab-card-bd);
-  color: #fff;
+  border: 1px solid rgba(255,255,255,0.45);
+  color: var(--primary-color);
+  font-family: var(--secondary-ff);
 }
 
 .form__textarea {
@@ -63,7 +70,7 @@
 }
 
 .form__msg-bk-error {
-  background-color: #d31f4d70;
+  /* background-color: #d31f4d70; */
   border: 1px solid #da0037;
   color: #da0037;
 }
