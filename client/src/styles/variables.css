@@ -7,15 +7,25 @@
 
   /* font colors */
   --primary-color: #f2f2f2;
-  --secondary-color: #da0037;
+  /* --secondary-color: #da0037; */
+  /* --secondary-color: #197EDD; */
+  --secondary-color: #5a39c2;
+
   --third-color: #ededed;
   --fourth-color: #000;
 
   /* body background */
   --primary-bg-color: #171717;
-  --secondary-bg-color: #da0037;
-  --third-bg-color: #f2f2f2;
 
+  /* --secondary-bg-color: #da0037; */
+  /* --secondary-bg-color: #1556ae; */
+  /* --secondary-bg-color: #D26410;  */
+  /* --secondary-bg-color: #7951aa; */
+  /* --secondary-bg-color: #512388; */
+  /* --secondary-bg-color: #5a39c2; */
+  --secondary-bg-color: #5135AA;
+  /* --secondary-bg-color: #6244CE; */
+  --third-bg-color: #f2f2f2;
 
   /* items background */
   --primary-item-bg-color: linear-gradient(
@@ -27,10 +37,10 @@
     rgba(235, 235, 233, 0.45),
     rgba(255, 255, 255, 0.52)
   );
-  
+
   /* states bg item */
   --primary-item-bg-color-hov: #c9c9c9;
-  
+
   /* states colors */
   --primary-color-hov: #d1d1d1;
   --secondary-color-act: #f7f7f7;
@@ -66,7 +76,7 @@
 
   /* sections */
   --sec-content-pad: 7em;
-  
+
   /* project */
   --pjt-slider-bk-margin: 3em auto;
   --pjt-board-gap-pad: 0.85em;
@@ -93,7 +103,6 @@
 
   /* skills */
   --skill-cards-gap: 0.6em;
-
 
   color-scheme: light dark;
   font-synthesis: none;
