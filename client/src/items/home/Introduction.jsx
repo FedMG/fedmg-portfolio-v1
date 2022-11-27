@@ -5,21 +5,21 @@ export const Introduction = () => {
     <div className='span-container'>
       <div className='span-container__subcontainer'>
         <Typography style='first-phrase' as='span'>
-          My name is{' '}
+          Hi, I am{' '}
           <Typography style='first-phrase__span' as='span'>
             Federico
           </Typography>
         </Typography>
         <br />
         <Typography style='second-phrase' as='span'>
-          I'm a{' '}
+          A{' '}
           <Typography style='second-phrase__span' as='span'>
             Fullstack Developer
           </Typography>
         </Typography>
         <br />
         <Typography style='third-phrase' as='span'>
-          A passionate of the{' '}
+          And a passionate of the{' '}
           <Typography style='third-phrase__span' as='span'>
             IT World
           </Typography>

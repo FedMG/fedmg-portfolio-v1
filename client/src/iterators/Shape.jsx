@@ -1,4 +1,4 @@
-export const Shape = ({ data: { styles, svg, title, path }  }) => {
+export const Shape = ({ data: { styles, svg, title, path } }) => {
   return (
     <div className={styles?.div}>
       <svg
