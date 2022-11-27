@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .project-board {
@@ -24,19 +23,11 @@
 }
 
 .project-cards {
-  background: var(--primary-item-bg-color);
-  
+  background: var(--primary-item-pjt-bg-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
-
   padding: var(--pjt-card-padding);
   border-radius: var(--pjt-card-bd-rad);
-  
-  
-  /* background: rgba(255,255,255,0.3); */
--webkit-backdrop-filter: blur(4px);
-backdrop-filter: blur(4px);
-/* border: 1px solid rgba(255,255,255,0.45); */
 }
 /* .project-figure {} */
 
@@ -80,7 +71,7 @@ backdrop-filter: blur(4px);
 }
 
 .project-cards:hover {
-  background: var(--primary-item-bg-color-hov);
+  background: var(--primary-item-pjt-bg-color-hov);
 }
 
 @media (max-width: 767px) {

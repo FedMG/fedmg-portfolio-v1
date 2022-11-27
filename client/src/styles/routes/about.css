@@ -12,21 +12,18 @@
 .about-card {
   position: relative;
   max-width: var(--ab-card-width);
-  background: var(--primary-item-bg-color);
+  background: var(--primary-card-bg-color);
   box-shadow: var(--ab-card-shadow);
+  padding: var(--ab-card-pad);
+  border-radius: var(--pjt-card-bd-rad);
 
-  /* background: rgba(255, 255, 255, 0.3); */
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.45);
-
-  /* border: var(--ab-card-bd); */
-  padding: var(--ab-card-pad);
-  border-radius: var(--pjt-card-bd-rad);
 }
 
 .about-text {
-  color: var(--fourth-color);
+  color: var(--primary-color);
   font-size: var(--ab-text-fz);
   font-family: var(--secondary-ff);
 }

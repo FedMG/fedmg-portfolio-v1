@@ -19,8 +19,8 @@
 }
 
 ::selection {
-  background: #fff;
-  color: #da0037;
+  background: #5135aa;
+  color: #fff;
 }
 
 html {
@@ -33,14 +33,14 @@ body {
 
 /* Chrome, Firefox, Opera, Safari 10.1+ */
 ::placeholder {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   opacity: 1;
 }
 
 :-ms-input-placeholder { 
-  color: var(--primary-color);
+  color: var(--secondary-color);  
 }
 
 ::-ms-input-placeholder {
-  color:  var(--primary-color);
+  color: var(--secondary-color);
 }

@@ -77,3 +77,10 @@
   color: var(--secondary-color-act);
   border: var(--button-bd-style-act);
 }
+
+@media (max-width: 767px) {
+  .button {
+    width: calc(var(--button-width) - 2.5em);
+    padding: calc(var(--button-padding) - 0.2em);
+  }
+}

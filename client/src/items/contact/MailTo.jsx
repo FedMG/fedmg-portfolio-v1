@@ -70,7 +70,7 @@ export const MailTo = () => {
           subject={message.subject}
           body={message.body}
         >
-          <Button style='button'>Generate</Button>
+          <Button style='button over-styles'>Submit</Button>
         </Mail>
       </div>
     </form>

@@ -13,8 +13,9 @@
 }
 
 .title__span-logo {
-  background-color: #f2f2f2;
+  background-color: #5135aa;
   color: var(--secondary-color);
+  color: #f2f2f2;
 }
 
 .Top__side-items,
@@ -33,7 +34,6 @@
 
 .Top__anchor:focus,
 .Top__anchor:hover {
-  background-color: #f2f2f2;
   color: var(--secondary-color);
   outline: none;
 }
