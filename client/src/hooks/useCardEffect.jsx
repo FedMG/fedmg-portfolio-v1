@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 const clickType = {
   [false]: {
@@ -13,7 +13,7 @@ const clickType = {
 
 export const useCardEffectRef = () => {
   const cardRef = useRef(null)
-  const [click, setClick] = useState(false)
+  // const [click, setClick] = useState(false)
 
   const serveProps = () => ({
     card: cardRef.current,
@@ -24,24 +24,38 @@ export const useCardEffectRef = () => {
   const applyEnter = () => {
     const { front, back } = serveProps()
 
-    front.transform = clickType[click].front
-    back.transform = clickType[click].back
+    // clicks events
+    // front.transform = clickType[click].front
+    // back.transform = clickType[click].back
 
-    if (click) {
-      return setClick(false)
-    } else {
-      return setClick(true)
-    }
+    // if (click) {
+    //   return setClick(false)
+    // } else {
+    //   return setClick(true)
+    // }
+
+    front.transform = clickType.false.front
+    back.transform = clickType.false.back
+
+    setTimeout(() => {
+      front.transform = clickType.true.front
+      back.transform = clickType.true.back
+    }, 1500)
   }
 
-  useEffect(() => {
-    const { card } = serveProps()
-    // card.addEventListener("click", applyEnter);
-    card.addEventListener('mouseenter', applyEnter)
+  useEffect(
+    () => {
+      const { card } = serveProps()
+      card.addEventListener('mouseenter', applyEnter)
+      // card.addEventListener('click', applyEnter)
 
-    // return () => card.removeEventListener("click", applyEnter);
-    return () => card.removeEventListener('mouseenter', applyEnter)
-  }, [click])
-
+      return () => card.removeEventListener('mouseenter', applyEnter)
+      // return () => card.removeEventListener('click', applyEnter)
+    },
+    [
+      /* click */
+    ]
+  )
+  
   return cardRef
 }
