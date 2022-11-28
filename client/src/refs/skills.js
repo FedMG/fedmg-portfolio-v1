@@ -20,6 +20,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 1,
@@ -30,6 +31,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 2,
@@ -40,6 +42,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 3,
@@ -50,6 +53,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 4,
@@ -60,6 +64,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 5,
@@ -71,6 +76,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 6,
@@ -82,6 +88,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 7,
@@ -93,6 +100,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 8,
@@ -104,6 +112,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 9,
@@ -115,6 +124,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 10,
@@ -126,6 +136,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 11,
@@ -137,6 +148,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 12,
@@ -148,6 +160,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 13,
@@ -158,6 +171,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 14,
@@ -169,6 +183,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
 
   {
@@ -181,6 +196,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
   {
     id: 16,
@@ -192,6 +208,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   },
 
   {
@@ -204,6 +221,7 @@ export const skills = [
       }
     ],
     ...repeated
+
   }
 ]
 

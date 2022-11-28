@@ -56,6 +56,6 @@ export const useCardEffectRef = () => {
       /* click */
     ]
   )
-  
+
   return cardRef
 }

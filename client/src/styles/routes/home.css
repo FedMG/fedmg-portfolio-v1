@@ -120,17 +120,26 @@
   }
 
   .intro-gif {
-    max-width: 250px;
-    min-width: 130px;
+    max-width: 350px;
+    min-width: 180px;
   }
 
   .first-phrase,
   .second-phrase,
   .third-phrase {
-    font-size: calc(var(--subtitle-section-fz) - 0.12em);
+    font-size: calc(clamp(1.1em, 5vw, 1.4em) - 0.12em);
   }
 
   .buttons-container__subcontainer {
     gap: 0 0.6em;
+  }
+
+  .icon-link:focus > div > .card-svg > .card-path,
+  .icon-link:hover > div > .card-svg > .card-path {
+    fill: var(--secondary-color);
+  }
+
+  .icon-link:active > div > .card-svg > .card-path {
+    fill: var(--secondary-bg-color-act);
   }
 }

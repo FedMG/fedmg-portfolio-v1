@@ -21,7 +21,7 @@ export const Introduction = () => {
         <Typography style='third-phrase' as='span'>
           And a passionate of the{' '}
           <Typography style='third-phrase__span' as='span'>
-            IT World
+            Information Technology World
           </Typography>
 
         </Typography>
