@@ -1,11 +1,11 @@
 import { CreateButtons } from '../../iterators/CreateButtons.jsx'
-import { dataButton } from '../../refs/dataButton.js'
+import { data } from '../../refs/buttons.js'
 
 export const LinkSection = () => {
   return (
     <div className='buttons-container'>
       <div className='buttons-container__subcontainer'>
-        <CreateButtons data={dataButton} style='button' />
+        <CreateButtons data={data} style='button btn-dimensions btn-visibility' />
       </div>
     </div>
   )

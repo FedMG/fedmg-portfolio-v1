@@ -67,7 +67,7 @@
 }
 
 .over-styles {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: var(--primary-color);
 }
 
@@ -95,8 +95,6 @@
   }
 
   .over-styles {
-    border: 2px solid #fff;
-    color: var(--primary-color);
-    padding: calc(var(--button-padding) + 0.3em);
+    padding: var(--button-padding);
   }
 }
