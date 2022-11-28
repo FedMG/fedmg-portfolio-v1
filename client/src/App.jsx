@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Header } from './structure/Header.jsx'
-import { Main } from './structure/Main.jsx'
-import { Loader } from './items/Loader.jsx'
+import { Header } from './routes/structure/Header.jsx'
+import { Main } from './routes/structure/Main.jsx'
+import { Loader } from './components/Loader.jsx'
 
 function App () {
   const [isLoading, setLoading] = useState(true)

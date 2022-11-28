@@ -1,7 +1,7 @@
-import { Introduction } from '../items/home/Introduction.jsx'
-import { LinkSection } from '../items/home/LinkSection.jsx'
-import { Shape } from '../iterators/Shape.jsx'
-import { waves } from '../refs/shapes.js'
+import { Introduction } from '../components/home/Introduction.jsx'
+import { LinkSection } from '../components/home/LinkSection.jsx'
+import { Shape } from '../components/Shape.jsx'
+import { waves } from './refs/shapes.js'
 import intro from '../assets/intro.gif'
 
 export const Home = () => {

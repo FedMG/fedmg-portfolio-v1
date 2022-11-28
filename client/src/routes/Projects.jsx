@@ -1,9 +1,9 @@
-import { Typography } from '../items/Typography.jsx'
-import { Slider } from '../items/Slider.jsx'
-import { CreateProject } from '../iterators/CreateProject.jsx'
-import { Shape } from '../iterators/Shape.jsx'
-import { projectData } from '../refs/projects.js'
-import { triangle } from '../refs/shapes.js'
+import { Typography } from '../components/Typography.jsx'
+import { Slider } from '../components/projects/Slider.jsx'
+import { BoardProjects } from '../components/projects/BoardProjects.jsx'
+import { Shape } from '../components/Shape.jsx'
+import { projects } from './refs/projects.js'
+import { triangle } from './refs/shapes.js'
 
 export const Projects = () => {
   return (
@@ -15,7 +15,7 @@ export const Projects = () => {
         </Typography>
         <div className='project-slider-bk'>
           <Slider>
-            <CreateProject data={projectData} />
+            <BoardProjects data={projects} />
           </Slider>
         </div>
       </div>

@@ -1,8 +1,8 @@
-import { Typography } from '../items/Typography.jsx'
-import { SkillBoard } from '../iterators/SkillBoard.jsx'
-import { Shape } from '../iterators/Shape.jsx'
-import { triangle } from '../refs/shapes.js'
-import { skills } from '../refs/skills.js'
+import { Typography } from '../components/Typography.jsx'
+import { SkillBoard } from '../components/skills/SkillBoard.jsx'
+import { Shape } from '../components/Shape.jsx'
+import { triangle } from './refs/shapes.js'
+import { skills } from './refs/skills.js'
 
 export const Skills = () => {
   return (
