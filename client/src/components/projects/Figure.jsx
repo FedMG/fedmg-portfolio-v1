@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { DataContext } from '../../iterators/CreateProject.jsx'
+import { DataContext } from './BoardProjects.jsx'
 
 export const Figure = ({ idx }) => {
   const board = useContext(DataContext)

@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Typography } from '../Typography.jsx'
-import { applyEffect, removeEffect } from '../../functionals/board-effect'
+import { applyEffect, removeEffect } from '../../functions/board-effect'
 
 export const Board = () => {
   const board = useRef(null)

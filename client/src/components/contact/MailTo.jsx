@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button } from '../Button.jsx'
 import { Typography } from '../Typography.jsx'
 import { Mail } from './Mail.jsx'
-import { structure } from '../../refs/message-structure.js'
+import { structure } from './message-structure.js'
 
 export const MailTo = () => {
   const [message, setMessage] = useState(structure)

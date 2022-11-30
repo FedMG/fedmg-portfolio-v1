@@ -1,4 +1,4 @@
-export const projectData = [
+export const projects = [
   {
     id: 0,
     board: [

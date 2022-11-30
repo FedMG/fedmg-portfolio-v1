@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
-import { Button } from '../items/Button.jsx'
-import { Shape } from '../iterators/Shape.jsx'
+import { Button } from '../Button.jsx'
+import { Shape } from '../Shape.jsx'
 
-export const CreateButtons = ({ data, style }) => {
+export const Buttons = ({ data, style }) => {
   return (
     <>
       {data.map(({ id, name, link, icon }) => (

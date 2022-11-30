@@ -1,14 +1,14 @@
 import { createContext } from 'react'
-import { CreateCards } from './CreateCards.jsx'
+import { ProjectCard } from './ProjectCard.jsx'
 
 export const DataContext = createContext()
 
-export const CreateProject = ({ data }) => {
+export const BoardProjects = ({ data }) => {
   return data.map(({ id, board }) => (
     <div key={id} className='project-board'>
       <DataContext.Provider value={board}>
-        <CreateCards />
-      </DataContext.Provider>
+         <ProjectCard />
+     </DataContext.Provider>
     </div>
   ))
 }

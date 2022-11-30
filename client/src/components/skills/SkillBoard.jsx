@@ -1,5 +1,5 @@
-import { Shape } from './Shape.jsx'
-import { SkillCard } from '../items/skills/SkillCard.jsx'
+import { Shape } from '../Shape.jsx'
+import { SkillCard } from './SkillCard.jsx'
 
 export const SkillBoard = ({ data }) => {
   return (

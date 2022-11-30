@@ -1,4 +1,4 @@
-export const headerData = {
+export const header = {
   routeNames: [
     { id: 1, name: 'Home' },
     { id: 2, name: 'About' },

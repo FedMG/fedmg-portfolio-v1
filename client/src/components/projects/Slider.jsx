@@ -1,7 +1,7 @@
 import { useRef, useCallback } from 'react'
-import { setNext, setPrevious } from '../functionals/move.js'
-import { Button } from './Button.jsx'
-import { buttonClasses } from '../refs/buttonClasses.js'
+import { setNext, setPrevious } from '../../functions/move.js'
+import { Button } from '../Button.jsx'
+import { classes } from './classes.js'
 
 export const Slider = ({ children, speed = '500' }) => {
   const slider = useRef(null)
@@ -35,7 +35,7 @@ export const Slider = ({ children, speed = '500' }) => {
         onclick={previous}
         src='https://img.icons8.com/material/96/000000/chevron-left--v1.png'
         alt='backward'
-        style={buttonClasses}
+        style={classes}
       />
 
       <div className='slider-element-bk'>
@@ -48,7 +48,7 @@ export const Slider = ({ children, speed = '500' }) => {
         onclick={next}
         src='https://img.icons8.com/material/96/000000/chevron-right--v1.png'
         alt='forward'
-        style={buttonClasses}
+        style={classes}
       />
     </div>
   )
