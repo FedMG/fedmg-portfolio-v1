@@ -7,15 +7,35 @@ export const setAnimation = (containerStyle, transition, transform) => {
   containerStyle.transform = transform
 }
 
-export const addId = (array, id = 0, len = array.length) =>  {
-  if (!Array.isArray(array)){
+
+export const addId = (array, id = 0, len = array.length) => {
+  if (!Array.isArray(array)) {
     return 'Is not an Array'
-  } 
-  
+  }
+
   if (id >= len) {
     return array
   } else {
-    array[id]['id'] = id;
-    return run(array, id + 1)
+    array[id].id = id
+    return addId(array, id + 1)
+  }
+}
+
+
+export const createSVGObject = (title, path, svgStyle, pathStyle) => {
+  return {
+    icon: {
+      title,
+      path,
+      svg: {
+        role: 'img',
+        xmlns: 'http://www.w3.org/2000/svg',
+        vbox: '0 0 24 24'
+      },
+      styles: {
+        svg: svgStyle,
+        path: pathStyle
+      }
+    }
   }
 }
