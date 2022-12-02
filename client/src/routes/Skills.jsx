@@ -1,6 +1,6 @@
-import { Typography } from '../components/Typography.jsx'
-import { SkillBoard } from '../components/skills/SkillBoard.jsx'
-import { Shape } from '../components/Shape.jsx'
+import { Typography } from '@/components/Typography'
+import { SkillBoard } from '@/components/skills/SkillBoard'
+import { Shape } from '@/components/Shape'
 import { triangle } from './refs/shapes.js'
 import { skills } from './refs/skills.js'
 

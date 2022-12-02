@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
-import { Button } from '../Button.jsx'
-import { Shape } from '../Shape.jsx'
+
+import { Button } from '@/components/Button'
+import { Shape } from '@/components/Shape'
 
 export const Buttons = ({ data, style }) => {
   return (
@@ -9,7 +10,7 @@ export const Buttons = ({ data, style }) => {
         <Fragment key={id}>
           <Button style={style} href={link}>
             <span className='button-content'>
-              <span className='button-name'>{name}</span>
+              {name}
               {icon && <Shape data={icon} />}
             </span>
           </Button>

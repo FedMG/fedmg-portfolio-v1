@@ -1,8 +1,8 @@
-import { Home } from '../Home.jsx'
-import { About } from '../About.jsx'
-import { Projects } from '../Projects.jsx'
-import { Skills } from '../Skills.jsx'
-import { Contact } from '../Contact.jsx'
+import { Home } from '@/routes/Home.jsx'
+import { About } from '@/routes/About'
+import { Projects } from '@/routes/Projects'
+import { Skills } from '@/routes/Skills'
+import { Contact } from '@/routes/Contact'
 
 export const Main = () => {
   return (

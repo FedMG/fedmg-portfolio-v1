@@ -7,8 +7,8 @@ export const BoardProjects = ({ data }) => {
   return data.map(({ id, board }) => (
     <div key={id} className='project-board'>
       <DataContext.Provider value={board}>
-         <ProjectCard />
-     </DataContext.Provider>
+        <ProjectCard />
+      </DataContext.Provider>
     </div>
   ))
 }

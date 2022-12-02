@@ -1,5 +1,5 @@
 import { Buttons } from './Buttons.jsx'
-import { data } from '../../routes/refs/buttons.js'
+import { data } from '@/routes/refs/buttons.js'
 
 export const LinkSection = () => {
   return (

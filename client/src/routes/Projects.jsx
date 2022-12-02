@@ -1,7 +1,7 @@
-import { Typography } from '../components/Typography.jsx'
-import { Slider } from '../components/projects/Slider.jsx'
-import { BoardProjects } from '../components/projects/BoardProjects.jsx'
-import { Shape } from '../components/Shape.jsx'
+import { Typography } from '@/components/Typography'
+import { Slider } from '@/components/projects/Slider'
+import { BoardProjects } from '@/components/projects/BoardProjects'
+import { Shape } from '@/components/Shape'
 import { projects } from './refs/projects.js'
 import { triangle } from './refs/shapes.js'
 

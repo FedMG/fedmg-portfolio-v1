@@ -1,4 +1,4 @@
-import { Typography } from '../Typography.jsx'
+import { Typography } from '@/components/Typography'
 
 export const Introduction = () => {
   return (
