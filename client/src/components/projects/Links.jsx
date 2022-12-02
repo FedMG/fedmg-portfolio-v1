@@ -1,21 +1,18 @@
 import { useContext } from 'react'
 import { DataContext } from './BoardProjects.jsx'
-import { Button } from '../Button.jsx'
+import { Buttons } from '@/components/home/Buttons.jsx'
+
+// old classes
+// project-buttons-bk
+// project-buttons
 
 export const Links = ({ idx }) => {
   const board = useContext(DataContext)
-  const {
-    links: [github, stackblitz]
-  } = board[idx]
+  const { buttons } = board[idx]
 
   return (
     <div className='project-buttons-bk'>
-      <Button href={github} style='project-buttons'>
-        Github
-      </Button>
-      <Button href={stackblitz} style='project-buttons'>
-        Stackblitz
-      </Button>
+      <Buttons data={buttons} style='button btn-dimensions btn-visibility' />
     </div>
   )
 }
