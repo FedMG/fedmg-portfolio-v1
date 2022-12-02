@@ -3,10 +3,10 @@
     "baseUrl":"src"
   },
     "paths": {
-      "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@functions/*": ["functions/*"],
-      "@hooks/*": ["hooks/*"],
-      "@routes/*": ["routes/*"]
+      // "@assets/*": ["assets/*"],
+      // "@components/*": ["components/*"],
+      // "@functions/*": ["functions/*"]
+      // "@hooks/*": ["hooks/*"],
+      // "@routes/*": ["routes/*"],
     }
 }
