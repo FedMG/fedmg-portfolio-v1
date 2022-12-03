@@ -8,6 +8,7 @@ export const SkillBoard = ({ data }) => {
         {data.map(({ id }) => (
           <SkillCard key={id}>
             <Shape data={data[id]} />
+            <span>{data[id].title}</span>
           </SkillCard>
         ))}
       </div>

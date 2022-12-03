@@ -6,10 +6,10 @@ export const SkillCard = ({ children }) => {
 
   return (
     <Card ref={cardRef}>
-      {children}
+      {children[0]}
       <div className='card-side back'>
         <div className='card-content'>
-          <div>Example</div>
+          {children[1]}
         </div>
       </div>
     </Card>

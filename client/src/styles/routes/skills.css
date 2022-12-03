@@ -51,6 +51,7 @@
   display: grid;
   place-content: center;
   height: 100%;
+  text-align: center;
 }
 
 

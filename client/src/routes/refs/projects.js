@@ -65,36 +65,37 @@ export const projects = [
       },
       {
         caption: 'MERN ecommerce',
-        source: 'https://shots.codepen.io/fedmg/details/ExQvJzm-320.webp?',
+        source: romanNumbers,
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Landing page',
-        source: 'https://shots.codepen.io/fedmg/details/QWQqmvq-320.webp?',
+        source: passwordGenerator,
         ...getLinkButtons('FedMG', ' ')
       }
     ])
   },
   {
+    id: 2,
     board: addId([
       {
         caption: 'Weather App',
-        source: 'https://shots.codepen.io/fedmg/pen/poaxwjd-320.webp?',
+        source: romanNumbers,
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Palindrome',
-        source: 'https://shots.codepen.io/fedmg/details/QWQqmvq-320.webp?',
+        source: passwordGenerator,
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Cypher App',
-        source: 'https://shots.codepen.io/fedmg/details/ExQvJzm-320.webp?',
+        source: romanNumbers,
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Tribute Page',
-        source: 'https://shots.codepen.io/fedmg/full/oNEPMYN-320.webp?',
+        source: passwordGenerator,
         ...getLinkButtons('FedMG', ' ')
       }
     ])
