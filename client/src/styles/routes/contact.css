@@ -4,7 +4,8 @@
   align-items: center;
   padding-top: var(--sections-bk-pad-top);
   max-height: 400px;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
 }
 
 .contact__mailto-bk {
@@ -48,6 +49,7 @@
 .form__textarea {
   resize: none;
   height: 100%;
+  min-height: 150px;
 }
 
 .form__control-bk {
