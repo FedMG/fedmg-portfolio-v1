@@ -16,12 +16,12 @@ export const data = addId([
   {
     name: 'Github',
     link: 'https://github.com/FedMG/',
-    ...createSVGObject('Github', githubPath, 'card-svg', 'card-path')
+    ...createSVGObject('Github', githubPath, 'svg-dimensions', 'svg-styles')
   },
   {
     name: 'Linkedin',
     link: 'https://www.linkedin.com/in/federico-gonzalia/',
-    ...createSVGObject('Linkedin', linkedinPath, 'card-svg', 'card-path')
+    ...createSVGObject('Linkedin', linkedinPath, 'svg-dimensions', 'svg-styles')
   },
   { name: 'Take a look', link: '' }
 ])

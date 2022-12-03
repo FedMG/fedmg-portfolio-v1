@@ -10,6 +10,7 @@
 @import "./shapes/waves.css";
 
 @import './items/button.css';
+@import './items/properties.css';
 
 * {  
   margin: 0;

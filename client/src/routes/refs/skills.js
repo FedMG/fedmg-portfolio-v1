@@ -7,8 +7,8 @@ export const repeated = {
     vbox: '0 0 24 24'
   },
   styles: {
-    svg: 'card-svg',
-    path: 'card-path'
+    svg: 'svg-dimensions',
+    path: 'svg-styles'
   }
 }
 

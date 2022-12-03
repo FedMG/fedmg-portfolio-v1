@@ -2,6 +2,7 @@ export const Shape = ({ data: { styles, svg, title, path } }) => {
   return (
     <div className={styles?.div}>
       <svg
+        fill={svg?.fill}
         className={styles?.svg}
         data-name={svg?.dname}
         xmlns={svg?.xmlns}

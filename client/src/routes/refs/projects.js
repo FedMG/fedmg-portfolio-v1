@@ -23,8 +23,8 @@ const getLinkButtons = (githubRepo, webLink) => {
         ...createSVGObject(
           'Github',
           githubPath,
-          'card-svg',
-          'card-path icon-btn-path'
+          'svg-dimensions',
+          'project-svg-styles'
         )
       },
       {
@@ -34,8 +34,9 @@ const getLinkButtons = (githubRepo, webLink) => {
         ...createSVGObject(
           'Open',
           openPagePath,
-          'card-svg',
-          'card-path icon-btn-path'
+          'svg-dimensions',
+          'project-svg-styles project-svg-styles-open-icon',
+          false
         )
       }
     ]

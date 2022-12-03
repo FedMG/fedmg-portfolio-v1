@@ -6,19 +6,18 @@
   border: var(--button-bd-style);
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .button-content {
   gap: 0 0.6em;
 }
 
 
+/* individual styles */
+.contact-btn {
+  
+}
 
-/* individual */
+
+/* individual dimensions */
 .home-button-dimensions {
   --button-padding: 0.5em;
   --button-width: 9em;
@@ -43,34 +42,43 @@
 }
 
 
-.contact-btn {
-  
+/* svg icons */
+.svg-styles {
+  fill: var(--primary-color);
 }
 
-
-
-
-
-
-
-/* container */
-.container {
+.svg-dimensions {
+  max-width: 1.7em;
+  max-height: 1.7em;
   width: 100%;
   height: 100%;
 }
 
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
+.container-visibility {
+  display: none;
 }
 
-.button-container {
-  /* display: flex; */
-  /* width: 100%; */
+
+/* individual svg */
+.project-svg-styles {
+  fill: var(--primary-color);
 }
 
+.project-svg-styles-open-icon {
+   stroke: var(--primary-color);
+   stroke-width:2;
+   stroke-linecap:round;
+   stroke-linejoin:round;
+   fill: none;
+}
+
+.project-svg-dimensions {
+  width:24px;
+  height:24px;
+}
+
+
+/* containers */
 .home-button-container {
   --home-container-btn-gap: 0 clamp(0.3em, 2vw, 1.05em);
   --home-container-btn-pad-left: clamp(0.5em, 7vw, 3em);
@@ -87,42 +95,6 @@
 }
 
 
-
-
-
-
-
-/* icons */
-.svg-icon {
-  
-}
-
-.svg-dimensions {
-  
-}
-
-
-.anchor-visibility {
-  display: none;
-}
-
-.project-svg-icon {
-}
-
-.project-svg-icon-dimensions {
-  width:24px;
-  height:24px;
-}
-
-.project-svg-icon-open {
-   stroke: black;
-   stroke-width:2;
-   stroke-linecap:round;
-   stroke-linejoin:round;
-}
-
-
-
 /* states */
 .button:hover {
   background-color: var(--primary-bg-color-hov);
@@ -136,9 +108,7 @@
 }
 
 
-
-
-
+/* queries */
 @media (min-width: 767.1px) and (max-width: 1023px) {
 
   .project-btn-container {
@@ -156,15 +126,13 @@
   }
 }
 
-
-/* queries */
 @media (max-width: 767px) {
   
   .contact-btn-dimensions {
     width: calc(var(--button-width) - 1.5em);
   }
   
-  .anchor-visibility {
+  .container-visibility {
     display: block;
   }
 
@@ -172,16 +140,53 @@
     display: none;
   }
 
-  /* .button-container {
-    gap: 0 0.6em;
-  } */
 
-  .anchor-visibility:focus > div > svg > path,
-  .anchor-visibility:hover > div > svg > path {
+  /* general svg buttons */
+  .anchor-svg-styles:focus > div > svg > path,
+  .anchor-svg-styles:hover > div > svg > path {
     fill: var(--secondary-color);
   }
 
-  .anchor-visibility:active > div > svg > path {
+  .anchor-svg-styles:active > div > svg > path {
+    fill: var(--secondary-bg-color-act);
+  }  
+  
+  
+  /* project svg */
+  .project-svg-styles {
+    fill: var(--secondary-color);
+  }
+  .project-svg-styles-open-icon {
+    stroke: var(--secondary-color);
+    fill: none;
+  }
+  
+  .anchor-svg-container {
+    padding: 0.1em;
+  }
+  
+  
+  /* project github svg */
+  .anchor-svg-styles:focus > div > svg > .project-svg-styles,
+  .anchor-svg-styles:hover > div > svg > .project-svg-styles {
+    fill: var(--primary-bg-color-hov);
+  }
+
+  .anchor-svg-styles:active > div > svg > .project-svg-styles {
     fill: var(--secondary-bg-color-act);
   }
+  
+  
+  /* project 'open svg' */
+  .anchor-svg-styles:focus > div > svg > .project-svg-styles-open-icon,
+  .anchor-svg-styles:hover > div > svg > .project-svg-styles-open-icon {
+    stroke: var(--primary-bg-color-hov);
+    fill:none;
+  }
+
+  .anchor-svg-styles:active > div > svg > .project-svg-styles-open-icon {
+    stroke: var(--secondary-bg-color-act);
+    fill: none;
+  }
+  
 }

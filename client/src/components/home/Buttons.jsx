@@ -14,9 +14,13 @@ export const Buttons = ({ data, style }) => {
               {icon && <Shape data={icon} />}
             </span>
           </Button>
-          <a className='anchor-visibility' href={link} target='_blank' rel='noreferrer'>
-            {icon && <Shape data={icon} />}
-          </a>
+          <div className='container-visibility'>
+            <div className='flex-center'>
+              <a className='anchor-svg-styles' href={link} target='_blank' rel='noreferrer'>
+                {icon && <Shape data={icon} />}
+              </a>
+            </div>
+          </div>
         </Fragment>
       ))}
     </>
