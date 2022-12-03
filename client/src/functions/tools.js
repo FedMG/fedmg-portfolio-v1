@@ -7,7 +7,6 @@ export const setAnimation = (containerStyle, transition, transform) => {
   containerStyle.transform = transform
 }
 
-
 export const addId = (array, id = 0, len = array.length) => {
   if (!Array.isArray(array)) {
     return 'Is not an Array'
@@ -20,7 +19,6 @@ export const addId = (array, id = 0, len = array.length) => {
     return addId(array, id + 1)
   }
 }
-
 
 export const createSVGObject = (title, path, svgStyle, pathStyle) => {
   return {

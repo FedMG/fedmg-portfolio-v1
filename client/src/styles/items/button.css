@@ -1,0 +1,187 @@
+/* general */
+.button { 
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-color);
+  border-radius: var(--button-bd-radius);
+  border: var(--button-bd-style);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-content {
+  gap: 0 0.6em;
+}
+
+
+
+/* individual */
+.home-button-dimensions {
+  --button-padding: 0.5em;
+  --button-width: 9em;
+
+  padding: var(--button-padding);
+  width: var(--button-width);
+}
+
+.project-btn-dimensions {
+  --button-padding: 0.2em;
+
+  padding: var(--button-padding);
+  width: 100%;
+}
+
+.contact-btn-dimensions {
+  --button-padding: 0.54em;
+  --button-width: 9em;
+  
+  padding: var(--button-padding);
+  width: var(--button-width);
+}
+
+
+.contact-btn {
+  
+}
+
+
+
+
+
+
+
+/* container */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.button-container {
+  /* display: flex; */
+  /* width: 100%; */
+}
+
+.home-button-container {
+  --home-container-btn-gap: 0 clamp(0.3em, 2vw, 1.05em);
+  --home-container-btn-pad-left: clamp(0.5em, 7vw, 3em);
+
+  gap: var(--home-container-btn-gap);
+  padding-left: calc(var(--home-container-btn-pad-left) - 1.2em);
+}
+
+.project-btn-container {
+  --project-btn-gap: 0.5em;
+  
+  gap: var(--project-btn-gap);
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
+
+/* icons */
+.svg-icon {
+  
+}
+
+.svg-dimensions {
+  
+}
+
+
+.anchor-visibility {
+  display: none;
+}
+
+.project-svg-icon {
+}
+
+.project-svg-icon-dimensions {
+  width:24px;
+  height:24px;
+}
+
+.project-svg-icon-open {
+   stroke: black;
+   stroke-width:2;
+   stroke-linecap:round;
+   stroke-linejoin:round;
+}
+
+
+
+/* states */
+.button:hover {
+  background-color: var(--primary-bg-color-hov);
+  color: var(--primary-color-hov);
+}
+
+.button:active {
+  background-color: var(--secondary-bg-color-act);
+  color: var(--secondary-color-act);
+  border: var(--button-bd-style-act);
+}
+
+
+
+
+
+@media (min-width: 767.1px) and (max-width: 1023px) {
+
+  .project-btn-container {
+    gap: calc(var(--project-btn-gap) - 0.3em);
+  }
+
+  .home-button-dimensions {
+    padding: calc(var(--button-padding) - 0.3em);
+    width: var(--button-width);
+  }
+  
+  .project-btn-dimensions {
+    padding: calc(var(--button-padding) - 0.3em);
+    width: 100%;
+  }
+}
+
+
+/* queries */
+@media (max-width: 767px) {
+  
+  .contact-btn-dimensions {
+    width: calc(var(--button-width) - 1.5em);
+  }
+  
+  .anchor-visibility {
+    display: block;
+  }
+
+  .button-visibility {
+    display: none;
+  }
+
+  /* .button-container {
+    gap: 0 0.6em;
+  } */
+
+  .anchor-visibility:focus > div > svg > path,
+  .anchor-visibility:hover > div > svg > path {
+    fill: var(--secondary-color);
+  }
+
+  .anchor-visibility:active > div > svg > path {
+    fill: var(--secondary-bg-color-act);
+  }
+}

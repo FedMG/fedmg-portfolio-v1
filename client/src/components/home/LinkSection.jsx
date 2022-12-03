@@ -3,9 +3,9 @@ import { data } from '@/routes/refs/buttons.js'
 
 export const LinkSection = () => {
   return (
-    <div className='buttons-container'>
-      <div className='buttons-container__subcontainer'>
-        <Buttons data={data} style='button btn-dimensions btn-visibility' />
+    <div className='container'>
+      <div className='home-button-container flex'>
+        <Buttons data={data} style={['button-visibility anchors', 'button home-button-dimensions']} />
       </div>
     </div>
   )

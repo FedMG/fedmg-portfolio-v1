@@ -1,8 +1,8 @@
 export const Button = ({ href, src, alt, onclick, style, children }) => {
   if (href) {
     return (
-      <a href={href} className='anchors' target='_blank' rel='noreferrer'>
-        <button className={style}>{children}</button>
+      <a href={href} className={style[0]} target='_blank' rel='noreferrer'>
+        <button className={style[1]}>{children}</button>
       </a>
     )
   }
@@ -18,7 +18,7 @@ export const Button = ({ href, src, alt, onclick, style, children }) => {
   }
 
   return (
-    <button className={style} onClick={onclick}>
+    <button className={`${style[0]} ${style[1]}`} onClick={onclick}>
       {children}
     </button>
   )

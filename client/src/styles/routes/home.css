@@ -42,51 +42,7 @@
   color: var(--secondary-color);
 }
 
-.buttons-container {
-  width: 100%;
-  height: 100%;
-}
 
-.buttons-container__subcontainer {
-  display: flex;
-  gap: var(--btn-subcontainer-gap);
-  padding-left: calc(var(--btn-subcontainer-pad-left) - 1.2em);
-  width: 100%;
-}
-
-.button {
-  background-color: var(--secondary-bg-color);
-  color: var(--third-color);
-  border-radius: var(--button-bd-radius);
-  border: var(--button-bd-style);
-}
-
-.btn-dimensions {
-  padding: var(--button-padding);
-  width: var(--button-width);
-}
-
-.button-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0 0.6em;
-}
-
-.icon-link {
-  display: none;
-}
-
-.button:hover {
-  background-color: var(--primary-bg-color-hov);
-  color: var(--primary-color-hov);
-}
-
-.button:active {
-  background-color: var(--secondary-bg-color-act);
-  color: var(--secondary-color-act);
-  border: var(--button-bd-style-act);
-}
 
 @media (min-width: 767.1px) and (max-width: 1023px) {
   .first-phrase,
@@ -94,19 +50,9 @@
   .third-phrase {
     font-size: var(--subtitle-section-fz);
   }
-  .btn-dimensions {
-    padding: calc(var(--button-padding) - 0.3em);
-    width: var(--button-width);
-  }
 }
 
 @media (max-width: 767px) {
-  .icon-link {
-    display: block;
-  }
-  .btn-visibility {
-    display: none;
-  }
 
   .home__elements-wrapper {
     padding-bottom: calc(var(--sec-content-pad) - 2em);

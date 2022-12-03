@@ -9,6 +9,8 @@
 @import "./shapes/triangle.css";
 @import "./shapes/waves.css";
 
+@import './items/button.css';
+
 * {  
   margin: 0;
   padding: 0;

@@ -9,12 +9,12 @@ export const Buttons = ({ data, style }) => {
       {data.map(({ id, name, link, icon }) => (
         <Fragment key={id}>
           <Button style={style} href={link}>
-            <span className='button-content'>
+            <span className='flex-center button-content'>
               {name}
               {icon && <Shape data={icon} />}
             </span>
           </Button>
-          <a className='icon-link' href={link} target='_blank' rel='noreferrer'>
+          <a className='anchor-visibility' href={link} target='_blank' rel='noreferrer'>
             {icon && <Shape data={icon} />}
           </a>
         </Fragment>
