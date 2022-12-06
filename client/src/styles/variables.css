@@ -34,22 +34,13 @@
   /* states bg colors */
   --primary-bg-color-hov: #764EF3 ;
   --secondary-bg-color-act: #432D8C;
-  /*  */
-}
 
-:root {
+
   /* fonts */
   --first-title-fz: clamp(2.2em, 10vw, 4.5em);
   --subtitle-section-fz: clamp(1.1em, 5vw, 1.6em);
 
-  /* home */
-  --span-subcontainer-pad-lf-bt: clamp(0.3em, 7vw, 3em);
-  --btn-subcontainer-gap: 0 clamp(0.3em, 2vw, 1.05em);
-  --btn-subcontainer-pad-left: clamp(0.5em, 7vw, 3em);
-
   /* button */
-  --button-padding: 0.5em;
-  --button-width: 9em;
   --button-bd-radius: 0.3em;
   --button-bd-style: 2px outset #666;
 
@@ -66,18 +57,9 @@
   --sec-content-pad: 7em;
 
   /* project */
-  --pjt-slider-bk-margin: 3em auto;
-  --pjt-board-gap-pad: 0.85em;
-  --pjt-gap-btns: 0.5em;
   --pjt-figcaption-fz: 1em;
-  --pjt-figcaption-margin: 0.3em 0 0.6em;
   --pjt-figcaption-fw: 600;
-  --pjt-card-padding: 0.2em;
   --pjt-card-bd-rad: 0.23em;
-
-  /* slider */
-  --sld-elem-bk-margin: 0 clamp(0.3em, 2vw, 1em);
-  --sld-icon-btn-width: 3.7em;
 
   /* subtitle-space-content */
   --sections-bk-pad-top: 3.7em;
@@ -85,12 +67,7 @@
   /* about */
   --ab-text-fz: clamp(1rem, 8vw - 2rem, 1.1rem);
   --ab-card-bd: 2px solid rgba(255, 255, 255, 0.25);
-  --ab-card-pad: 1.8em;
-  --ab-card-width: 40em;
   --ab-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-  /* skills */
-  --skill-cards-gap: 0.6em;
 
   color-scheme: light dark;
   font-synthesis: none;

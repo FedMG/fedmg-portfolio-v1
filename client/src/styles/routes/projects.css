@@ -6,12 +6,10 @@
 
 .project-slider-bk {
   padding-top: var(--sections-bk-pad-top);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-board {
+  --pjt-board-gap-pad: 0.85em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -26,10 +24,9 @@
   background: var(--primary-item-pjt-bg-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: var(--pjt-card-padding);
+  padding: 0.2em;
   border-radius: var(--pjt-card-bd-rad);
 }
-/* .project-figure {} */
 
 .project-image {
   width: 100%;
@@ -37,9 +34,8 @@
   user-select: none;
 }
 .project-figcaption {
-  margin: var(--pjt-figcaption-margin);
+  margin: 0.3em 0 0.6em;
   font-weight: var(--pjt-figcaption-fw);
-
   text-align: center;
   font-size: var(--pjt-figcaption-fz);
 }

@@ -8,7 +8,7 @@ export const SkillCard = ({ children }) => {
     <Card ref={cardRef}>
       {children[0]}
       <div className='card-side back'>
-        <div className='card-content'>
+        <div className='card-content grid-center'>
           {children[1]}
         </div>
       </div>

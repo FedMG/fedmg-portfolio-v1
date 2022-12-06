@@ -21,14 +21,14 @@ export const Board = () => {
   }
 
   return (
-    <div className='about-board-container'>
+    <div className='about-board-container grid-center'>
       <div
         className='about-board'
         onMouseMove={getEvent}
         onMouseLeave={() => removeEffect(references)}
         ref={board}
       >
-        <div className='about-card'>
+        <div className='about-card bk-drop'>
           <Typography as='p' style='about-text'>
             I am passionate about the IT world who loves to learn new things
             every day.
@@ -40,7 +40,7 @@ export const Board = () => {
             technological progress, curiosity and learning allows us to grow and
             improve.
           </Typography>
-          <div className='background-effect' />
+          <div className='background-effect container' />
         </div>
       </div>
     </div>

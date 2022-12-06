@@ -3,12 +3,12 @@ import { SkillCard } from './SkillCard'
 
 export const SkillBoard = ({ data }) => {
   return (
-    <div className='skill-cards-bk'>
-      <div className='skill-cards'>
+    <div className='skill-cards-bk grid-center'>
+      <div className='skill-cards grid'>
         {data.map(({ id }) => (
           <SkillCard key={id}>
             <Shape data={data[id]} />
-            <span>{data[id].title}</span>
+            <span className='card-span'>{data[id].title}</span>
           </SkillCard>
         ))}
       </div>

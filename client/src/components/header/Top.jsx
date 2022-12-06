@@ -1,13 +1,13 @@
 const Top = ({ title, span }) => (
-  <div className='Top'>
-    <div className='Top__side-items' />
-    <h1 className='anchor__title-logo'>
-      <a href='#Home' className='Top__anchor'>
+  <div className='top flex-btw'>
+    <div className='top__side-items inline-block' />
+    <h1 className='inline-block'>
+      <a href='#Home' className='top__anchor'>
         {title}
         <span className='title__span-logo'>{span}</span>
       </a>
     </h1>
-    <div className='Top__side-items' />
+    <div className='top__side-items inline-block' />
   </div>
 )
 

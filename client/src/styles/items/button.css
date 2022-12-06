@@ -1,5 +1,6 @@
 /* general */
 .button { 
+  background-image: linear-gradient(160deg, var(--primary-bg-color-hov) 0%, var(--secondary-bg-color-act) 100%);
   background-color: var(--secondary-bg-color);
   color: var(--primary-color);
   border-radius: var(--button-bd-radius);
@@ -13,7 +14,9 @@
 
 /* individual styles */
 .contact-btn {
-  
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  background-image: linear-gradient(160deg, #f2f2f2 0%, #d3d3d3 100%);
 }
 
 
@@ -89,14 +92,13 @@
 
 .project-btn-container {
   --project-btn-gap: 0.5em;
-  
   gap: var(--project-btn-gap);
   grid-template-columns: 1fr 1fr;
 }
 
-
 /* states */
 .button:hover {
+  background-image: none;
   background-color: var(--primary-bg-color-hov);
   color: var(--primary-color-hov);
 }
@@ -107,6 +109,15 @@
   border: var(--button-bd-style-act);
 }
 
+
+.contact-btn:hover {
+  color: var(--secondary-color);
+  background-image: linear-gradient(160deg, #d3d3d3 0%, #b2b2b2 100%);  
+}
+
+.contact-btn:active {
+  background-image: linear-gradient(160deg, #fff 0%, #e9e9e9 100%);  
+}
 
 /* queries */
 @media (min-width: 767.1px) and (max-width: 1023px) {

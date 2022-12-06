@@ -10,8 +10,8 @@ export const Contact = () => {
         <Typography as='h2' style='subtitle-section'>
           <Typography style='span-subtitle'>Contact</Typography> me
         </Typography>
-        <div className='contact__content'>
-          <div className='contact__mailto-bk'>
+        <div className='contact__content flex-center'>
+          <div className='contact__mailto-bk container'>
             <MailTo />
           </div>
         </div>

@@ -13,7 +13,7 @@ export const Projects = () => {
         <Typography as='h2' style='subtitle-section'>
           My<Typography style='span-subtitle'> projects</Typography>
         </Typography>
-        <div className='project-slider-bk'>
+        <div className='project-slider-bk flex-center'>
           <Slider>
             <BoardProjects data={projects} />
           </Slider>

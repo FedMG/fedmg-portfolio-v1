@@ -6,7 +6,7 @@ export const Card = forwardRef((props, ref) => {
   return (
     <div className='card' ref={ref}>
       <div className='card-side front'>
-        <div className='card-content'>{children[0]}</div>
+        <div className='card-content grid-center'>{children[0]}</div>
       </div>
       {children[1]}
     </div>

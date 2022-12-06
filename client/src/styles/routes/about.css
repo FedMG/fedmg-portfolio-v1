@@ -1,6 +1,4 @@
 .about-board-container {
-  display: grid;
-  place-content: center;
   padding-top: var(--sections-bk-pad-top);
 }
 
@@ -9,17 +7,14 @@
   perspective: 1100px;
 }
 
-.about-card {
+.about-card {  
   position: relative;
-  max-width: var(--ab-card-width);
+  max-width:40em;
+  padding: 1.8em;
   background: var(--primary-card-bg-color);
+  /* background-image: linear-gradient(160deg, var(--primary-bg-color-hov) 0%, var(--secondary-bg-color-act) 50%); */
   box-shadow: var(--ab-card-shadow);
-  padding: var(--ab-card-pad);
   border-radius: var(--pjt-card-bd-rad);
-
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
 .about-text {
@@ -34,8 +29,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 767px) {

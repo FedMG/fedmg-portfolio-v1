@@ -44,7 +44,7 @@ export const MailTo = () => {
   }
 
   return (
-    <form className='form' onSubmit={getForm}>
+    <form className='form flex-column bk-drop' onSubmit={getForm}>
       <label htmlFor='subject' />
       <input
         className={'form__input ' + (message.errors[0] ? 'error' : '')}
