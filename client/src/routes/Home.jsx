@@ -2,7 +2,7 @@ import { Introduction } from '@/components/home/Introduction.jsx'
 import { LinkSection } from '@/components/home/LinkSection.jsx'
 import { Shape } from '@/components/Shape.jsx'
 import { waves } from './refs/shapes.js'
-import intro from '@/assets/intro.gif'
+import intro from '@/assets/programming.gif'
 
 export const Home = () => {
   return (
