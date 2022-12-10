@@ -1,21 +1,13 @@
+@import './logo.css';
+
 .top {
   background-color: var(--top-bg-color);
+  padding: 0.2em;
 }
 
 .top__anchor {
   text-decoration: none;
-}
-
-.title__span-logo {
-  background-color: #5135aa;
-  color: var(--primary-color);
-}
-
-.top__side-items,
-.top__side-items {
-  background-color: var(--primary-color);
-  height: 5px;
-  width: 10px;
+  gap: 0.5em;
 }
 
 /* status */
