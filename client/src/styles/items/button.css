@@ -165,10 +165,10 @@
   
   /* project svg */
   .project-svg-styles {
-    fill: var(--secondary-color);
+    fill: var(--secondary-bg-color);
   }
   .project-svg-styles-open-icon {
-    stroke: var(--secondary-color);
+    stroke: var(--secondary-bg-color);
     fill: none;
   }
   
