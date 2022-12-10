@@ -4,7 +4,7 @@ import { Shape } from '@/components/Shape'
 import { triangle } from './refs/shapes.js'
 import { skills } from './refs/skills.js'
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <div id='Skills' className='section'>
       <Shape data={triangle.skillsTopEmpty} />
@@ -17,3 +17,5 @@ export const Skills = () => {
     </div>
   )
 }
+
+export default Skills

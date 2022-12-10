@@ -5,7 +5,7 @@ import { Shape } from '@/components/Shape'
 import { projects } from './refs/projects.js'
 import { triangle } from './refs/shapes.js'
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <div id='Projects' className='section'>
       <Shape data={triangle.downside} />
@@ -23,3 +23,5 @@ export const Projects = () => {
     </div>
   )
 }
+
+export default Projects

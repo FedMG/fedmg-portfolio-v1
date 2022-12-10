@@ -1,4 +1,6 @@
-export const Shape = ({ data: { styles, svg, title, path } }) => {
+import { memo } from "react"
+
+export const Shape = memo(({ data: { styles, svg, title, path } }) => {
   return (
     <div className={styles?.div}>
       <svg
@@ -23,4 +25,4 @@ export const Shape = ({ data: { styles, svg, title, path } }) => {
       </svg>
     </div>
   )
-}
+})

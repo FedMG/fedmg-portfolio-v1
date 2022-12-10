@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, lazy } from 'react'
 import { Loader } from '@/components/Loader'
-import { Header } from '@/routes/structure/Header.jsx'
-import { Main } from '@/routes/structure/Main.jsx'
+
+const Header = lazy(() => import('@/routes/structure/Header'));
+const Main = lazy(() => import('@/routes/structure/Main'));
+const Footer = lazy(() => import('@/routes/structure/Footer'))
+
 
 function App () {
   const [isLoading, setLoading] = useState(true)
@@ -16,6 +19,7 @@ function App () {
     <div className='App'>
       <Header />
       <Main />
+      <Footer />
     </div>
   )
 }

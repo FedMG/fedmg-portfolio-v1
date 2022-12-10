@@ -2,7 +2,7 @@ import Top from '@/components/header/Top'
 import { List } from '@/components/header/List'
 import { header } from '@/routes/refs/list'
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <header className='header'>
@@ -17,3 +17,5 @@ export const Header = () => {
     </>
   )
 }
+
+export default Header

@@ -3,7 +3,7 @@ import { MailTo } from '../components/contact/MailTo.jsx'
 import { Shape } from '../components/Shape.jsx'
 import { triangle } from './refs/shapes.js'
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <div id='Contact' className='section'>
       <div className='section-content'>
@@ -20,3 +20,5 @@ export const Contact = () => {
     </div>
   )
 }
+
+export default Contact
