@@ -1,11 +1,11 @@
-import { Typography } from '../items/Typography.jsx'
-import { Slider } from '../items/Slider.jsx'
-import { CreateProject } from '../iterators/CreateProject.jsx'
-import { Shape } from '../iterators/Shape.jsx'
-import { projectData } from '../refs/projects.js'
-import { triangle } from '../refs/shapes.js'
+import { Typography } from '@/components/Typography'
+import { Slider } from '@/components/projects/Slider'
+import { BoardProjects } from '@/components/projects/BoardProjects'
+import { Shape } from '@/components/Shape'
+import { projects } from './refs/projects.js'
+import { triangle } from './refs/shapes.js'
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <div id='Projects' className='section'>
       <Shape data={triangle.downside} />
@@ -13,9 +13,9 @@ export const Projects = () => {
         <Typography as='h2' style='subtitle-section'>
           My<Typography style='span-subtitle'> projects</Typography>
         </Typography>
-        <div className='project-slider-bk'>
+        <div className='project-slider-bk flex-center'>
           <Slider>
-            <CreateProject data={projectData} />
+            <BoardProjects data={projects} />
           </Slider>
         </div>
       </div>
@@ -23,3 +23,5 @@ export const Projects = () => {
     </div>
   )
 }
+
+export default Projects

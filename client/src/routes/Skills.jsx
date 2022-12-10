@@ -1,19 +1,21 @@
-import { Typography } from "../items/Typography.jsx";
-import { SkillBoard } from "../iterators/SkillBoard.jsx";
-import { Shape } from "../iterators/Shape.jsx";
-import { triangle } from "../refs/shapes.js";
-import { skills } from "../refs/skills.js";
+import { Typography } from '@/components/Typography'
+import { SkillBoard } from '@/components/skills/SkillBoard'
+import { Shape } from '@/components/Shape'
+import { triangle } from './refs/shapes.js'
+import { skills } from './refs/skills.js'
 
-export const Skills = () => {
+const Skills = () => {
   return (
-    <div id="Skills" className="section">
+    <div id='Skills' className='section'>
       <Shape data={triangle.skillsTopEmpty} />
-      <div className="section-content">
-        <Typography as="h2" style="subtitle-section">
-          My<Typography style="span-subtitle"> skills</Typography>
+      <div className='section-content'>
+        <Typography as='h2' style='subtitle-section'>
+          My<Typography style='span-subtitle'> skills</Typography>
         </Typography>
         <SkillBoard data={skills} />
       </div>
     </div>
-  );
-};
+  )
+}
+
+export default Skills

@@ -1,27 +1,26 @@
 .about-board-container {
-  display: grid;
-  place-content: center;
   padding-top: var(--sections-bk-pad-top);
 }
 
 .about-board {
-  padding: 0 2em;
-  perspective: 1000px;
+  margin: 0 2em;
+  perspective: 1100px;
 }
 
-.about-card {
+.about-card {  
   position: relative;
-  max-width: var(--ab-card-width);
-  background: var(--ab-card-bg-gradient);
+  max-width:40em;
+  padding: 1.8em;
+  background: var(--primary-card-bg-color);
+  /* background-image: linear-gradient(160deg, var(--primary-bg-color-hov) 0%, var(--secondary-bg-color-act) 50%); */
   box-shadow: var(--ab-card-shadow);
-  border: var(--ab-card-bd);
-  padding: var(--ab-card-pad);
   border-radius: var(--pjt-card-bd-rad);
 }
 
 .about-text {
-  color: var(--ab-text-color);
+  color: var(--primary-color);
   font-size: var(--ab-text-fz);
+  font-family: var(--secondary-ff);
 }
 
 .background-effect {
@@ -29,8 +28,7 @@
   filter: blur(20px);
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  left: 0;
 }
 
 @media (max-width: 767px) {

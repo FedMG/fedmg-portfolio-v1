@@ -1,25 +1,18 @@
 .skill-cards-bk {
-  display: grid;
-  place-content: center;
   padding: var(--sections-bk-pad-top) 1em 0 1em;
 }
 
 .skill-cards {
-  display: inherit;
+  --skill-cards-gap: 0.6em;
   grid-template-columns: repeat(6, minmax(30px, 130px));
   gap: var(--skill-cards-gap);
-
-  width: 100%;
-  height: 100%;
 }
 
 .card {
   perspective: 150rem;
   position: relative;
-
   max-height: 7.4em;
   max-width: 7.4em;
-
   box-shadow: none;
   background: none;
 }
@@ -30,7 +23,7 @@
   backface-visibility: hidden;
   height: 100px;
   width: 100%;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .card-side.back {
@@ -38,39 +31,24 @@
   top: 0;
   left: 0;
   transform: rotateY(-180deg);
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+  background-image: linear-gradient(160deg, var(--secondary-bg-color-act) 0%, var(--primary-bg-color-hov) 100%);
+  background-color: var(--secondary-bg-color);
 }
 
 .card-side.front {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, 
-  #0093e9 0%, 
-  #80d0c7 100%);
+  background-image: linear-gradient(160deg, var(--primary-bg-color-hov) 0%, var(--secondary-bg-color-act) 100%);
+  background-color: var(--secondary-bg-color);
 }
-
 
 .card-content {
-  display: grid;
-  place-content: center;
   height: 100%;
+  text-align: center;
 }
 
-.card-svg {
-  max-width: 1.7em;
-  max-height: 1.7em;
-  width: 100%;
-  height: 100%;
+.card-span {
+  font-size: clamp(0.8em, 2vw, 1.2em);
 }
 
-.card-path {
-  fill: #fff;
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .skill-cards {

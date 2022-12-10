@@ -1,43 +1,28 @@
-.Top {
-  display: flex;
-  justify-content: space-between;
+@import './logo.css';
+
+.top {
   background-color: var(--top-bg-color);
+  padding: 0.2em;
 }
 
-.Top__anchor {
+.top__anchor {
   text-decoration: none;
-}
-
-.anchor__title-logo {
-  color: var(--top-title-color);
-  display: inline-block;
-}
-
-.title__span-logo {
-  color: var(--top-span-color);
-}
-
-.Top__side-items,
-.Top__side-items {
-  display: inline-block;
-  background-color: var(--top-bg-side-items);
-  height: 5px;
-  width: 10px;
+  gap: 0.5em;
 }
 
 /* status */
-.Top__anchor:link,
-.Top__anchor:visited {
-  color: var(--top-link-visited-color);
+.top__anchor:link,
+.top__anchor:visited {
+  color: var(--primary-color);
 }
 
-.Top__anchor:focus,
-.Top__anchor:hover {
-  color: var(--top-focus-hover-color);
+.top__anchor:focus,
+.top__anchor:hover {
+  color: var(--secondary-color);
   outline: none;
 }
 
-.Top__anchor:active {
-  color: var(--top-activate-color);
+.top__anchor:active {
+  color: var(--primary-color);
   outline: none;
 }

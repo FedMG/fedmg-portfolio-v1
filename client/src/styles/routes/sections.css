@@ -18,11 +18,12 @@
   /* padding temporal */
   padding-top: 0.5em;
   text-align: center;
-  color: var(--subtitle-section);
+  color: var(--primary-color);
+  font-family: var(--primary-ff);
 }
 
 .span-subtitle {
-  color: var(--span-subtitle);
+  color: var(--secondary-color);
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -33,6 +34,6 @@
 
 @media (max-width: 767px) {
   .section-content {
-    padding: calc(var(--sec-content-pad) - 2em) 0;
+    padding: calc(var(--sec-content-pad) - 1.9em) 0;
   }
 }

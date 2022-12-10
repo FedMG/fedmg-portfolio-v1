@@ -28,7 +28,7 @@
 .skills-triangle-top .shape-fill,
 .skills-top-empty .shape-fill,
 .project-bottom .shape-fill {
-  fill: #ffffff;
+  fill: var(--third-bg-color);
 }
 
 .contact-triangle,
