@@ -3,7 +3,8 @@
 .flex-center,
 .flex-btw,
 .flex-column,
-.flex-evenly {
+.flex-evenly,
+.flex-wrap {
   display: flex;
 }
 
@@ -57,5 +58,26 @@
 /* inline-block */
 .inline-block {
   display: inline-block;
+}
+
+
+/* anchors */
+.anchor {
+  outline: none;
+  text-decoration: none;
+}
+
+.anchor:link,
+.anchor:visited {
+  color: var(--primary-bg-color);
+}
+
+.anchor:focus,
+.anchor:hover {
+  color: var(--primary-bg-color-hov);
+}
+
+.anchor:active {
+  color: var(--secondary-bg-color-act);
 }
 
