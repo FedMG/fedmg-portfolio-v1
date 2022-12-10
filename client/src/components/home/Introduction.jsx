@@ -1,10 +1,10 @@
 import { Typography } from "@/components/Typography";
-import { Typewriter, TypewriterSplit } from "./Typewriter";
+import { Typewriter } from "./Typewriter";
 
 export const Introduction = () => {
   return (
     <div className="span-container">
-      <div className="span-container__subcontainer">
+      <div className="flex-column">
         <Typography style='first-phrase' as='span'>
           Hi, I am{' '}
           <Typography style='first-phrase__span' as='span'>

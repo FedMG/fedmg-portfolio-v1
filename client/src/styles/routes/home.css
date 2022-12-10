@@ -40,11 +40,6 @@
   padding-bottom: var(--span-subcontainer-pad-lf-bt);
 }
 
-.span-container__subcontainer {
-  display: flex;
-  flex-direction: column;
-}
-
 .first-phrase,
 .second-phrase,
 .third-phrase {
