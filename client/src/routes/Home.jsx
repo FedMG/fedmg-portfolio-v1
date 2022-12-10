@@ -1,10 +1,14 @@
+import { lazy } from 'react'
+
 import { Introduction } from '@/components/home/Introduction.jsx'
 import { LinkSection } from '@/components/home/LinkSection.jsx'
 import { Shape } from '@/components/Shape.jsx'
 import { waves } from './refs/shapes.js'
-import intro from '@/assets/programming.gif'
 
-export const Home = () => {
+const Image = lazy(() => import('@/components/home/Image'))
+
+
+const Home = () => {
   return (
     <div id='Home' className='section'>
       <div className='home__elements-wrapper flex-evenly'>
@@ -12,11 +16,11 @@ export const Home = () => {
           <Introduction />
           <LinkSection />
         </div>
-        <div className='intro-gif-container'>
-          <img src={intro} className='intro-gif container' draggable='false' />
-        </div>
+        <Image />
       </div>
       <Shape data={waves.upside} />
     </div>
   )
 }
+
+export default Home
