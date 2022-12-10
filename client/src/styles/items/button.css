@@ -15,8 +15,7 @@
 /* individual styles */
 .contact-btn {
   font-size: 0.9em;
-  color: var(--secondary-color);
-  background-image: linear-gradient(160deg, #f2f2f2 0%, #d3d3d3 100%);
+  border: 1px solid #f2f2f2;
 }
 
 
@@ -110,14 +109,14 @@
 }
 
 
-.contact-btn:hover {
+/* .contact-btn:hover {
   color: var(--secondary-color);
   background-image: linear-gradient(160deg, #d3d3d3 0%, #b2b2b2 100%);  
 }
 
 .contact-btn:active {
   background-image: linear-gradient(160deg, #fff 0%, #e9e9e9 100%);  
-}
+} */
 
 /* queries */
 @media (min-width: 767.1px) and (max-width: 1023px) {
