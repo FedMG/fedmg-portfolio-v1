@@ -13,9 +13,7 @@ export const Introduction = () => {
         </Typography>
         <Typography style='second-phrase' as='span'>
           A{' '}
-          <Typography style='second-phrase__span' as='span'>
-            Fullstack Developer
-          </Typography>
+          <Typewriter msg={['Software Engineer', 'Fullstack Developer', 'Data Scientist']} timeout={1200} style='second-phrase__span pipe-effect'/>
         </Typography>
         <Typography style="third-phrase" as="span">
           And a passionate of the{" "}
