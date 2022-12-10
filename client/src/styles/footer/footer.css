@@ -1,0 +1,13 @@
+.Footer {
+  background-color: #f2f2f2;
+  padding: 0.5em;
+}
+.footer-span {
+  color: var(--primary-bg-color);
+}
+
+@media (max-width: 767px) {
+  .footer-elements-bk {
+    flex-wrap: wrap;
+  }
+}
