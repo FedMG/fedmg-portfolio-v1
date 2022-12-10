@@ -1,14 +1,14 @@
-const Top = ({ title, span }) => (
-  <div className='top flex-btw'>
-    <div className='top__side-items inline-block' />
-    <h1 className='inline-block'>
-      <a href='#Home' className='top__anchor'>
+import { Logo } from "./Logo";
+
+const Top = ({ title }) => (
+  <div className="top flex-center">
+    <h1 className="inline-block">
+      <a href="#Home" className="top__anchor flex-center">
         {title}
-        <span className='title__span-logo'>{span}</span>
+        <Logo />
       </a>
     </h1>
-    <div className='top__side-items inline-block' />
   </div>
-)
+);
 
-export default Top
+export default Top;

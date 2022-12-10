@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       <header className='header'>
-        <Top title='Fed' span='MG' />
+        <Top title='DiDeploy' />
       </header>
       <nav className='navbar flex-center'>
         <List
