@@ -23,13 +23,13 @@
   background: none;
   border: none;
   outline: none;
-  width: 3.2em;
+  width: 3.5em;
   height: 100%;
   max-height: 3.7em;
   pointer-events: all;
 }
 .slider-icon-button {
-  --sld-icon-btn-width: 3.7em;
+  --sld-icon-btn-width: 3.5em;
   
   width: var(--sld-icon-btn-width);
   height: var(--sld-icon-btn-width);
