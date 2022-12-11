@@ -34,11 +34,15 @@ export const Board = () => {
             every day.
             <br />
             <br />
-            I am a self-taught Software Engineering student.
+            I am a self-taught Software Engineering and Data science student.
             <br />
             <br />I love to get along with people where the passion for
             technological progress, curiosity and learning allows us to grow and
             improve.
+            <br />
+            <br />
+            Some of my hobbies are studying a new language, like Japanese,
+            and spending time with my family.
           </Typography>
           <div className='background-effect container' />
         </div>
