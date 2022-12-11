@@ -14,6 +14,7 @@ const Skills = () => {
         </Typography>
         <SkillBoard data={skills} />
       </div>
+      <Shape data={triangle.contact} />
     </div>
   )
 }
