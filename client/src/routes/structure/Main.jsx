@@ -5,7 +5,8 @@ const Home = lazy(() => import('@/routes/Home'))
 const About = lazy(() => import('@/routes/About'))
 const Projects = lazy(() => import('@/routes/Projects'))
 const Skills = lazy(() => import('@/routes/Skills'))
-const Contact = lazy(() => import('@/routes/Contact'))
+
+// const Contact = lazy(() => import('@/routes/Contact'))
 
 const Main = () => {
   return (
@@ -26,9 +27,9 @@ const Main = () => {
         <Skills />
       </Suspense>
 
-      <Suspense fallback={<Loader />}>
+      {/* <Suspense fallback={<Loader />}>
         <Contact />
-      </Suspense>
+      </Suspense> */}
     </main>
   )
 }

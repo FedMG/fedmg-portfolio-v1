@@ -1,9 +1,10 @@
 export const Mail = ({ email, subject = '', body = '', children }) => {
-  let params = subject || body ? '?' : ''
-
   if (subject && body) {
-    if (subject) params += `subject=${encodeURIComponent(subject)}`
-    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`
+    let params = '?'
+
+    params += `subject=${encodeURIComponent(subject)}`
+    params += `&body=${encodeURIComponent(body)}`
+
     return <a href={`mailto:${email}${params}`}>{children}</a>
   }
 
