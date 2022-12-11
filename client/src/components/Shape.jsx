@@ -1,4 +1,4 @@
-import { memo } from "react"
+import { memo } from 'react'
 
 export const Shape = memo(({ data: { styles, svg, title, path } }) => {
   return (

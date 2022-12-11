@@ -7,10 +7,9 @@ import { waves } from './refs/shapes.js'
 
 const Image = lazy(() => import('@/components/home/Image'))
 
-
 const Home = () => {
   return (
-    <div id='Home' className='section'>
+    <div className='section'>
       <div className='home__elements-wrapper flex-evenly'>
         <div className='intro-btn-elements'>
           <Introduction />
