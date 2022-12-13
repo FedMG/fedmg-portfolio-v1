@@ -47,7 +47,6 @@
   background: var(--primary-item-pjt-bg-color-hov);
 }
 
-
 @media (max-width: 767px) {
   .project-slider-bk {
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);

@@ -6,6 +6,7 @@ import { classes } from './classes'
 
 export const Slider = ({ children, speed = '500' }) => {
   const slider = useRef(null)
+  const empty = [...classes, 'empty-slider']
 
   const serveObject = () => {
     return {
@@ -17,8 +18,8 @@ export const Slider = ({ children, speed = '500' }) => {
 
   const conditionHandler = (setEvent) => {
     const { sliderElem } = serveObject()
-    if (sliderElem.length > 0) {
-      setEvent()
+    if (sliderElem.length > 1) {
+      return setEvent()
     }
   }
 
@@ -36,7 +37,8 @@ export const Slider = ({ children, speed = '500' }) => {
         onclick={previous}
         src='https://img.icons8.com/material/96/000000/chevron-left--v1.png'
         alt='backward'
-        style={classes}
+        style={empty}
+        // style = { classes }
       />
 
       <div className='slider-element-bk'>
@@ -49,7 +51,9 @@ export const Slider = ({ children, speed = '500' }) => {
         onclick={next}
         src='https://img.icons8.com/material/96/000000/chevron-right--v1.png'
         alt='forward'
-        style={classes}
+        style={empty}
+        // style = { classes }
+
       />
     </div>
   )

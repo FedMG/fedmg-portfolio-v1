@@ -44,6 +44,15 @@
   filter: var(--primary-arrow-btn-color-act);
 }
 
+/* only use when board slider is one */
+.empty-slider,
+.empty-slider:hover,
+.empty-slider:active {
+  filter: var(--secondary-arrow-btn-color-empty);
+}
+
+
+
 @media (max-width: 450px) {
   .slider-icon-button,
   .slider-buttons {
