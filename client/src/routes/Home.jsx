@@ -5,7 +5,7 @@ import { LinkSection } from '@/components/home/LinkSection.jsx'
 import { Shape } from '@/components/Shape.jsx'
 import { waves } from './refs/shapes.js'
 
-const Image = lazy(() => import('@/components/home/Image'))
+const Video = lazy(() => import('@/components/home/Video'))
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
           <Introduction />
           <LinkSection />
         </div>
-        <Image />
+        <Video />
       </div>
       <Shape data={waves.upside} />
     </div>
