@@ -1,5 +1,9 @@
 import passwordGenerator from '@/assets/password-generator.png'
+import passwordGeneratorMedium from '@/assets/password-generator-50-smaller.png'
+import passwordGeneratorSmaller from '@/assets/password-generator-75-smaller.png'
 import romanNumbers from '@/assets/roman-numbers.png'
+import romanNumberMedium from '@/assets/roman-numbers-50-smaller.png'
+import romanNumberSmaller from '@/assets/roman-numbers-75-smaller.png'
 
 import { addId, createSVGObject } from '@/functions/tools'
 import { githubPath } from './buttons'
@@ -43,6 +47,10 @@ const getLinkButtons = (githubRepo, webLink) => {
   }
 }
 
+const getSourceSize = (original, medium, smaller) => {
+  return `${smaller} 500w, ${medium} 1000w, ${original} 1500w`
+}
+
 export const projects = [
   {
     id: 1,
@@ -50,6 +58,7 @@ export const projects = [
       {
         caption: 'Roman numbers',
         source: romanNumbers,
+        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons(
           'FedMG/roman-numbers',
           'https://roman-numbers-xi.vercel.app/'
@@ -58,46 +67,55 @@ export const projects = [
       {
         caption: 'Password Generator',
         source: passwordGenerator,
+        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
         ...getLinkButtons(
           'midudev/password-generator/tree/main/src/components/fedmg',
           'https://hacktoberfest-2022.vercel.app/entry/fedmg'
         )
       },
       {
-        caption: 'MERN ecommerce',
+        caption: 'Soon',
         source: romanNumbers,
+        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons('FedMG', ' ')
       },
       {
-        caption: 'Landing page',
+        caption: 'Soon',
         source: passwordGenerator,
+        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
         ...getLinkButtons('FedMG', ' ')
       }
     ])
-  },
+  }
+] /*
   {
     id: 2,
     board: addId([
       {
         caption: 'Weather App',
         source: romanNumbers,
+        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Palindrome',
         source: passwordGenerator,
+        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Cypher App',
         source: romanNumbers,
+        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons('FedMG', ' ')
       },
       {
         caption: 'Tribute Page',
         source: passwordGenerator,
+        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
         ...getLinkButtons('FedMG', ' ')
       }
     ])
   }
 ]
+*/

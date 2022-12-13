@@ -15,11 +15,13 @@
   grid-template-rows: 1fr 1fr;
   grid-gap: var(--pjt-board-gap-pad);
   padding: 0 calc(var(--pjt-board-gap-pad) / 2);
-  min-width: 100%;
-  max-width: 24em;
-  transition: 0.3s ease all;
-}
 
+  transition: 0.3s ease all;
+  min-width: 100%;
+  max-width: 48em;
+  /* with another board project */
+  /* max-width: 24em; */
+}
 .project-cards {
   background: var(--primary-item-pjt-bg-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

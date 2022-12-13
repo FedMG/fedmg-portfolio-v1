@@ -3,10 +3,10 @@ import { DataContext } from './BoardProjects.jsx'
 
 export const Figure = ({ idx }) => {
   const board = useContext(DataContext)
-  const { caption, source } = board[idx]
+  const { caption, srcSet, source } = board[idx]
   return (
     <figure className='project-figure'>
-      <img src={source} alt={caption + ' image'} className='project-image' />
+      <img src={source} alt={caption + ' image'} className='project-image' srcSet={srcSet} sizes='(max-width: 767px) 500px, (min-width: 768px) and (max-width: 1023px) 1000px, 1500px' />
       <figcaption className='project-figcaption'>{caption}</figcaption>
     </figure>
   )

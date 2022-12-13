@@ -12,7 +12,7 @@
   --third-color: #ededed;
 
   /* body background */
-  --primary-bg-color: #0c0b0b;
+  --primary-bg-color: #0c0b0d;
   --secondary-bg-color: #5135aa;
   --third-bg-color: #f2f2f2;
 
@@ -27,6 +27,7 @@
   --primary-arrow-btn-color: invert(24%) sepia(19%) saturate(7476%) hue-rotate(241deg) brightness(85%) contrast(95%);
   --primary-arrow-btn-color-hov: invert(37%) sepia(63%) saturate(5931%) hue-rotate(243deg) brightness(99%) contrast(93%);
   --primary-arrow-btn-color-act: invert(18%) sepia(35%) saturate(3656%) hue-rotate(238deg) brightness(96%) contrast(97%);
+  --secondary-arrow-btn-color-empty: invert(29%) sepia(6%) saturate(325%) hue-rotate(227deg) brightness(89%) contrast(85%);
 
   /* states colors */
   --primary-color-hov: #d1d1d1;
