@@ -1,9 +1,10 @@
-import { Typography } from '@/components/Typography'
-import { Slider } from '@/components/projects/Slider'
-import { BoardProjects } from '@/components/projects/BoardProjects'
-import { Shape } from '@/components/Shape'
-import { projects } from './refs/projects.js'
-import { triangle } from './refs/shapes.js'
+import { Typography } from '@/components/utils/Typography'
+import { Slider } from '@/components/Slider'
+import { BoardProjects } from '@/components/BoardProjects'
+import { Shape } from '@/components/utils/Shape'
+
+import { projects } from './refs/projects'
+import { triangle } from './refs/shapes'
 
 const Projects = () => {
   return (

@@ -2,7 +2,6 @@
 @import "./projects.css";
 @import "./about.css";
 @import "./skills.css";
-/* @import "./contact.css"; */
 
 .section {
   height: 100%;
@@ -15,7 +14,7 @@
 }
 
 .subtitle-section {
-  /* padding temporal */
+  /* temporal padding */
   padding-top: 0.5em;
   text-align: center;
   color: var(--primary-color);

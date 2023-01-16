@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { DataContext } from './BoardProjects'
-import { Buttons } from '@/components/home/Buttons'
+import { Buttons } from './Buttons'
 
 export const Links = ({ idx }) => {
   const board = useContext(DataContext)

@@ -1,8 +1,13 @@
 import { useRef, useCallback } from 'react'
 
-import { setNext, setPrevious } from '@/functions/move.js'
-import { Button } from '@/components/Button.jsx'
-import { classes } from './classes'
+import { setNext, setPrevious } from '@/functions/move'
+import { Button } from './utils/Button'
+
+export const classes = [
+  'slider-buttons-bk',
+  'slider-buttons',
+  'slider-icon-button'
+]
 
 export const Slider = ({ children, speed = '500' }) => {
   const slider = useRef(null)

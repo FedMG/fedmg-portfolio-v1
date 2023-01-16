@@ -1,9 +1,9 @@
-import passwordGenerator from '@/assets/password-generator.png'
-import passwordGeneratorMedium from '@/assets/password-generator-50-smaller.png'
-import passwordGeneratorSmaller from '@/assets/password-generator-75-smaller.png'
-import romanNumbers from '@/assets/roman-numbers.png'
-import romanNumberMedium from '@/assets/roman-numbers-50-smaller.png'
-import romanNumberSmaller from '@/assets/roman-numbers-75-smaller.png'
+import passwordGenerator from '/password-generator.png'
+import passwordGeneratorMedium from '/password-generator-50-smaller.png'
+import passwordGeneratorSmaller from '/password-generator-75-smaller.png'
+import romanNumbers from '/roman-numbers.png'
+import romanNumberMedium from '/roman-numbers-50-smaller.png'
+import romanNumberSmaller from '/roman-numbers-75-smaller.png'
 
 import { addId, createSVGObject } from '@/functions/tools'
 import { githubPath } from './buttons'
@@ -74,43 +74,13 @@ export const projects = [
         )
       },
       {
-        caption: 'Soon',
+        caption: 'STORE API',
         source: romanNumbers,
         srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons('FedMG', ' ')
       },
       {
-        caption: 'Soon',
-        source: passwordGenerator,
-        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
-        ...getLinkButtons('FedMG', ' ')
-      }
-    ])
-  }
-] /*
-  {
-    id: 2,
-    board: addId([
-      {
-        caption: 'Weather App',
-        source: romanNumbers,
-        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
-        ...getLinkButtons('FedMG', ' ')
-      },
-      {
-        caption: 'Palindrome',
-        source: passwordGenerator,
-        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
-        ...getLinkButtons('FedMG', ' ')
-      },
-      {
-        caption: 'Cypher App',
-        source: romanNumbers,
-        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
-        ...getLinkButtons('FedMG', ' ')
-      },
-      {
-        caption: 'Tribute Page',
+        caption: 'E-commerce',
         source: passwordGenerator,
         srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
         ...getLinkButtons('FedMG', ' ')
@@ -118,4 +88,3 @@ export const projects = [
     ])
   }
 ]
-*/

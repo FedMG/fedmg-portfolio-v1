@@ -44,7 +44,7 @@
 .second-phrase,
 .third-phrase {
   display: inline-block;
-  font-size: calc(var(--subtitle-section-fz) + 0.3em);
+  font-size: calc(clamp(var(--subtitle-section-fz)) + 0.3em);
   font-family: var(--primary-ff);
   color: var(--primary-color);
 }
@@ -57,7 +57,7 @@
   .first-phrase,
   .second-phrase,
   .third-phrase {
-    font-size: var(--subtitle-section-fz);
+    font-size: clamp(var(--subtitle-section-fz));
   }
 }
 

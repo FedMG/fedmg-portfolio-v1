@@ -1,7 +1,8 @@
 import { useContext } from 'react'
-import { DataContext } from './BoardProjects.jsx'
-import { Figure } from './Figure.jsx'
-import { Links } from './Links.jsx'
+import { DataContext } from './BoardProjects'
+
+import { Figure } from './Figure'
+import { Links } from './Links'
 
 export const ProjectCard = () => {
   const board = useContext(DataContext)
