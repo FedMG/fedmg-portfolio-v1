@@ -74,7 +74,7 @@ export const projects = [
         )
       },
       {
-        caption: 'STORE API',
+        caption: 'Store API',
         source: romanNumbers,
         srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
         ...getLinkButtons('FedMG', ' ')

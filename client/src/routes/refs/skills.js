@@ -13,7 +13,7 @@ export const repeated = {
 }
 
 export const skills = addId([
-    {
+  {
     title: 'HTML5',
     path: [
       {
@@ -49,7 +49,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-    {
+  {
     title: 'Typescript',
     path: [
       {
@@ -76,7 +76,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-      {
+  {
     title: 'Styled components',
     path: [
       {
@@ -94,7 +94,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-    {
+  {
     title: 'Express',
     path: [
       {
@@ -112,7 +112,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-    {
+  {
     title: 'PostgreSQL',
     path: [
       {
@@ -138,7 +138,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-    {
+  {
     title: 'Postman',
     path: [
       {
@@ -156,7 +156,7 @@ export const skills = addId([
     ],
     ...repeated
   },
-    {
+  {
     title: 'Python',
     path: [
       {
@@ -164,5 +164,5 @@ export const skills = addId([
       }
     ],
     ...repeated
-  },
+  }
 ])
