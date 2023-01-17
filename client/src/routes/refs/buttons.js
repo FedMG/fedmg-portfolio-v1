@@ -22,6 +22,6 @@ export const data = addId([
     name: 'Linkedin',
     link: 'https://www.linkedin.com/in/federico-gonzalia/',
     ...createSVGObject('Linkedin', linkedinPath, 'svg-dimensions', 'svg-styles')
-  },
-  { name: 'Take a look', link: '' }
+  }
+  // { name: 'Take a look', link: '' }
 ])
