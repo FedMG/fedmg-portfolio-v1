@@ -1,5 +1,5 @@
 import { useEffect, useState, lazy } from 'react'
-import { Loader } from '@/components/Loader'
+import { Loader } from '@/components/utils/Loader'
 
 const Header = lazy(() => import('@/routes/structure/Header'))
 const Main = lazy(() => import('@/routes/structure/Main'))

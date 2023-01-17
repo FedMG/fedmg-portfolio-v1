@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { ProjectCard } from './ProjectCard.jsx'
+import { ProjectCard } from './ProjectCard'
 
 export const DataContext = createContext()
 

@@ -1,4 +1,4 @@
-import { Shape } from '@/components/Shape'
+import { Shape } from './utils/Shape'
 import { SkillCard } from './SkillCard'
 
 export const SkillBoard = ({ data }) => {

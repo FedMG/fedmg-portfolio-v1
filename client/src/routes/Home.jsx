@@ -1,11 +1,10 @@
-import { lazy } from 'react'
+import { Introduction } from '@/components/Introduction'
+import { Shape } from '@/components/utils/Shape'
+import { waves } from './refs/shapes'
+import Video from '@/components/Video'
 
-import { Introduction } from '@/components/home/Introduction.jsx'
-import { LinkSection } from '@/components/home/LinkSection.jsx'
-import { Shape } from '@/components/Shape.jsx'
-import { waves } from './refs/shapes.js'
-
-const Video = lazy(() => import('@/components/home/Video'))
+import { Buttons } from '@/components/Buttons'
+import { data } from './refs/buttons'
 
 const Home = () => {
   return (
@@ -13,7 +12,17 @@ const Home = () => {
       <div className='home__elements-wrapper flex-evenly'>
         <div className='intro-btn-elements'>
           <Introduction />
-          <LinkSection />
+          <div className='container'>
+            <div className='home-button-container flex'>
+              <Buttons
+                data={data}
+                style={[
+                  'button-visibility anchors',
+                  'button home-button-dimensions'
+                ]}
+              />
+            </div>
+          </div>{' '}
         </div>
         <Video />
       </div>

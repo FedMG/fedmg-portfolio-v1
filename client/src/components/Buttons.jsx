@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 
-import { Button } from '@/components/Button'
-import { Shape } from '@/components/Shape'
+import { Button } from './utils/Button'
+import { Shape } from './utils/Shape'
 
 export const Buttons = ({ data, style }) => {
   return (

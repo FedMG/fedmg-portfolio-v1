@@ -1,5 +1,5 @@
-import { Card } from './Card.jsx'
-import { useCardEffectRef } from '../../hooks/useCardEffect.jsx'
+import { useCardEffectRef } from '@/hooks/useCardEffect'
+import { Card } from './Card'
 
 export const SkillCard = ({ children }) => {
   const cardRef = useCardEffectRef()

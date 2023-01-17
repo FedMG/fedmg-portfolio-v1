@@ -17,7 +17,7 @@
   --third-bg-color: #f2f2f2;
 
   /* items background */
-  --primary-card-bg-color: rgba(81,53,170,0.5);
+  --primary-card-bg-color: 81, 53, 170, 0.5;
 
 
   /* states bg item */
@@ -39,8 +39,7 @@
 
 
   /* fonts */
-  --first-title-fz: clamp(2.2em, 10vw, 4.5em);
-  --subtitle-section-fz: clamp(1.1em, 5vw, 1.6em);
+  --subtitle-section-fz: 1.1em, 5vw, 1.6em;
 
   /* button */
   --button-bd-radius: 0.3em;
@@ -51,7 +50,6 @@
 
   /* top */
   --top-bg-color: #0c0b0b;
-  
   
   /* navbar */
   --nav-list-fz-break: 0.85em;
@@ -68,12 +66,10 @@
   --sections-bk-pad-top: 3.7em;
 
   /* about */
-  --ab-text-fz: clamp(1rem, 8vw - 2rem, 1.1rem);
-  --ab-card-bd: 2px solid rgba(255, 255, 255, 0.25);
+  --ab-text-fz: 1rem, 8vw - 2rem, 1.1rem;
   --ab-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   color-scheme: light dark;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

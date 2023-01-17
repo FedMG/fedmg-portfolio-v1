@@ -1,7 +1,7 @@
-import { Typography } from '../components/Typography.jsx'
-import { Board } from '../components/about/Board.jsx'
-import { Shape } from '../components/Shape.jsx'
-import { triangle, waves } from './refs/shapes.js'
+import { Typography } from '@/components/utils/Typography'
+import { Board } from '@/components/Board'
+import { Shape } from '@/components/utils/Shape'
+import { triangle, waves } from './refs/shapes'
 
 const About = () => {
   return (

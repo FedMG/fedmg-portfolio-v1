@@ -54,9 +54,13 @@
   .project-board {
     grid-gap: calc(var(--pjt-board-gap-pad) - 0.25em);
     padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.25em);
+    overflow: hidden;
   }
+  
   .project-figcaption {
     font-size: calc(var(--pjt-figcaption-fz) - 0.13em);
+      overflow: hidden;
+      text-overflow: '...';
+     white-space: nowrap;
   }
-
 }
