@@ -1,0 +1,10 @@
+{
+  "name": "dideploy-portfolio",
+  "short_name": "dideploy",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "icons": [
+  ],
+  "theme_color": "#5135aa",
+  "background_color": "#0c0b0d"
+}
