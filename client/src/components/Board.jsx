@@ -34,7 +34,7 @@ export const Board = () => {
             &#127793; Some of my hobbies are studying a new language like
             Japanese, and spending time with my family.
             <span className='hr' />
-            <strong>Grow mindset</strong>
+            <strong>Growth mindset</strong>
             <br />
             I like to think big, how to make something better, how to go further.
             <br />

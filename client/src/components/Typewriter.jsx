@@ -6,7 +6,7 @@ export const Typewriter = ({ msg, delay, timeout, style }) => {
 
   return (
     <>
-      <span className={style}>{text}</span>
+      <span translate='no' className={style}>{text}</span>
     </>
   )
 }
