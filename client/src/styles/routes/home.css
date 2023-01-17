@@ -84,3 +84,7 @@
     font-size: calc(clamp(1.1em, 5vw, 1.4em) - 0.12em);
   }
 }
+
+.second-phrase {
+  display: inline;
+}

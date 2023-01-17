@@ -2,9 +2,7 @@
   /* fonts family */
   --primary-ff: "Rubik", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
     oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --secondary-ff: "Noto Sans", -apple-system, blinkmacsystemfont, "Segoe UI",
-    roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+  --secondary-ff: "Noto Sans", var(--primary-ff);
 
   /* font colors */
   --primary-color: #f2f2f2;
