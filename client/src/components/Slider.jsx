@@ -1,6 +1,5 @@
-import { useRef, useCallback } from 'react'
+import { useSliderEffect } from '@/hooks/useSliderEffect'
 
-import { setNext, setPrevious } from '@/functions/move'
 import { Button } from './utils/Button'
 
 export const classes = [
@@ -10,31 +9,8 @@ export const classes = [
 ]
 
 export const Slider = ({ children, speed = '500' }) => {
-  const slider = useRef(null)
+  const { methods: { previous, next }, ref: slider } = useSliderEffect(speed)
   const empty = [...classes, 'empty-slider']
-
-  const serveObject = () => {
-    return {
-      sliderElem: slider.current.children,
-      containerStyle: slider.current.style,
-      container: slider.current
-    }
-  }
-
-  const conditionHandler = (setEvent) => {
-    const { sliderElem } = serveObject()
-    if (sliderElem.length > 1) {
-      return setEvent()
-    }
-  }
-
-  const next = useCallback(() => {
-    conditionHandler(() => setNext(speed, serveObject))
-  }, [speed])
-
-  const previous = () => {
-    conditionHandler(() => setPrevious(serveObject))
-  }
 
   return (
     <div className='slider-bk'>
@@ -58,7 +34,6 @@ export const Slider = ({ children, speed = '500' }) => {
         alt='forward'
         style={empty}
         // style = { classes }
-
       />
     </div>
   )
