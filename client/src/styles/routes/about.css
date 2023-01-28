@@ -1,7 +1,21 @@
-.hr {
-  display: block;
-  margin: 1.2em 0;
-  border-bottom: 2px solid #ffffff;
+.about-board-side {
+  position: relative;
+  transition: all 1.2s ease;
+  backface-visibility: hidden;
+  width: 100%;
+  color: var(--primary-color);
+}
+
+.about-board-side.board-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+}
+
+.about-board-side.board-front {
+  position: relative;
+  height: 100%;
 }
 
 .about-board-container {
@@ -10,23 +24,16 @@
 
 .about-board {
   margin: 0 2em;
-  perspective: 1100px;
+  perspective: 1000px;
 }
 
-.about-card {  
-  --ab-padding: 1.8em;
+.about-card {
   position: relative;
-  padding: var(--ab-padding);
+  height: 400px;
+  max-height: fit-content;
   background: rgba(var(--primary-card-bg-color));
   box-shadow: var(--ab-card-shadow);
   border-radius: var(--pjt-card-bd-rad);
-}
-
-.about-text {
-  color: var(--primary-color);
-  font-size: clamp(var(--ab-text-fz));
-  font-family: var(--secondary-ff);
-  max-width: 75ch;
 }
 
 .background-effect {
@@ -35,17 +42,68 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+}
+
+.hr {
+  display: block;
+  margin: 1.2em 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+.about-text,
+.svg-about-board {
+  --ab-spacing: 1.8em;
+}
+
+.about-text {
+  position: relative;
+  --ab-spacing: 1.8em;
+  padding: var(--ab-spacing);
+  color: var(--primary-color);
+  font-size: clamp(var(--ab-text-fz));
+  font-family: var(--secondary-ff);
+  max-width: 75ch;
+}
+
+.svg-about-board {
+  margin-top: calc(var(--ab-spacing) - 1.1em);
+  margin-right: var(--ab-spacing);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 90;
+  fill: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.svg-about-board:hover {
+  transform: rotate(4deg);
+  fill: #d1d1d1;
+}
+.svg-about-board:active {
+  transform: translateY(2.3px) rotate(4deg);
+  fill: #ffffff;
 }
 
 @media (max-width: 767px) {
-  .about-card {
-    padding: calc(var(--ab-padding) - 0.9em);
+  .svg-about-board:active {
+    transform: none;
   }
-  
+
+  .svg-about-board {
+    margin-top: calc(var(--ab-spacing) - 1.3em);
+    margin-right: calc(var(--ab-spacing) - 0.9em);
+  }
+  .about-text {
+    padding: calc(var(--ab-spacing) - 0.9em);
+    padding-top: calc(var(--ab-spacing) - 0.4em);
+  }
+
   .about-board-container {
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
   }
-    
+
   .about-board {
     touch-action: none;
   }
