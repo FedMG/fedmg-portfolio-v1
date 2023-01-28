@@ -5,6 +5,7 @@
   color: var(--primary-color);
   border-radius: var(--button-bd-radius);
   border: var(--button-bd-style);
+  transition: transform 0.3s ease;
 }
 
 .button-content {
@@ -100,12 +101,14 @@
   background-image: none;
   background-color: var(--primary-bg-color-hov);
   color: var(--primary-color-hov);
+  transform: translateY(2.1px);
 }
 
-.button:active {
+.button:active {  
   background-color: var(--secondary-bg-color-act);
   color: var(--secondary-color-act);
   border: var(--button-bd-style-act);
+  transform: rotateY(2deg);
 }
 
 
