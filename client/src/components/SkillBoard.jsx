@@ -1,5 +1,21 @@
+import { useCardEffectRef } from '@/hooks/useCardEffect'
 import { Shape } from './utils/Shape'
-import { SkillCard } from './SkillCard'
+import { Card } from './Card'
+
+const SkillCard = ({ children }) => {
+  const cardRef = useCardEffectRef()
+
+  return (
+    <Card ref={cardRef}>
+      {children[0]}
+      <div className='card-side back'>
+        <div className='card-content grid-center'>
+          {children[1]}
+        </div>
+      </div>
+    </Card>
+  )
+}
 
 export const SkillBoard = ({ data }) => {
   return (

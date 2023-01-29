@@ -1,3 +1,3 @@
 # My Portfolio
 
-- This project it's done with **React** and **CSS**.
+- This project was done with **React** and **CSS**.

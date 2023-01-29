@@ -3,8 +3,8 @@
 
 @import "./variables.css";
 @import "./items/loader.css";
-@import "./header/header.css";
-@import "./footer/footer.css";
+@import "./structure/header.css";
+@import "./structure/footer.css";
 @import "./routes/sections.css";
 @import "./shapes/triangle.css";
 @import "./shapes/waves.css";
@@ -15,9 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: var(--primary-ff);
 }
 
 ::selection {

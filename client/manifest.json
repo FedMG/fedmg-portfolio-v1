@@ -1,6 +1,6 @@
 {
-  "name": "dideploy-portfolio",
-  "short_name": "dideploy",
+  "name": "saydeploy-portfolio",
+  "short_name": "saydeploy",
   "start_url": "/index.html",
   "display": "standalone",
   "icons": [
