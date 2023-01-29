@@ -8,7 +8,6 @@ import commingSoon from '/comming-soon.png'
 import commingSoonMedium from '/comming-soon-50.png'
 import commingSoonSmaller from '/comming-soon-75.png'
 
-
 import { addId, createSVGObject } from '@/functions/tools'
 import { githubPath } from './buttons'
 

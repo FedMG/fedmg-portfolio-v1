@@ -12,10 +12,10 @@ export const Introduction = () => {
           </Typography>
         </Typography>
         <div>
-        <Typography style='second-phrase' as='span'>
-          A {' '}
-        </Typography>
-        <Typewriter msg={['Fullstack Developer', 'Software Developer']} timeout={1200} style='second-phrase second-phrase__span pipe-effect' />
+          <Typography style='second-phrase' as='span'>
+            A {' '}
+          </Typography>
+          <Typewriter msg={['Fullstack Developer', 'Software Developer']} timeout={1200} style='second-phrase second-phrase__span pipe-effect' />
         </div>
         <Typography style='third-phrase' as='span'>
           And a passionate of the{' '}
