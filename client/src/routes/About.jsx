@@ -5,7 +5,7 @@ import { triangle, waves } from './refs/shapes'
 
 const About = () => {
   return (
-    <div id='About' className='section'>
+    <div id='about' className='section'>
       <Shape data={waves.downside} />
       <div className='section-content'>
         <Typography as='h2' style='subtitle-section'>

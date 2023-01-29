@@ -8,7 +8,7 @@ import { triangle } from './refs/shapes'
 
 const Projects = () => {
   return (
-    <div id='Projects' className='section'>
+    <div id='projects' className='section'>
       <Shape data={triangle.downside} />
       <div className='section-content'>
         <Typography as='h2' style='subtitle-section'>

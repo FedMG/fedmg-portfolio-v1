@@ -38,3 +38,5 @@ export const createSVGObject = (title, path, svgStyle, pathStyle, fill = true) =
     }
   }
 }
+
+export const setUpperCase = (name) => name[0].toUpperCase() + name.slice(1)

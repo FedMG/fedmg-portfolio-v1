@@ -80,6 +80,7 @@
 }
 
 .navbar {
+  border-bottom: 2.5px solid transparent;
   top: 0;
   position: sticky;
   z-index: 222222;
@@ -96,7 +97,6 @@
 .lists {
   float: left;
 }
-
 .lists__anchor {
   display: block;
   text-decoration: none;
@@ -110,6 +110,11 @@
   color: var(--primary-color);
 }
 
+.nav-option-active:visited {
+  color: var(--secondary-color);
+}
+
+.nav-option-active,
 .lists__anchor:focus,
 .lists__anchor:hover {
   color: var(--secondary-color);
@@ -128,3 +133,4 @@
     font-size: var(--nav-list-fz-break);
   }
 }
+

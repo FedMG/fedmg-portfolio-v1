@@ -6,7 +6,7 @@ import { skills } from './refs/skills'
 
 const Skills = () => {
   return (
-    <div id='Skills' className='section'>
+    <div id='skills' className='section'>
       <Shape data={triangle.skillsTopEmpty} />
       <div className='section-content'>
         <Typography as='h2' style='subtitle-section'>
