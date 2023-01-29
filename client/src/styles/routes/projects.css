@@ -35,12 +35,14 @@
   vertical-align: top;
   user-select: none;
 }
+
 .project-figcaption {
   margin: 0.3em 0 0.6em;
   font-weight: var(--pjt-figcaption-fw);
   text-align: center;
-  font-size: var(--pjt-figcaption-fz);
+  font-size: var(--pjt-figcaption-fz);  
 }
+
 
 
 .project-cards:hover {
@@ -59,8 +61,21 @@
   
   .project-figcaption {
     font-size: calc(var(--pjt-figcaption-fz) - 0.13em);
-      overflow: hidden;
-      text-overflow: '...';
-     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-span-caption {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
+    white-space: nowrap;
+  }
+  
+  .project-span-caption:hover,
+  .project-span-caption:active {
+    overflow: visible;
+    white-space: wrap;
   }
 }
