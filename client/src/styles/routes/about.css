@@ -78,7 +78,6 @@
 }
 
 .svg-about-board:hover {
-  transform: rotate(4deg);
   fill: #d1d1d1;
 }
 .svg-about-board:active {

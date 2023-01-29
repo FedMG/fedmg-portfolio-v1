@@ -20,12 +20,11 @@ export const Board = () => {
           <div className="about-board-side board-front flex-center">
             <Typography as="p" style="about-text">
               <span className="hr" />
-              I am a self-taught student of Software Engineering &#128187;, and
+              I am a self-taught Software developer &#128187;, and
               a student at UBA of Data science degree &#128202;
               <br />
-              <br />I like to get along with people where the passion for
-              technological progress, curiosity and learning allows us to grow
-              and improve.
+              <br />I love to get along with curious and passionate people,
+               with whom there can be a mutual learning that allows us to grow and improve.
               <br />
               <br />
               &#127793; Some of my hobbies are studying a new language like
@@ -38,19 +37,22 @@ export const Board = () => {
             <Typography as="p" style="about-text">
               <strong style={{ fontSize: '115%' }}>Soft-skills</strong>
               <span className="hr" />
-              <strong>Growth mindset</strong>
+              &#x1F9E0;
+              <strong> Growth mindset</strong>
               <br />
               I like to think big, how to make something better, how to go
               further.
               <br />
               <br />
-              <strong>Work ethic</strong>
+              &#x1F4AA;
+              <strong> Work ethic</strong>
               <br />
               I love to keep learning new things and keep improving to give the
               best result.
               <br />
               <br />
-              <strong>Team player attitude</strong>
+              &#x1F91D;	
+              <strong> Team player attitude</strong>
               <br />I love to work side by side and help whoever needs it to
               achieve a common goal.
               <span className="hr" />
