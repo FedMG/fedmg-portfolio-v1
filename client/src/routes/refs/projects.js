@@ -4,6 +4,10 @@ import passwordGeneratorSmaller from '/password-generator-75-smaller.png'
 import romanNumbers from '/roman-numbers.png'
 import romanNumberMedium from '/roman-numbers-50-smaller.png'
 import romanNumberSmaller from '/roman-numbers-75-smaller.png'
+import commingSoon from '/comming-soon.png'
+import commingSoonMedium from '/comming-soon-50.png'
+import commingSoonSmaller from '/comming-soon-75.png'
+
 
 import { addId, createSVGObject } from '@/functions/tools'
 import { githubPath } from './buttons'
@@ -74,16 +78,16 @@ export const projects = [
         )
       },
       {
-        caption: 'Store API',
-        source: romanNumbers,
-        srcSet: getSourceSize(romanNumbers, romanNumberMedium, romanNumberSmaller),
-        ...getLinkButtons('FedMG', ' ')
+        caption: 'E-commerce',
+        source: commingSoon,
+        srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
+        ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', ' ')
       },
       {
-        caption: 'E-commerce',
-        source: passwordGenerator,
-        srcSet: getSourceSize(passwordGenerator, passwordGeneratorMedium, passwordGeneratorSmaller),
-        ...getLinkButtons('FedMG', ' ')
+        caption: 'Soon',
+        source: commingSoon,
+        srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
+        ...getLinkButtons('FedMG/e-commerce-project-', ' ')
       }
     ])
   }
