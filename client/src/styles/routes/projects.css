@@ -40,7 +40,7 @@
   margin: 0.3em 0 0.6em;
   font-weight: var(--pjt-figcaption-fw);
   text-align: center;
-  font-size: var(--pjt-figcaption-fz);  
+  font-size: var(--pjt-figcaption-fz);
 }
 
 
@@ -48,7 +48,7 @@
   background: var(--primary-item-pjt-bg-color-hov);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {  
   .project-slider-bk {
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
   }
