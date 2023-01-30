@@ -1,12 +1,14 @@
-import passwordGenerator from '/password-generator.png'
-import passwordGeneratorMedium from '/password-generator-50-smaller.png'
-import passwordGeneratorSmaller from '/password-generator-75-smaller.png'
-import romanNumbers from '/roman-numbers.png'
-import romanNumberMedium from '/roman-numbers-50-smaller.png'
-import romanNumberSmaller from '/roman-numbers-75-smaller.png'
-import commingSoon from '/comming-soon.png'
-import commingSoonMedium from '/comming-soon-50.png'
-import commingSoonSmaller from '/comming-soon-75.png'
+/* eslint-disable */
+import passwordGenerator from '/password-generator-25.webp'
+import passwordGeneratorMedium from '/password-generator-50.webp'
+import passwordGeneratorSmaller from '/password-generator-75.webp'
+import romanNumbers from '/roman-numbers-25.webp'
+import romanNumberMedium from '/roman-numbers-50.webp'
+import romanNumberSmaller from '/roman-numbers-75.webp'
+import commingSoon from '/comming-soon-25.webp'
+import commingSoonMedium from '/comming-soon-50.webp'
+import commingSoonSmaller from '/comming-soon-75.webp'
+/* eslint-disable */
 
 import { addId, createSVGObject } from '@/functions/tools'
 import { githubPath } from './buttons'
@@ -80,13 +82,13 @@ export const projects = [
         caption: 'E-commerce',
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
-        ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', ' ')
+        ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', '#')
       },
       {
         caption: 'Soon',
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
-        ...getLinkButtons('FedMG/e-commerce-project-', ' ')
+        ...getLinkButtons('FedMG/e-commerce-project-', '#')
       }
     ])
   }
