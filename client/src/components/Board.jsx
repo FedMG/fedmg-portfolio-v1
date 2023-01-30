@@ -2,7 +2,7 @@ import { useCardEffectRef } from '@/hooks/useCardEffect'
 import { Typography } from './utils/Typography'
 
 export const Board = () => {
-  const cardRef = useCardEffectRef(true, true)
+  const cardRef = useCardEffectRef('click')
 
   return (
     <div className='about-board-container grid-center'>

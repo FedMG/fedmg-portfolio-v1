@@ -11,40 +11,34 @@ const clickType = {
   }
 }
 
-export const useCardEffectRef = (withClick = false, withButton = false) => {
+export const useCardEffectRef = (event = 'mouseenter') => {
   const cardRef = useRef(null)
   const [click, setClick] = useState(false)
 
   const serveProps = () => {
-    if (!withButton) {
-      return {
-        card: cardRef.current,
-        front: cardRef.current.children[0].style,
-        back: cardRef.current.children[1].style
-      }
-    }
+    const current = cardRef.current
+    const isMouseEnter = [current, current.children[0], current.children[1]]
+    const children = event === 'click' ? current.children : isMouseEnter
 
-    if (withButton) {
-      return {
-        card: cardRef.current.children[0],
-        front: cardRef.current.children[1].style,
-        back: cardRef.current.children[2].style
-      }
+    return {
+      card: children[0],
+      front: children[1].style,
+      back: children[2].style
     }
   }
 
   const applyEnter = () => {
     const { front, back } = serveProps()
 
-    if (withClick) {
+    if (event === 'click') {
       front.transform = clickType[click].front
       back.transform = clickType[click].back
 
       if (click) {
         return setClick(false)
-      } else {
-        return setClick(true)
       }
+
+      return setClick(true)
     }
 
     front.transform = clickType.false.front
@@ -59,13 +53,8 @@ export const useCardEffectRef = (withClick = false, withButton = false) => {
   useEffect(() => {
     const { card } = serveProps()
 
-    if (withClick) {
-      card.addEventListener('click', applyEnter)
-      return () => card.removeEventListener('click', applyEnter)
-    } else {
-      card.addEventListener('mouseenter', applyEnter)
-      return () => card.removeEventListener('mouseenter', applyEnter)
-    }
+    card.addEventListener(event, applyEnter)
+    return () => card.removeEventListener(event, applyEnter)
   }, [click])
 
   return cardRef
