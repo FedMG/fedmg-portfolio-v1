@@ -6,7 +6,7 @@
 
 .project-slider-bk {
   padding-top: var(--sections-bk-pad-top);
-}
+  }
 
 .project-board {
   --pjt-board-gap-pad: 0.85em;
@@ -17,12 +17,16 @@
   padding: 0 calc(var(--pjt-board-gap-pad) / 2);
 
   transition: 0.3s ease all;
-  min-width: 100%;
-  max-width: 48em;
+  /* min-width: 100%; */
+  /* max-width: 48em; */
   /* with another board project */
   /* max-width: 24em; */
 }
 .project-cards {
+  --width-board: 400px;
+  min-width: var(--width-board);
+  width: 100%;
+
   background: var(--primary-item-pjt-bg-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -30,16 +34,28 @@
   border-radius: var(--pjt-card-bd-rad);
 }
 
-.project-image {
+.figure-aspect-ratio-box {
+  padding-top: calc(427 / 712 * 100%);
+  position: relative;
+  overflow: hidden;
+  height: 0;
   width: 100%;
-  vertical-align: top;
+
+}
+.figure-aspect-ratio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   user-select: none;
+  vertical-align: top;
 }
 
 .project-figcaption {
   margin: 0.3em 0 0.6em;
-  font-weight: var(--pjt-figcaption-fw);
   text-align: center;
+  font-weight: var(--pjt-figcaption-fw);
   font-size: var(--pjt-figcaption-fz);
 }
 
@@ -49,12 +65,12 @@
 }
 
 @media (max-width: 767px) {  
-  .project-slider-bk {
+    .project-slider-bk {
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
   }
   .project-board {
     grid-gap: calc(var(--pjt-board-gap-pad) - 0.25em);
-    padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.25em);
+    padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.45em);
     overflow: hidden;
   }
   
@@ -76,5 +92,37 @@
   .project-span-caption:active {
     overflow: visible;
     white-space: wrap;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1063px) {
+  .project-cards {
+    min-width: calc(var(--width-board) - 100px);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-cards {
+    min-width: calc(var(--width-board) - 150px);
+  }  
+}
+
+@media (max-width: 640px) {
+    .project-cards {
+    min-width: calc(var(--width-board) - 195px);
+  }
+}
+
+@media (max-width: 566px) {
+    .project-cards {
+    min-width: calc(var(--width-board) - 246px);
+  }
+}
+
+@media (max-width: 414px) {
+  .project-cards {
+    min-width: calc(var(--width-board) - 268px);
   }
 }
