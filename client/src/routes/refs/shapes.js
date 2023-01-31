@@ -1,73 +1,39 @@
-const repeated = {
-  svg: {
-    dname: 'Layer 1',
-    xmlns: 'http://www.w3.org/2000/svg',
-    vbox: '0 0 1200 120',
-    preAR: 'none'
-  }
-}
-
 export const triangle = {
   upside: {
-    ...repeated,
     path: [{ id: 1, d: 'M1200 0L0 0 598.97 114.72 1200 0z' }],
-    styles: {
-      div: 'triangle-bottom',
-      path: 'shape-fill'
-    }
+    styles: ['triangle-bottom', 'shape-fill']
   },
 
   downside: {
-    ...repeated,
     path: [{ id: 1, d: 'M1200 0L0 0 892.25 114.72 1200 0z' }],
-    styles: {
-      div: 'triangle-top',
-      path: 'shape-fill'
-    }
+    styles: ['triangle-top', 'shape-fill']
   },
 
   contact: {
-    ...repeated,
     path: [{ id: 1, d: 'M1200 0L0 0 598.97 114.72 1200 0z' }],
-    styles: {
-      div: 'contact-triangle',
-      path: 'shape-fill'
-    }
+    styles: ['contact-triangle', 'shape-fill']
   },
 
   skillsTopAsym: {
-    ...repeated,
     path: [
       { id: 1, d: 'M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z' }
     ],
-    styles: {
-      div: 'skills-triangle-top',
-      path: 'shape-fill'
-    }
+    styles: ['skills-triangle-top', 'shape-fill']
   },
   skillsTopEmpty: {
-    ...repeated,
     path: [
       { id: 1, d: 'M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z' }
     ],
-    styles: {
-      div: 'skills-top-empty',
-      path: 'shape-fill'
-    }
+    styles: ['skills-top-empty', 'shape-fill']
   },
   projectBottom: {
-    ...repeated,
     path: [{ id: 1, d: 'M1200 0L0 0 892.25 114.72 1200 0z' }],
-    styles: {
-      div: 'project-bottom',
-      path: 'shape-fill'
-    }
+    styles: ['project-bottom', 'shape-fill']
   }
 }
 
 export const waves = {
   upside: {
-    ...repeated,
     path: [
       {
         id: 1,
@@ -84,14 +50,10 @@ export const waves = {
         d: 'M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z'
       }
     ],
-    styles: {
-      div: 'waves-upside',
-      path: 'shape-fill'
-    }
+    styles: ['waves-upside', 'shape-fill']
   },
 
   downside: {
-    ...repeated,
     path: [
       {
         id: 1,
@@ -108,9 +70,6 @@ export const waves = {
         d: 'M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z'
       }
     ],
-    styles: {
-      div: 'waves-downside',
-      path: 'shape-fill'
-    }
+    styles: ['waves-downside', 'shape-fill']
   }
 }

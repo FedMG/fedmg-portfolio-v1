@@ -1,25 +1,20 @@
 import { memo } from 'react'
 
-export const Shape = memo(({ data: { styles, svg, title, path } }) => {
+export const Shape = memo(({ data: { styles, path } }) => {
   return (
-    <div className={styles?.div}>
+    <div className={styles[0]}>
       <svg
-        fill={svg?.fill}
-        className={styles?.svg}
-        data-name={svg?.dname}
-        xmlns={svg?.xmlns}
-        viewBox={svg?.vbox}
-        role={svg?.role}
-        preserveAspectRatio={svg?.preAR}
+        data-name='Layer 1'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1200 120'
+        preserveAspectRatio='none'
       >
-        {title && <title>{title}</title>}
-
         {path.map(({ id, d, opacity }) => (
           <path
-            key={id || title}
+            key={id}
             d={d}
             opacity={opacity || 1}
-            className={styles?.path}
+            className={styles[1]}
           />
         ))}
       </svg>
