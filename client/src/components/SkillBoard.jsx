@@ -1,6 +1,6 @@
 import { useCardEffectRef } from '@/hooks/useCardEffect'
-import { Shape } from './utils/Shape'
 import { Card } from './Card'
+import { IconSVG } from './utils/IconSVG'
 
 const SkillCard = ({ children }) => {
   const cardRef = useCardEffectRef()
@@ -21,10 +21,10 @@ export const SkillBoard = ({ data }) => {
   return (
     <div className='skill-cards-bk grid-center'>
       <div className='skill-cards grid'>
-        {data.map(({ id }) => (
+        {data.map(({ id, path, title }) => (
           <SkillCard key={id}>
-            <Shape data={data[id]} />
-            <span className='card-span'>{data[id].title}</span>
+            <IconSVG data={path} />
+            <span className='card-span'>{title}</span>
           </SkillCard>
         ))}
       </div>

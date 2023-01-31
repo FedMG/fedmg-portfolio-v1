@@ -16,8 +16,8 @@ const Header = () => {
     <>
       <header className='header' id='home'>
         <div className='top flex-center'>
-          <h1 className='inline-block'>
-            <a href='#Home' className='top__anchor flex-center'>
+          <h1 className='inline-block' translate='no'>
+            <a href='#home' className='top__anchor flex-center'>
               SayDeploy
               <Logo />
             </a>

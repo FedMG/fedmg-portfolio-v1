@@ -155,12 +155,12 @@
 
 
   /* general svg buttons */
-  .anchor-svg-styles:focus > div > svg > path,
-  .anchor-svg-styles:hover > div > svg > path {
+  .anchor-svg-styles:focus > svg > path,
+  .anchor-svg-styles:hover > svg > path {
     fill: var(--secondary-color);
   }
 
-  .anchor-svg-styles:active > div > svg > path {
+  .anchor-svg-styles:active > svg > path {
     fill: var(--secondary-bg-color-act);
   }  
   
@@ -180,24 +180,24 @@
   
   
   /* project github svg */
-  .anchor-svg-styles:focus > div > svg > .project-svg-styles,
-  .anchor-svg-styles:hover > div > svg > .project-svg-styles {
+  .anchor-svg-styles:focus > svg > .project-svg-styles,
+  .anchor-svg-styles:hover > svg > .project-svg-styles {
     fill: var(--primary-bg-color-hov);
   }
 
-  .anchor-svg-styles:active > div > svg > .project-svg-styles {
+  .anchor-svg-styles:active > svg > .project-svg-styles {
     fill: var(--secondary-bg-color-act);
   }
   
   
   /* project 'open svg' */
-  .anchor-svg-styles:focus > div > svg > .project-svg-styles-open-icon,
-  .anchor-svg-styles:hover > div > svg > .project-svg-styles-open-icon {
+  .anchor-svg-styles:focus > svg > .project-svg-styles-open-icon,
+  .anchor-svg-styles:hover > svg > .project-svg-styles-open-icon {
     stroke: var(--primary-bg-color-hov);
     fill:none;
   }
 
-  .anchor-svg-styles:active > div > svg > .project-svg-styles-open-icon {
+  .anchor-svg-styles:active > svg > .project-svg-styles-open-icon {
     stroke: var(--secondary-bg-color-act);
     fill: none;
   }

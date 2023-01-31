@@ -107,8 +107,4 @@
   .about-board-container {
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
   }
-
-  .about-board {
-    touch-action: none;
-  }
 }
