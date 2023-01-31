@@ -21,7 +21,7 @@ export const Buttons = ({ data, style }) => {
                 target='_blank'
                 rel='noreferrer'
               >
-                <IconSVG data={svg} />
+                <IconSVG data={svg} title={name}/>
               </a>
             </div>
           </div>
