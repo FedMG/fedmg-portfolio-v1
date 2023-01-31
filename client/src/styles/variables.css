@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-ff);
+}
+
 :root {
   /* fonts family */
   --primary-ff: "Rubik", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,

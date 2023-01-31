@@ -86,6 +86,11 @@
 }
 
 @media (max-width: 767px) {
+  .about-card {
+    height: 425px;
+  }
+  
+  
   .svg-about-board:active {
     transform: none;
   }
@@ -96,7 +101,7 @@
   }
   .about-text {
     padding: calc(var(--ab-spacing) - 0.9em);
-    padding-top: calc(var(--ab-spacing) - 0.4em);
+    padding-top: calc(var(--ab-spacing) - 0.2em);
   }
 
   .about-board-container {
