@@ -22,3 +22,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 767px) {
+  .loader {
+    position: absolute;
+    top: 32%;
+    left: 45%;
+  }  
+}

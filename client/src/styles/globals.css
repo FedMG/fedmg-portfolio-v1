@@ -1,22 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-
+@import "./font.css";
 @import "./variables.css";
 @import "./items/loader.css";
+@import "./shapes/triangle.css";
+@import "./shapes/waves.css";
 @import "./structure/header.css";
 @import "./structure/footer.css";
 @import "./routes/sections.css";
-@import "./shapes/triangle.css";
-@import "./shapes/waves.css";
 @import './items/button.css';
 @import './properties.css';
 
-* {  
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--primary-ff);
-}
 
 ::selection {
   background: #5135aa;
