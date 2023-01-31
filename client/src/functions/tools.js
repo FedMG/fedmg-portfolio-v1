@@ -20,23 +20,6 @@ export const addId = (array, id = 0, len = array.length) => {
   }
 }
 
-export const createSVGObject = (title, path, svgStyle, pathStyle, fill = true) => {
-  return {
-    icon: {
-      title,
-      path,
-      svg: {
-        role: 'img',
-        xmlns: 'http://www.w3.org/2000/svg',
-        vbox: '0 0 24 24',
-        fill: fill ? 'fill' : 'none'
-      },
-      styles: {
-        svg: svgStyle,
-        path: pathStyle
-      }
-    }
-  }
-}
-
 export const setUpperCase = (name) => name[0].toUpperCase() + name.slice(1)
+
+export const isArray = (arr) => Array.isArray(arr)
