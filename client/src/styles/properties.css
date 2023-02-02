@@ -1,7 +1,17 @@
+/* transition */
+.translateY {
+  transition: transform 0.3s ease;
+}
+
+.translateY:hover {
+  transform: translateY(5px);
+}
+
 /* flex */
 .flex,
 .flex-center,
 .flex-btw,
+.flex-btw-cy,
 .flex-column,
 .flex-evenly,
 .flex-wrap {
@@ -29,7 +39,6 @@
   justify-content: space-evenly;
 }
 
-
 /* grid */
 .grid,
 .grid-center {
@@ -40,13 +49,11 @@
   place-content: center;
 }
 
-
 /* container */
 .container {
   width: 100%;
   height: 100%;
 }
-
 
 .bk-drop {
   -webkit-backdrop-filter: blur(4px);
@@ -54,12 +61,10 @@
   border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
-
 /* inline-block */
 .inline-block {
   display: inline-block;
 }
-
 
 /* anchors */
 .anchor {
@@ -80,4 +85,3 @@
 .anchor:active {
   color: var(--secondary-bg-color-act);
 }
-
