@@ -18,11 +18,11 @@ const Home = () => {
                 data={data}
                 style={[
                   'button-visibility anchors',
-                  'button home-button-dimensions'
+                  'button home-button-dimensions home-button'
                 ]}
               />
             </div>
-          </div>{' '}
+          </div>
         </div>
         <Video />
       </div>

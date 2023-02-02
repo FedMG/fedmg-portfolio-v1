@@ -51,6 +51,32 @@ const getSourceSize = (original, medium, smaller) => {
   return `${smaller} 500w, ${medium} 1000w, ${original} 1500w`
 }
 
+
+const tech = {
+  ['css']: ['CSS', '#1572B6'],
+  ['html']:['HTML', '#E34F26'],
+  ['js']: ['Javascript', '#F7DF1E'],
+  ['react']: ['React', '#61DAFB'],
+  ['node']: ['NodeJS', '#339933'],
+  ['ts']: ['Typescript', '#3178C6'],
+  ['testing']: ['Testing Library', '#E33332'],
+  ['jest']: ['Jest', '#C21325'],
+  ['express']: ['Express', '#000000'],
+  ['mongo']: ['MongoDB', '#47A248'], 
+  ['mongoose']: ['Mongoose', '#800'],
+  ['styled']:['Styled components', '#DB7093'],
+  ['tw']:['Tailwind', '#06B6D4'],
+  ['mantine']:['Mantine', '#349af0'],
+  ['pg']: ['PostgreSQL', '#4169E1'],
+  ['prisma']: ['Prisma', '#2D3748'],
+  ['next']:['Next.js', '#000000'],
+  ['nextauth']: ['Next-Auth', '#a553b3'],
+  ['jwt']: ['JWT', '#000000'],
+  ['redis']: ['Redis', '#DC382D'],
+  ['python']: ['Python', '#3776AB'],
+  ['aws']: ['AWS', '#232F3E']
+}
+
 export const projects = [
   {
     id: 1,
@@ -62,7 +88,9 @@ export const projects = [
         ...getLinkButtons(
           'FedMG/roman-numbers',
           'https://roman-numbers-xi.vercel.app/'
-        )
+        ),
+        description: 'One of my first projects, it\' s simple but I learned a lot of things like how to deploy to production on my own, how to divide the problems in small parts to solve them, about algorithms.',
+        badges: [tech['html'], tech['styled'], tech['js'], tech['react']],
       },
       {
         caption: 'Password Generator',
@@ -71,20 +99,26 @@ export const projects = [
         ...getLinkButtons(
           'midudev/password-generator/tree/main/src/components/fedmg',
           'https://hacktoberfest-2022.vercel.app/entry/fedmg'
-        )
+        ),
+        description: 'Open source project - A Midudev challenge to do a password generator without any component library.  My first OS project where I learned a lot of things, like how to solve bugs in production, how to work with the community, how to make better commits and PRs',
+        badges: [tech['html'], tech['css'], tech['js'], tech['react']],
       },
       {
         caption: 'E-commerce',
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
-        ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', '#')
+        ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', '#'),
+        description: 'A monolothic project that consume an API of products. I learned a lot of things like how to make better commits with CommitLint and Husky and consume an own API in a monolithic architecture.',
+        badges: [tech['html'], tech['mantine'], tech['js'], tech['react'], tech['next'], tech['ts'], tech['node'], tech['express'], tech['jwt'], ,tech['mongo'], tech['mongoose'], tech['jest'], tech['testing']]
       },
       {
         caption: 'Soon',
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
-        ...getLinkButtons('FedMG/e-commerce-project-', '#')
-      }
+        ...getLinkButtons('FedMG/e-commerce-project-', '#'),
+        description: 'I\'m learned about many things, like how to make differents tests (snapshots, unitary, mocks, integration, API tests), how to implement Server Side Rendering, how to implement authentication and use sessions.',
+        badges: [tech['html'], tech['tw'], tech['react'], tech['next'],tech['nextauth'], tech['ts'], tech['node'], tech['express'], tech['pg'], tech['prisma'], tech['jest'], tech['testing']]
+        }
     ])
   }
 ]
