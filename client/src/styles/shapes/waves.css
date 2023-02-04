@@ -62,3 +62,9 @@
     height: 12.5em;
   }
 }
+
+@media (min-width: 600px) and (max-width: 768px) and (min-height: 896px) and (max-width: 1024px){
+ .waves-upside {
+  bottom: -2.4px;
+  }
+}
