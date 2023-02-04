@@ -6,74 +6,35 @@
 }
 
 :root {
-  /* fonts family */
   --primary-ff: "Rubik", -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
     oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --secondary-ff: "Noto Sans", var(--primary-ff);
-
-  /* font colors */
   --primary-color: #f2f2f2;
-  /* --secondary-color: #764bff;  */
   --secondary-color: #835cff;
   --third-color: #ededed;
-
-  /* body background */
   --primary-bg-color: #0c0b0d;
   --secondary-bg-color: #5135aa;
   --third-bg-color: #f2f2f2;
-
-  /* items background */
-  --primary-card-bg-color: 81, 53, 170, 0.5;
-
-
-  /* states bg item */
+  --primary-color-hov: #f2f2f2;
+  --secondary-color-act: #f7f7f7;
+  --primary-bg-color-hov: #764EF3;
+  --secondary-bg-color-act: #432D8C;
+  --top-bg-color: #0c0b0b;
+  --about-primary-card-bg-color: 81, 53, 170, 0.5;
+  --pjt-figcaption-fz: 1em;
+  --pjt-figcaption-fw: 600;
+  --pjt-card-bd-rad: 0.23em;
   --primary-item-pjt-bg-color: #d2d2d2;
   --primary-item-pjt-bg-color-hov: #a9a9a9;
-  
   --primary-arrow-btn-color: invert(24%) sepia(19%) saturate(7476%) hue-rotate(241deg) brightness(85%) contrast(95%);
   --primary-arrow-btn-color-hov: invert(37%) sepia(63%) saturate(5931%) hue-rotate(243deg) brightness(99%) contrast(93%);
   --primary-arrow-btn-color-act: invert(18%) sepia(35%) saturate(3656%) hue-rotate(238deg) brightness(96%) contrast(97%);
   --secondary-arrow-btn-color-empty: invert(29%) sepia(6%) saturate(325%) hue-rotate(227deg) brightness(89%) contrast(85%);
-
-  /* states colors */
-  --primary-color-hov: #d1d1d1;
-  --primary-color-hov: #f2f2f2;
-  --secondary-color-act: #f7f7f7;
-  /* states bg colors */
-  --primary-bg-color-hov: #764EF3;
-  --secondary-bg-color-act: #432D8C;
-
-
-  /* fonts */
   --subtitle-section-fz: 1.1em, 5vw, 1.6em;
-
-  /* button */
-  --button-bd-radius: 0.3em;
-  --button-bd-style: 2px outset #666;
-
-  /* active button */
-  --button-bd-style-act: 2px inset #666;
-
-  /* top */
-  --top-bg-color: #0c0b0b;
-  
-  /* navbar */
-  --nav-list-fz-break: 0.85em;
-
-  /* sections */
-  --sec-content-pad: 7em;
-
-  /* project */
-  --pjt-figcaption-fz: 1em;
-  --pjt-figcaption-fw: 600;
-  --pjt-card-bd-rad: 0.23em;
-
-  /* subtitle-space-content */
-  --sections-bk-pad-top: 3.7em;
-
-  /* about */
   --ab-text-fz: 1rem, 8vw - 2rem, 1.1rem;
-  --ab-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --ab-card-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  --sec-content-pad: 7em;
+  --sections-bk-pad-top: 3.7em;
 
   color-scheme: light dark;
   text-rendering: optimizeLegibility;

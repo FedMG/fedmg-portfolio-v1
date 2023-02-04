@@ -95,6 +95,7 @@
 }
 
 .lists {
+  --nav-list-fz-break: 0.85em;
   float: left;
 }
 .lists__anchor {
