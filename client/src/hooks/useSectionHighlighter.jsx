@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { routeNames } from '@/routes/structure/Header'
 
+const PRE_OFFSET_TOP = 30
+
 export const useSectionHighlighter = () => {
   const [activeSection, setActiveSection] = useState('')
 
@@ -12,12 +14,12 @@ export const useSectionHighlighter = () => {
       if (!pageSection) {
         continue
       }
-
+        
       if (
-        pageSection.offsetTop <= currentPosition &&
-        pageSection.offsetTop + pageSection.offsetHeight > currentPosition
+        (pageSection.offsetTop - PRE_OFFSET_TOP) <= currentPosition &&
+        (pageSection.offsetTop - PRE_OFFSET_TOP) + pageSection.offsetHeight > currentPosition
       ) {
-        // window.location.hash = `#${name}`;
+        // window.location.hash = name
         setActiveSection(name)
         break
       }
