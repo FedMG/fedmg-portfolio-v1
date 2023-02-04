@@ -31,7 +31,7 @@
   position: relative;
   height: 400px;
   max-height: fit-content;
-  background: rgba(var(--primary-card-bg-color));
+  background: rgba(var(--about-primary-card-bg-color));
   box-shadow: var(--ab-card-shadow);
   border-radius: var(--pjt-card-bd-rad);
 }

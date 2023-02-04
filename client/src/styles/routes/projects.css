@@ -52,6 +52,7 @@
   text-align: center;
   font-weight: var(--pjt-figcaption-fw);
   font-size: var(--pjt-figcaption-fz);
+  color: #000000;
 }
 
 .project-card:hover {
