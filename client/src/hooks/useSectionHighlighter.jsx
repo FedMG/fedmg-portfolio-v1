@@ -12,12 +12,11 @@ export const useSectionHighlighter = () => {
       if (!pageSection) {
         continue
       }
-
+        
       if (
-        pageSection.offsetTop <= currentPosition &&
-        pageSection.offsetTop + pageSection.offsetHeight > currentPosition
+        (pageSection.offsetTop - 30) <= currentPosition &&
+        (pageSection.offsetTop - 30) + pageSection.offsetHeight > currentPosition
       ) {
-        // window.location.hash = `#${name}`;
         setActiveSection(name)
         break
       }
