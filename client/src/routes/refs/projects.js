@@ -89,7 +89,7 @@ export const projects = [
           'FedMG/roman-numbers',
           'https://roman-numbers-xi.vercel.app/'
         ),
-        description: 'One of my first projects, it\' s simple but I learned a lot of things like how to deploy to production on my own, how to divide the problems in small parts to solve them, about algorithms.',
+        description: 'One of my first projects, it\' s simple but I learned a lot of things like, how to deploy to production on my own, how to break problems into small parts to solve them and build an algorithm.',
         badges: [tech['html'], tech['styled'], tech['js'], tech['react']],
       },
       {
@@ -100,7 +100,7 @@ export const projects = [
           'midudev/password-generator/tree/main/src/components/fedmg',
           'https://hacktoberfest-2022.vercel.app/entry/fedmg'
         ),
-        description: 'Open source project - A Midudev challenge to do a password generator without any component library.  My first OS project where I learned a lot of things, like how to solve bugs in production, how to work with the community, how to make better commits and PRs',
+        description: 'A Midudev challenge to build a password generator without any component library. My first OS project, where I learned about Astro, how to work on an OS project in the community, how to make better PRs and how to fix bugs in production.',
         badges: [tech['html'], tech['css'], tech['js'], tech['react']],
       },
       {
@@ -108,7 +108,7 @@ export const projects = [
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
         ...getLinkButtons('FedMG/e-commerce-monolithic-tsx-node-mgdb', '#'),
-        description: 'A monolothic project that consume an API of products. I learned a lot of things like how to make better commits with CommitLint and Husky and consume an own API in a monolithic architecture.',
+        description: 'I learned a lot of things like how to make better commits with CommitLint and Husky, how to consume an own API in a monolithic architecture, how to make differents tests (snapshots, unitary, mocks, API tests), how to implement Server Side Rendering, and much more.',
         badges: [tech['html'], tech['mantine'], tech['js'], tech['react'], tech['next'], tech['ts'], tech['node'], tech['express'], tech['jwt'], ,tech['mongo'], tech['mongoose'], tech['jest'], tech['testing']]
       },
       {
@@ -116,7 +116,7 @@ export const projects = [
         source: commingSoon,
         srcSet: getSourceSize(commingSoon, commingSoonMedium, commingSoonSmaller),
         ...getLinkButtons('FedMG/e-commerce-project-', '#'),
-        description: 'I\'m learned about many things, like how to make differents tests (snapshots, unitary, mocks, integration, API tests), how to implement Server Side Rendering, how to implement authentication and use sessions.',
+        description: 'Next project...',
         badges: [tech['html'], tech['tw'], tech['react'], tech['next'],tech['nextauth'], tech['ts'], tech['node'], tech['express'], tech['pg'], tech['prisma'], tech['jest'], tech['testing']]
         }
     ])
