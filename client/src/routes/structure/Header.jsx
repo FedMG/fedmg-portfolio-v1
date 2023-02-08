@@ -4,8 +4,8 @@ import { useSectionHighlighter } from '@/hooks/useSectionHighlighter'
 
 export const routeNames = [
   { name: 'home' },
-  { name: 'about' },
   { name: 'projects' },
+  { name: 'about' },
   { name: 'skills' }
 ]
 
