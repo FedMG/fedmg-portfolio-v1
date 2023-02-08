@@ -8,7 +8,7 @@ import { data } from './refs/buttons'
 
 const Home = () => {
   return (
-    <div className='section'>
+    <div className='section' id='home'>
       <div className='home__elements-wrapper flex-evenly'>
         <div className='intro-btn-elements'>
           <Introduction />
