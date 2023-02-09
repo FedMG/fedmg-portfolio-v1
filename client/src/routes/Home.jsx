@@ -3,10 +3,10 @@ import Video from '@/components/Video'
 
 import { Buttons } from '@/components/Buttons'
 import { data } from './refs/buttons'
-
+// id='home'
 const Home = () => {
   return (
-    <div className='section' id='home'>
+    <div className='section'>
       <div className='home__elements-wrapper flex-evenly'>
         <div className='intro-btn-elements'>
           <Introduction />

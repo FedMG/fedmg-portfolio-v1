@@ -2,10 +2,10 @@ import { Typography } from '@/components/utils/Typography'
 import { Slider } from '@/components/Slider'
 import { BoardProjects } from '@/components/BoardProjects'
 import { projects } from './refs/projects'
-
+// id='projects'
 const Projects = () => {
   return (
-    <div id='projects' className='section'>
+    <div className='section'>
         <div className='section-content'>
           <Typography as='h2' style='subtitle-section'>
             My<Typography style='span-subtitle'> projects</Typography>

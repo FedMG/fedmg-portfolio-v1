@@ -1,10 +1,9 @@
 import { Typography } from '@/components/utils/Typography'
 import { Board } from '@/components/Board'
-
+// id='about'
 const About = () => {
   return (
-    <>
-    <div id='about' className='section'>
+    <div className='section'>
         <div className='section-content'>
           <Typography as='h2' style='subtitle-section'>
             <Typography as='span' style='span-subtitle'>
@@ -15,7 +14,6 @@ const About = () => {
           <Board />
         </div>
     </div>
-    </>
   )
 }
 

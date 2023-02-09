@@ -13,19 +13,19 @@ const Main = () => {
   return (
     <main className='Main'>
       <Suspense fallback={<Loader />}>
-        <Background bottom={waves.upside}>
+        <Background bottom={waves.upside} id='home'>
           <Home />
         </ Background>
         
-        <Background top={triangle.downside} bottom={triangle.projectBottom}>
+        <Background top={triangle.downside} bottom={triangle.projectBottom} id='projects'>
           <Projects />
         </ Background>
         
-        <Background top={waves.downside} bottom={triangle.upside}>
+        <Background top={waves.downside} bottom={triangle.upside} id='about'>
           <About />
         </ Background>
         
-        <Background top={triangle.skillsTopEmpty} bottom={triangle.contact}>
+        <Background top={triangle.skillsTopEmpty} bottom={triangle.contact} id='skills'>
           <Skills />
         </ Background>
       </Suspense>
