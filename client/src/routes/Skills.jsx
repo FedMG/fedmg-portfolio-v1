@@ -1,7 +1,7 @@
 import { Typography } from '@/components/utils/Typography'
 import { SkillBoard } from '@/components/SkillBoard'
 import { skills } from './refs/skills'
-// id='skills'
+
 const Skills = () => {
   return (
     <div className='section'>

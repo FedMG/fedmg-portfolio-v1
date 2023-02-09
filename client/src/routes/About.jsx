@@ -1,6 +1,6 @@
 import { Typography } from '@/components/utils/Typography'
 import { Board } from '@/components/Board'
-// id='about'
+
 const About = () => {
   return (
     <div className='section'>

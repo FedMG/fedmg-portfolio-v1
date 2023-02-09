@@ -2,7 +2,7 @@ import { Typography } from '@/components/utils/Typography'
 import { Slider } from '@/components/Slider'
 import { BoardProjects } from '@/components/BoardProjects'
 import { projects } from './refs/projects'
-// id='projects'
+
 const Projects = () => {
   return (
     <div className='section'>

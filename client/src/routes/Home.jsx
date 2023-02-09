@@ -3,7 +3,7 @@ import Video from '@/components/Video'
 
 import { Buttons } from '@/components/Buttons'
 import { data } from './refs/buttons'
-// id='home'
+
 const Home = () => {
   return (
     <div className='section'>
