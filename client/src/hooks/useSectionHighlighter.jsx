@@ -44,23 +44,3 @@ export const useSectionHighlighter = () => {
 
   return activeSection;
 };
-
-/* 
-
-    routeNames.every(({ name }) => {
-      const pageSection = document.getElementById(name)
-      if (!pageSection) return false
-
-      const sectionHeight = pageSection.offsetHeight
-      const sectionStart = pageSection.offsetTop
-      const sectionEnd = sectionHeight + sectionStart
-      
-      if (userPosition >= sectionStart - sectionHeight / PRE_OFFSET_TOP && userPosition <= sectionEnd - sectionHeight / PRE_OFFSET_BOTTOM) {
-        highlightSection = name
-        return false
-      }
-
-      return true
-    })
-
-*/
