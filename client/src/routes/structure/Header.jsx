@@ -29,7 +29,7 @@ const Header = () => {
           {routeNames.map(({ name }) => (
             <li className='lists' key={name}>
               <a
-                href={`#${name === 'home' ? 'Home': name}`}
+                href={`#${name === 'home' ? 'Home' : name}`}
                 className={`lists__anchor ${
                   activeSection === name ? 'nav-option-active' : ''
                 }`}

@@ -1,5 +1,3 @@
-// import { useSliderEffect } from '@/hooks/useSliderEffect'
-
 import { Button } from './utils/Button'
 
 export const classes = [
@@ -9,18 +7,18 @@ export const classes = [
 ]
 
 export const Slider = ({ children }) => {
-
   return (
     <div className='slider-bk'>
       <Button
         src='https://img.icons8.com/material/96/000000/chevron-left--v1.png'
         alt='backward'
-        style = { classes }
+        style={classes}
       />
 
       <div className='slider-element-bk'>
-        <div 
-         className='slider-element'>
+        <div
+          className='slider-element'
+        >
           {children}
         </div>
       </div>
@@ -28,7 +26,7 @@ export const Slider = ({ children }) => {
       <Button
         src='https://img.icons8.com/material/96/000000/chevron-right--v1.png'
         alt='forward'
-        style = { classes }
+        style={classes}
       />
     </div>
   )

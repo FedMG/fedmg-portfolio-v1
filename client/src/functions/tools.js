@@ -23,3 +23,5 @@ export const addId = (array, id = 0, len = array.length) => {
 export const setUpperCase = (name) => name[0].toUpperCase() + name.slice(1)
 
 export const isArray = (arr) => Array.isArray(arr)
+
+export const createAndFillIterable = (arr, value) => Array(arr.length).fill(value)
