@@ -11,7 +11,7 @@ export const Button = ({ href, src, alt, onclick, style, children }) => {
     return (
       <div className={style[0]}>
         <button onClick={onclick} className={style[1]}>
-          <img src={src} className={`${style[2]} ${style[3]}`} alt={alt} />
+          <img src={src} className={`${style[2]} ${style[3]}`} alt={alt} draggable={false}/>
         </button>
       </div>
     )
