@@ -7,7 +7,7 @@ const PERCENT = 0.7
 function checkSectionVisibility (userPosition, visibility) {
   routeNames.forEach(({ name }, i) => {
     const pageSection = document.getElementById(name)
-    if (pageSection) {
+    if (pageSection instanceof HTMLElement) {
       const sectionStartPosition = pageSection.offsetTop
       const heightDevice = window.screen.height
       if (userPosition >= sectionStartPosition - heightDevice * PERCENT) {
@@ -34,9 +34,8 @@ export const useFragmentDelay = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScrollEvent)
-    const initialScroll = setTimeout(() => window.scrollTo(0, 1), 2000)
-
-    return () => {
+      const initialScroll = setTimeout(() => window.scrollTo(0, 1), 1150)
+  return () => {
       clearTimeout(initialScroll)
       window.removeEventListener('scroll', handleScrollEvent)
     }
