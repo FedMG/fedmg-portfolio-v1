@@ -1,29 +1,39 @@
 import { useEffect, useState } from 'react'
 import { routeNames } from '@/routes/structure/Header'
 
-const PRE_OFFSET_TOP = 30
+const PRE_OFFSET_TOP = 2
+const PRE_OFFSET_BOTTOM = 3
+
+function checkSectionHighlight (userPosition, highlightSection) {
+  routeNames.every(({ name }) => {
+    const pageSection = document.getElementById(name)
+    if (!pageSection) return false
+
+    const sectionHeight = pageSection.offsetHeight
+    const sectionStart = pageSection.offsetTop
+    const sectionEnd = sectionHeight + sectionStart
+
+    if (userPosition >= sectionStart - sectionHeight / PRE_OFFSET_TOP && userPosition <= sectionEnd - sectionHeight / PRE_OFFSET_BOTTOM) {
+      highlightSection = name
+      return false
+    }
+
+    return true
+  })
+
+  return Promise.resolve(highlightSection)
+}
 
 export const useSectionHighlighter = () => {
   const [activeSection, setActiveSection] = useState('')
 
   const handleScrollEvent = () => {
-    const currentPosition = window.scrollY
-    for (const { name } of routeNames) {
-      const pageSection = document.getElementById(name)
+    const userPosition = window.scrollY
+    const highlightSection = activeSection
 
-      if (!pageSection) {
-        continue
-      }
-        
-      if (
-        (pageSection.offsetTop - PRE_OFFSET_TOP) <= currentPosition &&
-        (pageSection.offsetTop - PRE_OFFSET_TOP) + pageSection.offsetHeight > currentPosition
-      ) {
-        // window.location.hash = name
-        setActiveSection(name)
-        break
-      }
-    }
+    checkSectionHighlight(userPosition, highlightSection).then(
+      (highlight) => setActiveSection(highlight)
+    ).catch(() => new Error('HandleScrollEvent: something is wrong in useSectionHighlighter'))
   }
 
   useEffect(() => {

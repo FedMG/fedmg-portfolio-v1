@@ -17,6 +17,9 @@
   grid-gap: var(--pjt-board-gap-pad);
   padding: 0 calc(var(--pjt-board-gap-pad) / 2);
   transition: 0.3s ease all;
+
+  /* min-width: 100%; */
+  /* max-width: 450px; */
 }
 
 .project-card {
@@ -64,9 +67,11 @@
     padding-top: calc(var(--sections-bk-pad-top) - 1.2em);
   }
   .board-projects {
-    grid-gap: calc(var(--pjt-board-gap-pad) - 0.25em);
+    grid-gap: calc(var(--pjt-board-gap-pad) - 0.50em);
     padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.45em);
     overflow: hidden;
+    /* to use when slider is on */
+    /* padding: 0 calc(var(--pjt-board-gap-pad) / 2 - 0.15em); */
   }
 
   .project-figcaption {

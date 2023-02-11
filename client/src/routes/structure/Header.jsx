@@ -4,8 +4,8 @@ import { useSectionHighlighter } from '@/hooks/useSectionHighlighter'
 
 export const routeNames = [
   { name: 'home' },
-  { name: 'about' },
   { name: 'projects' },
+  { name: 'about' },
   { name: 'skills' }
 ]
 
@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='header' id='home'>
+      <header className='header' id='Home'>
         <div className='top flex-center'>
           <h1 className='inline-block' translate='no'>
             <a href='#home' className='top__anchor flex-center'>
@@ -29,7 +29,7 @@ const Header = () => {
           {routeNames.map(({ name }) => (
             <li className='lists' key={name}>
               <a
-                href={`#${name}`}
+                href={`#${name === 'home' ? 'Home' : name}`}
                 className={`lists__anchor ${
                   activeSection === name ? 'nav-option-active' : ''
                 }`}

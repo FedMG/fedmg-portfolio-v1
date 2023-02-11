@@ -1,6 +1,4 @@
 import { Introduction } from '@/components/Introduction'
-import { Shape } from '@/components/utils/Shape'
-import { waves } from './refs/shapes'
 import Video from '@/components/Video'
 
 import { Buttons } from '@/components/Buttons'
@@ -26,7 +24,6 @@ const Home = () => {
         </div>
         <Video />
       </div>
-      <Shape data={waves.upside} />
     </div>
   )
 }
