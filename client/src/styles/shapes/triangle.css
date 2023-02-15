@@ -87,7 +87,6 @@
 
 /* project-bottom */
 .project-bottom {
-  /* bottom: -1.3px; */
   bottom: -2px
 }
 
@@ -99,7 +98,8 @@
 
 /* ipad mini */
 @media (min-width: 700px) and (max-width: 800px) and (min-height: 1000px) and (max-width: 1100px){
-  .project-bottom {
+  .project-bottom,
+  .triangle-bottom {
     bottom: -3px;
   }
 }

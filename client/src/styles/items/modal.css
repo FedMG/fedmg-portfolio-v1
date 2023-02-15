@@ -176,7 +176,7 @@
   }
 
   .modal-body {
-    padding: calc(var(--body-padding-y) - 0.7em) 0;
+    padding: calc(var(--body-padding-y) - 0.4em) 0;
   }
   
   .modal-footer {
