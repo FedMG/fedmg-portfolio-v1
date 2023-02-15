@@ -63,7 +63,7 @@
 .modal-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 2.5px;
   height: fit-content;
 }
 .badge {
@@ -139,7 +139,7 @@
 @media (max-width: 767px) {
   .badge {
     font-size: 0.7em;
-    padding: 0.13em;
+    padding: 0.16em;
   }
   
   .modal-dialog {
@@ -176,7 +176,7 @@
   }
 
   .modal-body {
-    padding: calc(var(--body-padding-y) - 0.7em) 0;
+    padding: calc(var(--body-padding-y) - 0.4em) 0;
   }
   
   .modal-footer {

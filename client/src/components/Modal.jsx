@@ -2,7 +2,7 @@ import { Buttons } from './Buttons'
 
 const ModalHeader = ({ title, closeBtn }) => (
   <div className='modal-header flex-btw-cy'>
-    <h3 className='modal-title'>{title}</h3>
+    <h3 className='modal-title' style={{ color: '#000000'}}>{title}</h3>
     <div className='project-modal-button-box'>
       <button
         className='project-modal-button modal-close button'
@@ -40,6 +40,7 @@ const Badges = ({ items }) => (
         key={name}
         className='badge translateY'
         style={{ backgroundColor: `${color}` }}
+        translate='no'
       >
         {name}
       </span>

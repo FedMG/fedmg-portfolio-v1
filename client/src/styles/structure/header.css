@@ -111,15 +111,10 @@
   color: var(--primary-color);
 }
 
-.nav-option-active:visited {
-  color: var(--secondary-color);
-}
-
-.nav-option-active,
 .lists__anchor:focus,
 .lists__anchor:hover {
-  color: var(--secondary-color);
   outline: none;
+  color: var(--secondary-color);
   border-bottom: 2.5px solid var(--secondary-color);
 }
 
@@ -127,6 +122,12 @@
   color: var(--primary-color);
   outline: none;
   border-bottom: 4px solid var(--primary-color);
+}
+
+.nav-option-active:link,
+.nav-option-active:visited {
+  color: var(--secondary-color);
+  border-bottom: 2.5px solid var(--secondary-color);
 }
 
 @media (max-width: 450px) {
