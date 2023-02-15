@@ -1,67 +1,101 @@
-import { useCardEffectRef } from '@/hooks/useCardEffect'
-import { Typography } from './utils/Typography'
+import { useCarouselEffect } from "@/hooks/useCarouselEffect";
+import { Button } from "./utils/Button";
 
-export const Board = () => {
-  const cardRef = useCardEffectRef('click')
-
+const Text = ({ children, header, icon = null }) => {
   return (
-    <div className='about-board-container grid-center'>
-      <div className='about-board'>
-        <div className='about-card bk-drop' ref={cardRef}>
-          <svg
-            className='svg-about-board'
-            width='30px'
-            height='30px'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path d='M22.706,15.708l-5,5a1,1,0,0,1-1.414-1.414L19.586,16H2a1,1,0,0,1-1-1V4A1,1,0,0,1,2,3H12a1,1,0,0,1,0,2H3v9H19.586l-3.293-3.293a1,1,0,0,1,1.414-1.414l5,5A1,1,0,0,1,22.706,15.708Z' />
-          </svg>
-          <div className='about-board-side board-front flex-center'>
-            <Typography as='p' style='about-text'>
-              <span className='hr' />
-              I am a self-taught Software developer &#128187;, and
-              a student at UBA of Data science degree &#128202;
-              <br />
-              <br />I love to get along with curious and passionate people,
-              with whom there can be a mutual learning that allows us to grow and improve.
-              <br />
-              <br />
-              &#127793; Some of my hobbies are studying a new language like
-              Japanese, and spending time with my family.
-              <span className='hr' />
-            </Typography>
-          </div>
+    <p className="text">
+      {header && (
+        <span className="text-header">
+          {icon}
+          <strong className="strong">{header}</strong>
+        </span>
+      )}
+      {children}
+    </p>
+  );
+};
 
-          <div className='about-board-side board-back flex-center'>
-            <Typography as='p' style='about-text'>
-              <strong style={{ fontSize: '115%' }}>Soft-skills</strong>
-              <span className='hr' />
-              &#x1F9E0;
-              <strong> Growth mindset</strong>
-              <br />
-              I like to think big, how to make something better, how to go
-              further.
-              <br />
-              <br />
-              &#x1F4AA;
-              <strong> Work ethic</strong>
-              <br />
-              I love to keep learning new things and keep improving to give the
-              best result.
-              <br />
-              <br />
-              &#x1F91D;
-              <strong> Team player attitude</strong>
-              <br />I love to work side by side and help whoever needs it to
-              achieve a common goal.
-              <span className='hr' />
-            </Typography>
-          </div>
-
-          <div className='background-effect container' />
-        </div>
+const BoardContent = ({ children, header }) => {
+  return (
+    <div className="about-text-container">
+      <div className='about-text'>
+      {header && <strong style={{ fontSize: "115%" }}>{header}</strong>}
+      <span className="hr" />
+      {children}
+      <span className="hr" />
       </div>
     </div>
+  );
+};
+
+const classes = ["slider-buttons-bk", "slider-buttons", "slider-icon-button"];
+
+const Carousel = ({ children }) => {
+  const {
+    methods: { previous, next },
+    ref: slider,
+  } = useCarouselEffect(400);
+
+  return (
+    <div className="slider-bk">
+      <Button
+        onclick={previous}
+        src="https://img.icons8.com/material/96/000000/chevron-left--v1.png"
+        alt="backward"
+        style={classes}
+      />
+
+      <div className="slider-element-bk">
+        <div ref={slider} className="slider-element">
+          {children}
+        </div>
+      </div>
+
+      <Button
+        onclick={next}
+        src="https://img.icons8.com/material/96/000000/chevron-right--v1.png"
+        alt="forward"
+        style={classes}
+      />
+    </div>
+  )
+}
+
+export const Board = () => {
+  return (
+    <div className="about-board-container grid-center">
+          <Carousel>
+            <BoardContent>
+              <Text>
+                I learned software development &#128187; as an autodidact and I am currently studying a bachelor's degree in data science &#128202; at the University of Buenos Aires.
+              </Text>
+
+              <Text>
+                I love meeting curious and passionate people, with whom there can be mutual learning that allows us to grow and improve.
+              </Text>
+
+              <Text>
+                &#127793; Some of my hobbies are studying a new language like Japanese, and spending time with my family.
+              </Text>
+            </BoardContent>
+
+            <BoardContent header="Soft-skills">
+              <Text icon="&#x1F9E0;" header="Growth mindset">
+                I like to think big, how to make something better, how to go
+                further.
+              </Text>
+
+              <Text icon="&#x1F4AA;" header="Work ethic">
+                I love to keep learning new things and keep improving to give
+                the best result.
+              </Text>
+
+              <Text icon="&#x1F91D;" header="Team player attitude">
+                I love to work side by side and help whoever needs it to achieve
+                a common goal.
+              </Text>
+            </BoardContent>
+          </Carousel>
+        </div>
   )
 }
