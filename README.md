@@ -11,7 +11,7 @@ Implementation of Custom Hooks and Window object to build UI components with sta
 
 ### Home
 
-<img src="/public/portfolio-about.webp" alt="An image of the home page of the portfolio. It has greatings and a typewritter component that write I'm 'Software developer' and 'Fullstack developer' letter by letter" width="500" />
+<img src="/public/portfolio-home.webp" alt="An image of the home page of the portfolio. It has greatings and a typewritter component that write I'm 'Software developer' and 'Fullstack developer' letter by letter" width="500" />
 
 ### Project Carousel
 
