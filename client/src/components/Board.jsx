@@ -67,13 +67,14 @@ export const Board = () => {
           <Carousel>
             <BoardContent>
               <Text>
-                I learned software development &#128187; as an autodidact and I am currently studying a bachelor's degree in data science &#128202; at the University of Buenos Aires.
+                Self-taught Software Developer &#128187; and currently pursuing a bachelor's degree in Data Science &#128202; at the University of Buenos Aires.
               </Text>
-
+              <Text>
+                With more than a year and a half of experience with information technologies.
+              </Text>
               <Text>
                 I love meeting curious and passionate people, with whom there can be mutual learning that allows us to grow and improve.
               </Text>
-
               <Text>
                 &#127793; Some of my hobbies are studying a new language like Japanese, and spending time with my family.
               </Text>
