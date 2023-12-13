@@ -20,7 +20,3 @@ Implementation of Custom Hooks and Window object to build UI components with sta
 ### Modal project
 
 <img src="/public/portfolio-modal.webp" alt="An image of a Modal UI component with project description, its a board that when you click a button it open over the all things" width="500" />
-
-### About me 
-
-<img src="/public/portfolio-about.webp" alt="A portfolio about section image that has a carousel board with a brief description about me" width="500" />
